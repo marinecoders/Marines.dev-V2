@@ -1,23 +1,23 @@
 <script>
   import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
   import McswfLogoAndText from '@components/logos/McswfLogoAndText.svelte';
-  import { LinkedIn } from '@icons/iconExports';
+  import MIUMCLogoAndText from '@components/logos/MIUMCLogoAndText.svelte';
+  import Icon from '@iconify/svelte';
   import { externalLinks } from '@content/externalLinks';
 
   export let background = '';
-  export let rounded = true;
 </script>
 
 <div class={background}>
   <footer
-    class="pb-0 pt-6 lg:pb-2 blue-radial-gradient shadow-xl shadow-stone-950"
-    class:rounded-t-3xl={rounded}>
+    class="pb-0 pt-6 lg:pb-2 shadow-xl shadow-stone-950"
+    style="background-color: #1a1d24;">
     <MaxWidthContainer>
       <!-- STANDARD FOOTER -->
       <div class="hidden lg:block container pb-28 mx-auto lg:py-8">
         <div class="flex justify-around py-4 border-b">
           <div class="flex w-2/5 align-middle mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
-            <McswfLogoAndText displayImage={true} />
+            <MIUMCLogoAndText displayImage={true} />
           </div>
           <div class="w-3/5">
             <h1 class="text-lg font-bold">VISION</h1>
@@ -30,7 +30,7 @@
         <div class="flex justify-around py-4 align-middle border-b">
           <div class="w-2/5">
             <a
-              href={externalLinks.marinesDotCom}
+              href={externalLinks.miusite}
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
@@ -38,7 +38,7 @@
                 style="fill: white;"
                 src="/ega-full.svg"
                 class="h-12 text-white"
-                alt="MCSWF Logo" />
+                alt="MIU Logo" />
             </a>
           </div>
           <div class="w-3/5">
@@ -55,17 +55,20 @@
         <div class="flex justify-around items-center py-4 mb-8 border-b">
           <div class="w-2/5">
             <h1 class="mb-2 font-light text-xs">GET IN TOUCH</h1>
-            <div class="flex justify-start">
+            <div class="flex justify-start space-x-4">
               <a
                 href={externalLinks.social.linkedIn}
                 class="mr-4"
                 target="_blank"
                 rel="noopener noreferrer">
-                <LinkedIn
-                  size="lg"
-                  primary="fill-linkedin-blue"
-                  secondary="fill-white"
-                  class="rounded-sm" />
+                <Icon icon="mdi:linkedin" width="32" height="32" class="text-white hover:text-blue-500 transition-colors" />
+              </a>
+              <a
+                href={externalLinks.miusite}
+                class="mr-4"
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon icon="mdi:web" width="32" height="32" class="text-white hover:text-mcswf-gold transition-colors" />
               </a>
             </div>
           </div>
@@ -90,7 +93,7 @@
       <!-- MOBILE FOOTER -->
       <div class="block lg:hidden container pb-32 mx-auto">
         <div class="flex justify-start py-4 border-b">
-          <McswfLogoAndText displayImage={true} />
+          <MIUMCLogoAndText displayImage={true} />
         </div>
         <div class="flex justify-start py-4 align-middle border-b">
           <a
@@ -140,11 +143,14 @@
             class="mr-4"
             target="_blank"
             rel="noopener noreferrer">
-            <LinkedIn
-              size="lg"
-              primary="fill-linkedin-blue"
-              secondary="fill-white"
-              class="rounded-sm" />
+            <Icon icon="mdi:linkedin" width="32" height="32" class="text-white hover:text-blue-500 transition-colors" />
+          </a>
+          <a
+            href={externalLinks.miusite}
+            class="mr-4"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Icon icon="mdi:web" width="32" height="32" class="text-white hover:text-mcswf-gold transition-colors" />
           </a>
         </div>
       </div>

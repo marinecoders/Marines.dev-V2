@@ -8,7 +8,7 @@
   {#if displayImage}
     <img
       style="fill: white;"
-      src="/marine-coders-logo.svg"
+      src="/MIU-logo.svg"
       class="h-16 text-white mr-4"
       alt="Marine Coders Logo" />
   {/if}

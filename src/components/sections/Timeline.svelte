@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import Icon from '@iconify/svelte';
   
   export let timelineData = [];
   
@@ -53,6 +54,24 @@
     const [month, year] = dateString.split(' ');
     return { month, year };
   }
+  
+  // Map emoji icons to Iconify icon names
+  function getIconName(iconEmoji) {
+    const iconMap = {
+      '🚀': 'lucide:rocket', // Rocket launch
+      '📋': 'lucide:clipboard-list', // Presentation/documentation
+      '💡': 'lucide:lightbulb', // Inspiration/idea
+      '🎯': 'lucide:target', // Training/focus
+      '🤝': 'lucide:handshake', // Partnership/sponsorship
+      '📜': 'lucide:scroll', // Charter/document
+      '🏛️': 'lucide:building-2', // Official establishment
+      '✈️': 'lucide:plane', // Pilot program
+      '📦': 'lucide:package', // Product delivery
+      '📈': 'lucide:trending-up', // Growth
+      '🏆': 'lucide:trophy' // Achievement/milestone
+    };
+    return iconMap[iconEmoji] || 'lucide:rocket'; // Default to rocket if not found
+  }
 </script>
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" bind:this={timelineRef}>
@@ -78,7 +97,9 @@
             <div class="bg-white rounded-lg shadow-xl p-6 border-l-4 {getTypeStyles(item.type).split(' ')[2]} hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <!-- Date Badge -->
               <div class="flex items-center mb-4">
-                <span class="text-2xl mr-3">{item.icon}</span>
+                <div class="mr-3 p-2 rounded-full bg-mcswf-gold text-mcswf-red">
+                  <Icon icon={getIconName(item.icon)} width="24" height="24" />
+                </div>
                 <div class="bg-mcswf-red text-white px-3 py-1 rounded-full text-sm font-bold">
                   {formatDate(item.date).month} {formatDate(item.date).year}
                 </div>

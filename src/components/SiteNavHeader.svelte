@@ -7,6 +7,7 @@
   import Hamburger from '@icons/Hamburger.svelte';
   import ForwardArrow from '@icons/ForwardArrow.svelte';
   import McswfLogoAndText from '@components/logos/McswfLogoAndText.svelte';
+  import ThemeToggle from '@components/ThemeToggle.svelte';
   import { externalLinks } from '@content/externalLinks';
 
   let dropdownOpen = false;
@@ -64,33 +65,36 @@
 
 <header
   id="header"
-  class="w-full sticky top-0 z-30 bg-custom-gradient-blue-header shadow-sm shadow-stone-950">
+  class="w-full sticky top-0 z-30 shadow-sm shadow-stone-950" style="background-color: #1a1d24;">
   <MaxWidthContainer>
     <div class="flex flex-row justify-between items-center w-full py-2 sm:py-4 md:gap-4 lg:gap-8">
-      <McswfLogoAndText displayImage={false} />
-      {#if dropdownOpen}
-        <div
-          class="ml-auto hidden md:block"
-          transition:fade={{ duration: 300, easing: quintOut }}>
-          <ButtonCustom
-            color="white"
-            size="md"
-            class="px-2 py-1 text-xs sm:px-4 sm:text-base ml-auto hidden md:block"
-            link="/contactUs/getInTouch"
-            externalLink={true}>GET IN TOUCH</ButtonCustom>
-        </div>
-      {/if}
-      <Hamburger
-        bind:open={dropdownOpen}
-        class="bg-zinc-200"
-        id="site-header-hamburger" />
+      <McswfLogoAndText displayImage={true} />
+      <div class="flex items-center gap-4">
+        <ThemeToggle />
+        {#if dropdownOpen}
+          <div
+            class="ml-auto hidden md:block"
+            transition:fade={{ duration: 300, easing: quintOut }}>
+            <ButtonCustom
+              color="white"
+              size="md"
+              class="px-2 py-1 text-xs sm:px-4 sm:text-base ml-auto hidden md:block"
+              link="/contactUs/getInTouch"
+              externalLink={true}>GET IN TOUCH</ButtonCustom>
+          </div>
+        {/if}
+        <Hamburger
+          bind:open={dropdownOpen}
+          class="bg-zinc-200"
+          id="site-header-hamburger" />
+      </div>
     </div>
   </MaxWidthContainer>
 
   <Dropdown
     bind:open={dropdownOpen}
     triggeredBy="#site-header-hamburger"
-    containerClass="bg-custom-gradient-blue-header py-6 w-screen rounded-t-none !top-[68px] md:!top-[87px] text-white">
+    containerClass="py-6 w-screen rounded-t-none !top-[68px] md:!top-[87px] text-white" style="background-color: #1a1d24;">
     <div
       class="w-screen"
       transition:fadeSlide={{ duration: 200 }}>

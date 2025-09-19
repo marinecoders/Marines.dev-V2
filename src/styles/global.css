@@ -1,3 +1,22 @@
+/* Theme Variables */
+:root {
+  --bg-primary: #252a34; /* Dark mode background */
+  --text-primary: #ffffff;
+  --header-bg: #1a1d24;
+}
+
+.light {
+  --bg-primary: #dee4e7; /* Light mode background */
+  --text-primary: #1a1d24;
+  --header-bg: #f8f9fa;
+}
+
+/* Apply theme variables */
+body {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;

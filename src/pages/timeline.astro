@@ -1,0 +1,170 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Timeline from '@components/sections/Timeline.svelte';
+import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
+import FooterFull from '@components/FooterFull.svelte';
+import { displaySiteBanner } from '../components/stores.js';
+
+displaySiteBanner.set(true);
+
+const timelineData = [
+  {
+    date: "September 2020",
+    title: "Marine Coders Begins",
+    description: "Major Hutcheon and Captain Chew complete a tour to the USAF Platform One and create the Marine Coders as an active duty community of practice to align active-duty talent across the enterprise and share best practices on developing software. Initially modeled on the (now defunct) 'Airman Coders' and 'Super Coders.'",
+    type: "milestone",
+    icon: "🚀"
+  },
+  {
+    date: "October 2020",
+    title: "Initial Concept Presentation",
+    description: "Though not 'officially' sanctioned as a community of practice, the initial concept is presented to Lieutenant General Glavy (then Major General), who later becomes a champion of the Marine Corps Software Factory while serving as Deputy Commandant for Information.",
+    type: "presentation",
+    icon: "📋"
+  },
+  {
+    date: "June 2021",
+    title: "MCSWF Inspiration",
+    description: "Lieutenant Colonel Charlie Bahk is inspired to create the Marine Corps Software Factory (MCSWF) after a visit to the Army Software Factory.",
+    type: "inspiration",
+    icon: "💡"
+  },
+  {
+    date: "August 2021",
+    title: "MIU First Annual Training",
+    description: "MIU conducts first annual training, establishing the foundation for future innovation programs.",
+    type: "training",
+    icon: "🎯"
+  },
+  {
+    date: "September 2021",
+    title: "Executive Sponsorship Secured",
+    description: "Major Hutcheon and Captain Chew meet Brigadier General Mahlock. She provides them executive sponsorship to build a 'microservices challenge.' This is the first executive sponsorship to a Marine Corps wide hackathon.",
+    type: "sponsorship",
+    icon: "🤝"
+  },
+  {
+    date: "October 2021",
+    title: "II MIG Marine Coders Detachment",
+    description: "The II MIG Marine Coders 'Detachment' is formally chartered, marking an early effort to explore organic software development within the Marine Corps. However, the initiative sees limited operational engagement and is eventually sunset without sustained activity.",
+    type: "charter",
+    icon: "📜"
+  },
+  {
+    date: "November 2021",
+    title: "MIU Partnership Established",
+    description: "Lieutenant Colonel Carlson, one of the founders of the MIU, connects with Major Hutcheon and Captain Chew as they are resigning from active duty. The three Marines immediately saw the alignment between the newly formed MIU and the Marine Coders team. Soon thereafter a formal announcement is released establishing the partnership.",
+    type: "partnership",
+    icon: "🤝"
+  },
+  {
+    date: "August 2022",
+    title: "MIU Second Annual Training",
+    description: "MIU's second annual training in preparation to becoming a formally activated unit within the next year.",
+    type: "training",
+    icon: "🎯"
+  },
+  {
+    date: "June 2023",
+    title: "MCSWF Pilot Announced",
+    description: "MCSWF pilot announced to have a total of ~7 Marines.",
+    type: "pilot",
+    icon: "✈️"
+  },
+  {
+    date: "July 2023",
+    title: "MIU Official Standup",
+    description: "MIU officially stands up as a unit. There are ~15 Marine Coders at this time. MCSWF/MIU partnership is officially established.",
+    type: "milestone",
+    icon: "🏛️"
+  },
+  {
+    date: "September 2023",
+    title: "First Software Product Shipped",
+    description: "MCSWF ships first software product, marking a significant milestone in the program's development.",
+    type: "achievement",
+    icon: "📦"
+  },
+  {
+    date: "December 2024",
+    title: "MCSWF Growth",
+    description: "MCSWF reaches ~13 Marines, showing continued growth and development of the program.",
+    type: "growth",
+    icon: "📈"
+  },
+  {
+    date: "June 2024",
+    title: "First Annual Training Support",
+    description: "The Marine Coders attend their first annual training in support of the MCSWF. There are ~20 Marine Coders in attendance.",
+    type: "training",
+    icon: "🎯"
+  },
+  {
+    date: "March 2025",
+    title: "Second Annual Training Support",
+    description: "The Marine Coders attend their second annual training in support of the MCSWF. There are ~30 Marine Coders in attendance.",
+    type: "training",
+    icon: "🎯"
+  },
+  {
+    date: "June 2025",
+    title: "Official Unit Establishment",
+    description: "DOTMLPF/C Working Group approval to establish the Marine Corps Software Factory as an official unit.",
+    type: "milestone",
+    icon: "🏆"
+  }
+];
+---
+
+<Layout title="Marine Coders Timeline">
+  <div class="min-h-screen bg-mcswf-red">
+    <!-- Hero Section -->
+    <div class="relative bg-custom-gradient-blue-header py-20">
+      <MaxWidthContainer>
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h1 class="text-4xl md:text-6xl font-bold text-mcswf-gold mb-6 font-colossalis">
+            Marine Coders Journey
+          </h1>
+          <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed">
+            From humble beginnings to official recognition - the evolution of Marine Corps software development
+          </p>
+          <div class="flex justify-center items-center space-x-4 text-mcswf-gold">
+            <div class="w-16 h-0.5 bg-mcswf-gold"></div>
+            <span class="text-lg font-semibold">2020 - 2025</span>
+            <div class="w-16 h-0.5 bg-mcswf-gold"></div>
+          </div>
+        </div>
+      </MaxWidthContainer>
+    </div>
+
+    <!-- Timeline Section -->
+    <div class="py-16">
+      <MaxWidthContainer>
+        <Timeline client:only="svelte" timelineData={timelineData} />
+      </MaxWidthContainer>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="bg-custom-gradient-red-banner py-16">
+      <MaxWidthContainer>
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-colossalis">
+            Join the Future of Marine Corps Innovation
+          </h2>
+          <p class="text-lg md:text-xl text-white mb-8 leading-relaxed">
+            Be part of the next chapter in Marine Corps software development. The Marine Innovation Unit continues to push boundaries and create cutting-edge solutions for the Marine Corps.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contactUs/applyNow" class="bg-mcswf-gold hover:bg-mcswf-gold-dark text-mcswf-red font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+              Apply Now
+            </a>
+            <a href="/about" class="border-2 border-white text-white hover:bg-white hover:text-mcswf-red font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </MaxWidthContainer>
+    </div>
+  </div>
+  <FooterFull client:only="svelte" />
+</Layout>

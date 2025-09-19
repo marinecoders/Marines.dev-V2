@@ -27,7 +27,9 @@
       text: 'ABOUT',
       image: '/images/about_card.png',
       url: '/about',
-      subLinks: [{ url: '/about', text: 'WHO WE ARE' }],
+      subLinks: [{ url: '/about', text: 'WHO WE ARE' },
+        { url: '/timeline', text: 'CODERS HISTORY' }
+      ],
     },
     {
       text: 'CAREER',

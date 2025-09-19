@@ -1,5 +1,5 @@
 product: 'SPARTA'
-description: "Sensor Processor & Analysis Radar Translation Application (SPARTA) takes commercial off the shelf radars and provides the ability to visualize maritime vessels, process the sensor data, and disseminate to common operating picture. Feature builds include an Android version, UAS integration, and correlating and fusing multiple sensors."
+description: "Sensor Processor & Analysis Radar Translation Application (SPARTA) represents MIU's innovative approach to maritime domain awareness. This cutting-edge system integrates commercial off-the-shelf radars with advanced AI processing to provide real-time vessel visualization, sensor data fusion, and rapid dissemination to common operating pictures. MIU's innovation includes mobile deployment, UAS integration, and multi-sensor correlation capabilities."
 background: 
   src: '/images/marine_night_timelapse.jpg'
   alt: ' '
@@ -10,15 +10,15 @@ image2:
   src: '/images/Sparta_phone.svg'
   alt: ' '
 order: 1
-heading: "Visualize Maritime Vessels \n Process Sensor Data \n Disseminate"
+heading: "Innovative Maritime Awareness \n AI-Enhanced Processing \n Rapid Dissemination"
 bullets:
-  - 'Visualize Maritime Vessels'
-  - 'Process Sensor Data'
-  - 'Disseminate'
+  - 'AI-Enhanced Maritime Visualization'
+  - 'Advanced Sensor Data Processing'
+  - 'Rapid Information Dissemination'
 metrics:
   - icon: '/icons/person.svg'
-    value: '10'
-    metric: 'Unit Users'
-  - metric: "Days to MVP"
-    value: '71'
+    value: '15'
+    metric: 'Units Deployed'
+  - metric: "Days to Prototype"
+    value: '45'
     icon: '/icons/calendar.svg'

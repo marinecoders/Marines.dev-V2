@@ -7,28 +7,28 @@ icon: software_engineer.svg
 image_alt_text: Marine Software Engineer
 image_focus: right
 about: >
-  Software Development Engineers are responsible for creating, refining, and launching applications. They prioritize high availability, minimal latency, and scalability. Their approach is to first implement user stories from the backlog and adopt a test-first methodology. This strategy helps them to ensure that the software is free of bugs or security vulnerabilities.
+  MIU Software Development Engineers are at the forefront of Marine Corps innovation, responsible for creating cutting-edge applications that enhance Marine Corps capabilities. They focus on rapid prototyping, emerging technology integration, and scalable solutions that can be deployed in challenging operational environments. Their approach combines agile development methodologies with military-specific requirements to deliver innovative solutions quickly and effectively.
 
 
-  Additionally, Software Engineers engage in eXtreme Programming (XP), a collaborative method where pairs of engineers simultaneously work on the same code segment. This facilitates knowledge sharing and context understanding.
+  MIU Software Engineers work in collaborative, cross-functional teams that include industry partners, academic researchers, and military subject matter experts. This unique environment enables rapid innovation and knowledge transfer between civilian and military domains.
 --- 
 # ABOUT THE JOB
-  Software engineering is a dynamic field that involves a balanced team of professionals, including software engineers, who collaborate in the design, development, testing, and maintenance of software systems. Software engineers establish a foundation in computer science principles, engineering methodologies, and information technology.
+  MIU Software Engineering represents the cutting edge of military technology development, where engineers work on innovative projects that directly impact Marine Corps operations. This role involves rapid prototyping, emerging technology evaluation, and the development of next-generation capabilities that enhance Marine Corps effectiveness across all domains.
 
-  Working alongside other specialists like UI/UX designers and project managers, software engineers use a variety of programming languages such as Java, Python, JavaScript, and TypeScript—each chosen based on the specific requirements of the project—to build and implement effective software solutions. 
+  MIU Software Engineers collaborate with a diverse team including military strategists, industry experts, academic researchers, and operational Marines to develop solutions that address real-world military challenges. They work with cutting-edge technologies including AI/ML, cloud computing, mobile applications, and emerging platforms to create innovative solutions.
 
-  These projects can range from simple mobile applications to complex cloud-based systems, their ability to solve complex problems as part of a cohesive team. Additionally, software engineers play a critical role in adapting to evolving technologies and tools, ensuring that the team stays at the forefront of innovation and effectively meets the changing needs of users and stakeholders.
-# SOFTWARE ENGINEER RESPONSIBILITIES
-  - Planning, executing, and overseeing projects from conception to completion; which includes, managing timelines and resources.
-  - Managing versions of software through tools like Git, ensuring smooth transitions between versions and maintaining a history of changes and updates.
-  - Integrating security validation features into software to protect against vulnerabilities.
-  - Evaluating and analyzing user needs to ensure that the software meets all requirements and user expectations.
-  - Refining and optimizing code for efficiency and performance, ensuring that the software runs smoothly and quickly.
-  - Providing technical leadership to peers and junior engineers.
+  Projects range from tactical mobile applications to complex AI-driven systems, all designed to provide Marines with decisive advantages on the battlefield. MIU engineers play a critical role in bridging the gap between emerging commercial technologies and military applications, ensuring the Marine Corps remains at the forefront of technological innovation.
+# MIU SOFTWARE ENGINEER RESPONSIBILITIES
+  - Leading rapid prototyping and innovation projects that enhance Marine Corps capabilities across all operational domains.
+  - Collaborating with military subject matter experts to understand operational requirements and translate them into technical solutions.
+  - Evaluating and integrating emerging technologies including AI/ML, cloud computing, and mobile platforms for military applications.
+  - Developing secure, scalable software solutions that can operate in contested and austere environments.
+  - Working with industry partners and academic institutions to leverage cutting-edge research and development.
+  - Providing technical leadership and mentoring to junior engineers while fostering innovation culture.
 # WHATS IN IT FOR ME?
-  - Meaningful work that will directly contribute to Marines key pain points at both the tactical edge and in garrison. 
-  - A structured environment with a plethora of opportunities to practice fluid leadership and team management skills.
-  - HIGH availability of training, programs, and certifications that can enhance credentials and expertise transferable to a surplus of career fields.
-  - Opportunities for professional networking through partnering with our industry and business partnerships on certain applications. 
-  - Solve Marine Corps deterrents to mission success with substantial contributions that directly influence the lives of Marines and the security of the nation.
-  - Opportunities to teach or mentor in coding bootcamps, courses, or workshops, contributing to the education of the next generation of Marine Corps software engineers.
+  - Work on cutting-edge innovation projects that directly enhance Marine Corps capabilities and operational effectiveness.
+  - Collaborate with industry leaders, academic researchers, and military experts in a unique innovation environment.
+  - Access to the latest technologies, training programs, and certifications that enhance both military and civilian career prospects.
+  - Opportunities to present innovative solutions to senior Marine Corps leadership and influence future technology investments.
+  - Contribute to national security through technological innovation that provides Marines with decisive advantages.
+  - Lead and mentor in MIU's innovation programs, helping develop the next generation of military technologists.

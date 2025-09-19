@@ -73,10 +73,10 @@
             <p>Interested in partnering with the Marine Corps Software Factory?</p>
             <p>
               Email us at <a
-                href={`mailto:${externalLinks.mcswfEmail}?subject=${externalLinks.mcswfEmailSubject}`}
+                href={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="underline text-mcswf-gold">{externalLinks.mcswfEmail}</a>
+                class="underline text-mcswf-gold">{externalLinks.miuEmail}</a>
             </p>
           </div>
         </div>
@@ -119,17 +119,17 @@
             <p>Interested in partnering with the Marine Corps Software Factory?</p>
             <p>
               Email us at <a
-                href={`mailto:${externalLinks.mcswfEmail}?subject=${externalLinks.mcswfEmailSubject}`}
+                href={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="underline text-mcswf-gold">mcswf@usmc.mil</a>
+                class="underline text-mcswf-gold">miu@usmc.mil</a>
             </p>
           </div>
         </div>
         <div class="flex justify-center py-4">
           <div class="w-full">
             <p class="font-light">
-              Product of The Marine Corps Software Factory, which proudly sits within the <span class="underline text-mcswf-gold">Deputy Commandant for Information.</span>
+              Product of The Marine Innovation Unit, which proudly sits within the <span class="underline text-mcswf-gold">Deputy Commandant for Information.</span>
             </p>
           </div>
         </div>

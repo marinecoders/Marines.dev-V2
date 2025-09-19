@@ -1,14 +1,14 @@
 metrics:
-  - metric: 'Marines Trained'
+  - metric: 'Innovation Projects'
     icon: '/icons/marinesTrained.svg'
-    value: '4'
-  - metric: "Applications Deployed"
+    value: '12'
+  - metric: "Technologies Evaluated"
     icon: '/icons/applicationsDeployed.svg'
-    value: '5'
-  - metric: 'Units Using MCSWF Applications'
+    value: '8'
+  - metric: 'Marine Corps Units Supported'
     icon: '/icons/unitsUsing.svg'
-    value: '16'
-  - metric: 'Average Days 0-1 MVP'
+    value: '24'
+  - metric: 'Average Days to Prototype'
     icon: '/icons/averageDays.svg'
-    value: '81'
+    value: '45'
     

@@ -7,32 +7,36 @@ image_wide: designer.png
 image_alt_text: Marine Product Designer
 image_focus: left
 about: >
-  Product Designers, specializing in UI/UX, play a vital role in guiding application teams to develop products that meet user needs. They serve as the primary link between the user and the team, utilizing a wide range of skills, including user research, experience and interaction design, and visual design.
+  MIU Product Designers are innovation catalysts who transform complex military requirements into intuitive, effective user experiences. They specialize in creating user interfaces and experiences for cutting-edge military applications, working at the intersection of technology and operational needs. Their expertise spans user research, experience design, and visual design, all focused on enhancing Marine Corps capabilities.
 
 
-  Designers skillfully filter user feedback, focusing their teams on the most pressing user concerns. Working within a balanced team alongside Product Managers and Engineers, UI/UX Designers engage in a collaborative process. They help set design priorities, refine project backlogs and roadmaps, and assess the technical feasibility of their design proposals.
+  MIU Designers work in collaborative innovation teams alongside military subject matter experts, engineers, and industry partners. They translate complex operational requirements into user-centered designs that enhance Marine effectiveness in challenging environments. Their work directly impacts mission success by creating interfaces that Marines can rely on in high-stress, time-critical situations.
 ---
 
 # ABOUT THE JOB
 
-A UI/UX Designer is a professional dedicated to designing and enhancing the user interfaces (Ul) and user experiences (UX) of digital products like websites, applications, and software. This role is a unique blend of graphic design, psychology, and technology, focusing on creating digital products that are not just functional, but also intuitive, engaging, and accessible.
+MIU Product Designers are at the forefront of military technology innovation, creating user experiences for next-generation Marine Corps applications. This role combines design expertise with deep understanding of military operations, focusing on creating interfaces that enhance Marine effectiveness in complex, high-stakes environments.
 
-In addition to their core skills, UI/UX Designers are equipped with essential team soft skills such as effective communication, empathy, and collaborative problem-solving. They excel in articulating design concepts clearly to cross-functional teams and stakeholders, ensuring a harmonious and productive work environment. Their ability to empathize not only with users but also with team members enhances their capacity to negotiate and align diverse perspectives, playing a pivotal role in bridging the gap between the user, the technology, and the business objectives.
+MIU Designers work in a unique environment that bridges military operations and cutting-edge technology. They collaborate with operational Marines, military strategists, industry experts, and academic researchers to create designs that solve real-world military challenges. Their work spans from tactical mobile applications to complex command and control systems, all designed to provide Marines with decisive advantages.
 
-# PRODUCT DESIGNER RESPONSIBILITIES
+The role requires exceptional communication skills to translate complex military requirements into intuitive designs, while working effectively with diverse teams including active-duty Marines, reservists, civilian contractors, and industry partners. MIU Designers play a critical role in ensuring that innovative technologies are accessible and effective for their intended military users.
 
-- Conduct user research, market analysis, and script writing for stakeholder interviews to understand user needs and business goals.
-- Work closely with developers, product managers, and other team members and communicate design ideas and create detailed design documentation.
-- Collect and analyze user feedback for continuous improvement and evaluate UX performance and make necessary enhancements.
-- Understand the use of typography, color palettes, icons, and images to create a visually appealing interface.
-- Ensuring the design aligns with the brand's identity for a consistent user experience across all platforms.
-- Develop information architecture and wireframes and interactive prototypes with visual elements.
+# MIU PRODUCT DESIGNER RESPONSIBILITIES
+
+- Conduct user research with operational Marines to understand mission-critical requirements and design constraints in military environments.
+- Collaborate with military subject matter experts, engineers, and industry partners to translate complex operational needs into intuitive user experiences.
+- Design interfaces for applications that must function reliably in austere, contested, and high-stress operational environments.
+- Create design systems and prototypes for cutting-edge military technologies including AI/ML interfaces, tactical mobile apps, and command systems.
+- Ensure designs meet military security standards while maintaining usability and effectiveness for Marine users.
+- Lead design thinking workshops and innovation sessions to explore new approaches to military technology challenges.
 
 # WHAT'S IN IT FOR ME?
 
-- Design skills are universally relevant, offering opportunities to work in any team environment with potential of travel opportunities and exposure to diverse cultures and ideas.
-- The results of a Ul/UX designer's work are often visible and tangible, leading to a sense of accomplishment and recognition within the team and by users.
-- The Ul/UX design community is vibrant and supportive, offering numerous opportunities for networking, mentorship, and collaboration. Conferences, meetups, and online forums provide platforms for learning and sharing knowledge.
-- Significantly impact the Marine Corps through research and design, enhancing user experience and perceptions, potentially saving lives through by the outcomes of accessibility.
+- Work on cutting-edge innovation projects that directly enhance Marine Corps capabilities and operational effectiveness.
+- Collaborate with industry leaders, military experts, and academic researchers in a unique innovation environment.
+- Design interfaces for applications that Marines rely on in critical situations, with direct impact on mission success and safety.
+- Access to the latest design tools, technologies, and methodologies used in both military and commercial innovation.
+- Opportunities to present design solutions to senior Marine Corps leadership and influence future technology investments.
+- Contribute to national security through innovative design that provides Marines with decisive technological advantages.
 
 ---

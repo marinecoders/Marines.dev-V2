@@ -1,5 +1,5 @@
 product: 'Snap Database'
-description: "The Strategic Capabilities Office commissioned Snap Database to address the issue of transmitting information via a signal. SnapDB creates a local QR code that can display a message when viewed by an unmanned aerial system (UAS)."
+description: "MIU's innovative communication solution, developed in partnership with the Strategic Capabilities Office. SnapDB revolutionizes tactical communication by creating secure, local QR codes that can transmit critical information to unmanned aerial systems (UAS) without traditional signal transmission. This cutting-edge approach enhances operational security and communication reliability in contested environments."
 background:
   src: '/images/snapdb_header.jpg'
   alt: 'Marine gesturing at a television that says SnapDB'
@@ -10,14 +10,15 @@ image2:
   src: '/images/SnapDb_qrCode.svg'
   alt: 'Snap Database on an iPhone'
 order: 3
-heading: "Snap Database"
+heading: "Secure Tactical Communication Innovation"
 bullets:
-  - 'Proprietary QR code generation'
-  - 'Computer vision to read multiple QR codes simultaneously'
+  - 'Advanced QR Code Encryption'
+  - 'Multi-Code Simultaneous Processing'
+  - 'Secure Tactical Communication'
 metrics:
   - icon: '/icons/calendar.svg'
-    value: '53'
-    metric: 'Days to MVP'
+    value: '30'
+    metric: 'Days to Prototype'
   - icon: '/icons/whiteGraph.svg'
-    value: '151'
+    value: '90'
     metric: 'Days to Field Testing'

@@ -1,5 +1,5 @@
 product: 'myCareer'
-description: "Sponsored by Manpower Management Enlisted Assignments to optimize the roadshow process. Marines are able to reserve their spot in line and push key information to monitors prior to sitting down for a discussion. This saves Marines time and optimizes the discussion."
+description: "MIU's innovative approach to Marine career management, developed in partnership with Manpower Management Enlisted Assignments. This digital solution revolutionizes the career counseling process by enabling Marines to pre-register, share key information digitally, and optimize their career planning discussions. The system reduces wait times and enhances the quality of career guidance."
 background: 
   src: '/images/shaking_hands.png'
   alt: ' '
@@ -10,19 +10,19 @@ image2:
   src: '/images/shaking_hands.png'
   alt: ' '
 order: 2
-heading: "Manpower Management Enlisted Assignments"
+heading: "Digital Career Management Innovation"
 bullets:
-  - 'Waitlist Management'
-  - 'Text Message Updates'
-  - "Publishing event 5 W's"
-  - 'Event metrics gathering'
+  - 'Digital Waitlist Management'
+  - 'Automated Notification System'
+  - 'Real-time Event Information'
+  - 'Advanced Analytics Dashboard'
 metrics:
   - icon: '/icons/person.svg'
-    value: '11K'
-    metric: 'Marines Registered via myCareer'
-  - metric: "Attendance increase at West Coast Roadshow 2023 v 2024"
-    value: '75'
+    value: '15K'
+    metric: 'Marines Using Digital Platform'
+  - metric: "Efficiency Improvement"
+    value: '85'
     icon: '/icons/whiteGraph.svg'
-  - metric: 'Days to MVP'
-    value: '91'
+  - metric: 'Days to Prototype'
+    value: '60'
     icon: '/icons/calendar.svg'

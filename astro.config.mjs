@@ -6,7 +6,7 @@ import svelte from '@astrojs/svelte';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), svelte(), mdx()],
-  site: 'https://dev-mcswf.usmc.dev',
+  site: 'https://dev-miu.usmc.dev',
   base: '/',
   redirects: {
     '/contactUs': '/contactUs/getInTouch',

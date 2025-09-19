@@ -14,9 +14,9 @@
       <ButtonCustom
         color="yellow"
         size="md"
-        link={externalLinks.recruitingApplication}
-        externalLink={true}
-        class="px-2 py-1 text-xs sm:px-4 sm:text-base md:px-8">Apply Now</ButtonCustom>
+        link={'/contactUs/applyNow'}
+        externalLink={false}
+        class="px-2 py-1 text-xs sm:px-4 sm:text-base md:px-8">Learn how to apply</ButtonCustom>
     </div>
   </div>
 {/if}

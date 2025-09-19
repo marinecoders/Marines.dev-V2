@@ -44,7 +44,7 @@
       image: '/images/contact_card.png',
       url: '/contactUs',
       subLinks: [
-        { url: '/contactUs/applyNow', text: 'APPLY NOW' },
+        { url: '/contactUs/applyNow', text: 'LEARN HOW TO APPLY' },
         { url: '/contactUs/proposeApp', text: 'PROPOSE AN APP' },
         { url: '/contactUs/getInTouch', text: 'GET IN TOUCH' },
       ],
@@ -118,10 +118,10 @@
         </div>
         <div class="flex justify-center">
           <a
-            href={externalLinks.recruitingApplication}
+            href={'/contactUs/applyNow'}
             target="_blank"
             rel="noopener noreferrer"
-            class="m-auto md:hidden underline underline-offset-2 text-mcswf-gold hover:text-mcswf-gold-dark">APPLY NOW</a>
+            class="m-auto md:hidden underline underline-offset-2 text-mcswf-gold hover:text-mcswf-gold-dark">Learn how to apply</a>
         </div>
         <!-- Moble Nav Header -->
         <div class="block md:hidden py-4 text-white fill-whith">

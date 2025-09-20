@@ -21,7 +21,7 @@
         { url: '/products', text: 'OVERVIEW' },
         { url: '/products/sparta', text: 'SPARTA' },
         { url: '/products/my-career', text: 'MyCareer' },
-        { url: '/products/SnapDB', text: 'Snap Database' },
+        { url: '/products/FlightMode', text: 'FlightMode' },
       ],
     },
     {

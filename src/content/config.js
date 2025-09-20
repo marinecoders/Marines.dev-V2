@@ -89,6 +89,25 @@ const contactUsCollection = defineCollection({
   }),
 });
 
+const articlesCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    publishDate: z.date(),
+    author: z.string(),
+    category: z.string(),
+    tags: z.array(z.string()).optional(),
+    featured: z.boolean().optional().default(false),
+    external: z.boolean().optional().default(false),
+    externalUrl: z.string().optional(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }).optional(),
+  }),
+});
+
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"
 export const collections = {
@@ -98,4 +117,5 @@ export const collections = {
   aboutMetrics: aboutMetricsCollection,
   steps: stepsCollection,
   contactUs: contactUsCollection,
+  articles: articlesCollection,
 };

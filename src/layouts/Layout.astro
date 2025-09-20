@@ -7,9 +7,10 @@ import '../styles/fonts.css';
 
 interface Props {
   title?: string;
+  hideBackground?: boolean;
 }
 
-const { title = null } = Astro.props;
+const { title = null, hideBackground = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -49,10 +50,10 @@ const { title = null } = Astro.props;
     />
     <title>MIU {title && '-'} {title}</title>
   </head>
-  <body class="overflow-auto h-full w-full font-expressway text-white bg-mcswf-red">
+  <body class="overflow-auto h-full w-full font-roboto text-white bg-mcswf-red">
     <SiteBanner />
     <SiteNavHeader client:only="svelte" />
-    <SiteBackgroundImg />
+    {!hideBackground && <SiteBackgroundImg />}
     <main>
       <slot />
     </main>

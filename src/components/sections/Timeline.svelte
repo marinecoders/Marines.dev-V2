@@ -94,7 +94,7 @@
           
           <!-- Content Card -->
           <div class="ml-16 md:ml-0 md:w-5/12 {index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}">
-            <div class="bg-white rounded-lg shadow-xl p-6 border-l-4 {getTypeStyles(item.type).split(' ')[2]} hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 border-l-4 {getTypeStyles(item.type).split(' ')[2]} hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <!-- Date Badge -->
               <div class="flex items-center mb-4">
                 <div class="mr-3 p-2 rounded-full bg-mcswf-gold text-mcswf-red">
@@ -106,19 +106,19 @@
               </div>
               
               <!-- Title -->
-              <h3 class="text-xl font-bold text-mcswf-red mb-3 font-colossalis">
+              <h3 class="text-xl font-bold text-mcswf-red dark:text-mcswf-gold mb-3 font-roboto">
                 {item.title}
               </h3>
               
               <!-- Description -->
-              <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+              <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">
                 {item.description}
               </p>
               
               <!-- Type Indicator -->
               <div class="mt-4 flex items-center">
                 <div class="w-3 h-3 rounded-full {getTypeStyles(item.type).split(' ')[0]} mr-2"></div>
-                <span class="text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                <span class="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide">
                   {item.type}
                 </span>
               </div>
@@ -130,28 +130,28 @@
   </div>
   
   <!-- Timeline Legend -->
-  <div class="mt-16 bg-white rounded-lg shadow-lg p-6">
-    <h3 class="text-xl font-bold text-mcswf-red mb-4 font-colossalis">Timeline Legend</h3>
+  <div class="mt-16 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+    <h3 class="text-xl font-bold text-mcswf-red dark:text-mcswf-gold mb-4 font-roboto">Timeline Legend</h3>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
       <div class="flex items-center">
         <div class="w-3 h-3 rounded-full bg-mcswf-gold mr-2"></div>
-        <span class="text-sm text-gray-700">Milestone</span>
+        <span class="text-sm text-gray-700 dark:text-gray-300">Milestone</span>
       </div>
       <div class="flex items-center">
         <div class="w-3 h-3 rounded-full bg-mcswf-blue mr-2"></div>
-        <span class="text-sm text-gray-700">Presentation</span>
+        <span class="text-sm text-gray-700 dark:text-gray-300">Presentation</span>
       </div>
       <div class="flex items-center">
         <div class="w-3 h-3 rounded-full bg-mcswf-gold-dark mr-2"></div>
-        <span class="text-sm text-gray-700">Inspiration</span>
+        <span class="text-sm text-gray-700 dark:text-gray-300">Inspiration</span>
       </div>
       <div class="flex items-center">
         <div class="w-3 h-3 rounded-full bg-mcswf-battle-red mr-2"></div>
-        <span class="text-sm text-gray-700">Training</span>
+        <span class="text-sm text-gray-700 dark:text-gray-300">Training</span>
       </div>
       <div class="flex items-center">
         <div class="w-3 h-3 rounded-full bg-mcswf-pinstripe mr-2"></div>
-        <span class="text-sm text-gray-700">Partnership</span>
+        <span class="text-sm text-gray-700 dark:text-gray-300">Partnership</span>
       </div>
     </div>
   </div>

@@ -44,7 +44,7 @@
       class="items-center text-center"
       key={index}>
       <div class="mt-8 sm:mt-4 m-auto md:w-36">
-        <h3 class="text-[100px] font-extrabold font-menobanner">{time}</h3>
+        <h3 class="text-[100px] font-extrabold font-roboto">{time}</h3>
         <p class="font-semibold text-2xl md:text-[18px] text-mcswf-gold">
           {index === 0 ? 'DAYS' : index === 1 ? 'HOURS' : index === 2 ? 'MINUTES' : 'SECONDS'}
         </p>

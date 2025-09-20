@@ -21,9 +21,11 @@ export default {
         'linkedin-blue': '#0077B5',
       },
       fontFamily: {
-        colossalis: ['Colossalis'],
-        expressway: ['Expressway', 'sans-serif'],
-        menobanner: ['MenoBanner'],
+        sans: ['Roboto', '-apple-system', 'BlinkMacSystemFont', 'Helvetica', 'Arial', 'sans-serif'],
+        roboto: ['Roboto', '-apple-system', 'BlinkMacSystemFont', 'Helvetica', 'Arial', 'sans-serif'],
+      },
+      fontFeatureSettings: {
+        'kern-liga': ['kern', 'liga'],
       },
       transitionProperty: {
         grid: 'grid-template-columns',

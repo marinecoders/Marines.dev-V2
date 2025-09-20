@@ -29,7 +29,8 @@
       image: '/images/about_card.png',
       url: '/about',
       subLinks: [{ url: '/about', text: 'WHO WE ARE' },
-        { url: '/timeline', text: 'CODERS HISTORY' }
+        { url: '/timeline', text: 'CODERS HISTORY' },
+        { url: '/publication', text: 'PUBLICATION 1' }
       ],
     },
     {
@@ -105,7 +106,7 @@
             <div class="col-span-1 tracking-wide">
               <h2 class="inline-block text-lg lg:text-xl font-bold bg-gradient-to-r from-white via-slate-100 to-slate-200 text-transparent bg-clip-text pb-2">{link.text}</h2>
               {#if link.subLinks}
-                <ul class="text-base lg:text-lg font-light">
+                <ul class="text-base lg:text-lg font-bold">
                   {#each link.subLinks as subLink}
                     <li class="p-1">
                       <a
@@ -158,7 +159,7 @@
                 </div>
 
                 {#if link.subLinks}
-                  <ul class="text-base text-white">
+                  <ul class="text-base text-white font-bold">
                     {#each link.subLinks as subLink}
                       <li class="py-2 pl-4">
                         <a

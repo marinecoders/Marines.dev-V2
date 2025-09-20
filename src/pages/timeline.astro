@@ -1,6 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import Timeline from '@components/sections/Timeline.svelte';
+import TimelineComponent from '@components/sections/Timeline.svelte';
 import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
 import FooterFull from '@components/FooterFull.svelte';
 import { displaySiteBanner } from '../components/stores.js';
@@ -117,20 +117,20 @@ const timelineData = [
 ---
 
 <Layout title="Marine Coders Timeline">
-  <div class="min-h-screen bg-mcswf-red">
+  <div class="min-h-screen bg-mcswf-red dark:bg-gray-900">
     <!-- Hero Section -->
-    <div class="relative bg-custom-gradient-blue-header py-20">
+    <div class="relative bg-custom-gradient-blue-header dark:bg-gray-800 py-20">
       <MaxWidthContainer>
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 class="text-4xl md:text-6xl font-bold text-mcswf-gold mb-6 font-colossalis">
+          <h1 class="text-4xl md:text-6xl font-bold text-mcswf-gold dark:text-mcswf-gold mb-6 font-roboto">
             Marine Coders Journey
           </h1>
-          <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed">
+          <p class="text-xl md:text-2xl text-white dark:text-gray-200 mb-8 leading-relaxed">
             From humble beginnings to official recognition - the evolution of Marine Corps software development
           </p>
           <div class="flex justify-center items-center space-x-4 text-mcswf-gold">
             <div class="w-16 h-0.5 bg-mcswf-gold"></div>
-            <span class="text-lg font-semibold">2020 - 2025</span>
+            <span class="text-lg font-semibold">2020 - Today</span>
             <div class="w-16 h-0.5 bg-mcswf-gold"></div>
           </div>
         </div>
@@ -138,27 +138,27 @@ const timelineData = [
     </div>
 
     <!-- Timeline Section -->
-    <div class="py-16">
+    <div class="py-16 bg-white dark:bg-gray-900">
       <MaxWidthContainer>
-        <Timeline client:only="svelte" timelineData={timelineData} />
+        <TimelineComponent client:only="svelte" timelineData={timelineData} />
       </MaxWidthContainer>
     </div>
 
     <!-- Call to Action Section -->
-    <div class="bg-custom-gradient-red-banner py-16">
+    <div class="bg-custom-gradient-red-banner dark:bg-gray-800 py-16">
       <MaxWidthContainer>
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-colossalis">
+          <h2 class="text-3xl md:text-4xl font-bold text-white dark:text-gray-200 mb-6 font-roboto">
             Join the Future of Marine Corps Innovation
           </h2>
-          <p class="text-lg md:text-xl text-white mb-8 leading-relaxed">
+          <p class="text-lg md:text-xl text-white dark:text-gray-300 mb-8 leading-relaxed">
             Be part of the next chapter in Marine Corps software development. The Marine Innovation Unit continues to push boundaries and create cutting-edge solutions for the Marine Corps.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/contactUs/applyNow" class="bg-mcswf-gold hover:bg-mcswf-gold-dark text-mcswf-red font-bold py-3 px-8 rounded-lg transition-colors duration-300">
               Apply Now
             </a>
-            <a href="/about" class="border-2 border-white text-white hover:bg-white hover:text-mcswf-red font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+            <a href="/about" class="border-2 border-white dark:border-gray-300 text-white dark:text-gray-200 hover:bg-white dark:hover:bg-gray-300 hover:text-mcswf-red dark:hover:text-gray-800 font-bold py-3 px-8 rounded-lg transition-colors duration-300">
               Learn More
             </a>
           </div>

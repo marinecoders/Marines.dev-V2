@@ -1,7 +1,7 @@
 product: 'FlightMode'
 description: "MIU's addition to the Tactical Assault Kit for Android (ATAK), FlightMode supplements ATAK’s feature for 9-line preparation from the ground with the ability for pilots to seamlessly transcribe 9-lines for Close Air Support (CAS). Amongst many features, this plugin allows for clear readback and visualization of key mapping attributes needed for CAS in the battle area."
 background:
-  src: '/images/TAK-background.jpg'
+  src: '/images/TAK-background.png'
   alt: 'Marine gesturing at a television that says SnapDB'
 image:
   src: '/images/FlightMode-on-Galaxy-Tab-S6.svg'

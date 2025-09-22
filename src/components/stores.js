@@ -4,6 +4,7 @@ export const mobile = writable(0)
 export const active = writable(0)
 
 export const displaySiteBanner = writable(false) // Show the site Banner.svelte component
+export const displaySiteClassificationBanner = writable(false) // Show the site ClassificationBanner.svelte component
 
 // Theme management
 export const isDarkMode = writable(true) // Default to dark mode

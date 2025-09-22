@@ -10,10 +10,12 @@ import { getCollection } from 'astro:content'; // Get products collection
 import { displaySiteBanner } from '../components/stores.js';
 import MetricCard from '@components/cards/MetricCard.svelte';
 import { externalLinks } from '@content/externalLinks.js';
+import { displaySiteClassificationBanner } from '../components/stores.js';
 import '../styles/global.css';
 import '../styles/fonts.css';
 
-displaySiteBanner.set(true);
+displaySiteBanner.set(false);
+displaySiteClassificationBanner.set(true);
 
 const products = await getCollection('products');
 const metrics = await getCollection('aboutMetrics');

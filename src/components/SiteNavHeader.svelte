@@ -9,8 +9,19 @@
   import McswfLogoAndText from '@components/logos/McswfLogoAndText.svelte';
   import ThemeToggle from '@components/ThemeToggle.svelte';
   import { externalLinks } from '@content/externalLinks';
+  import SiteClassificationBanner from '@components/SiteClassificationBanner.svelte';
+  import { displaySiteClassificationBanner } from './stores.js';
+
+  displaySiteClassificationBanner.set(true);
 
   let dropdownOpen = false;
+
+  // Prevent horizontal scroll when dropdown is open
+  $: if (dropdownOpen) {
+    document.body.style.overflowX = 'hidden';
+  } else {
+    document.body.style.overflowX = '';
+  }
 
   const dropdownLinks = [
     {
@@ -69,6 +80,7 @@
 <header
   id="header"
   class="w-full sticky top-0 z-30 shadow-sm shadow-stone-950" style="background-color: #1a1d24;">
+  <SiteClassificationBanner />
   <MaxWidthContainer>
     <div class="flex flex-row justify-between items-center w-full py-2 sm:py-4 md:gap-4 lg:gap-8">
       <McswfLogoAndText displayImage={true} />
@@ -97,13 +109,12 @@
   <Dropdown
     bind:open={dropdownOpen}
     triggeredBy="#site-header-hamburger"
-    containerClass="py-6 w-screen rounded-t-none !top-[68px] md:!top-[87px] text-white" style="background-color: #1a1d24;">
+    containerClass="py-6 w-full rounded-t-none !top-[68px] md:!top-[117px] text-white" style="background-color: #1a1d24;">
     <div
-      class="w-screen"
       transition:fadeSlide={{ duration: 200 }}>
       <MaxWidthContainer>
         <!-- Desktop Nav Header -->
-        <div class="hidden md:grid md:grid-cols-4 gap-2 md:gap-4 md:pr-12 lg:pr-32 xl:pr-64">
+        <div class="hidden md:grid md:grid-cols-4 gap-2 md:gap-4 md:pr-12 lg:pr-32 xl:pr-64 px-0">
           {#each dropdownLinks as link}
             <div class="col-span-1 tracking-wide">
               <h2 class="inline-block text-lg lg:text-xl font-bold bg-gradient-to-r from-white via-slate-100 to-slate-200 text-transparent bg-clip-text pb-2">{link.text}</h2>

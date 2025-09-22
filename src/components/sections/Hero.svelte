@@ -25,7 +25,7 @@
   style={`background-image: url("${backgroundImg}");`}
   class={twMerge('relative z-20 w-full bg-cover bg-center bg-no-repeat h-[400px] md:h-[550px]', componentHeightClasses, $$props.class)}>
   <div class="absolute inset-0 bg-stone-900 opacity-25"></div>
-  <div class={twMerge('relative h-[400px] md:h-[550px] bg-gradient-to-t from-stone-950 mx-auto rounded-b-2xl tracking-wider pb-12', componentHeightClasses)}>
+  <div class={twMerge('relative h-[400px] md:h-[550px] bg-gradient-to-t from-stone-950 mx-auto tracking-wider pb-12', componentHeightClasses)}>
     <MaxWidthContainer
       class={twMerge('relative h-[400px] md:h-[550px] flex flex-col gap-6 md:gap-12 items-stretch md:items-center justify-center md:justify-center text-left md:text-center', componentHeightClasses)}>
       <!-- Title -->

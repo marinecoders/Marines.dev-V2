@@ -85,7 +85,10 @@
     <div class="flex flex-row justify-between items-center w-full py-2 sm:py-4 md:gap-4 lg:gap-8">
       <McswfLogoAndText displayImage={true} />
       <div class="flex items-center gap-4">
-        <ThemeToggle />
+        <!-- Theme toggle - hidden on mobile, shown on desktop -->
+        <div class="hidden md:block">
+          <ThemeToggle />
+        </div>
         {#if dropdownOpen}
           <div
             class="ml-auto hidden md:block"
@@ -109,7 +112,8 @@
   <Dropdown
     bind:open={dropdownOpen}
     triggeredBy="#site-header-hamburger"
-    containerClass="py-6 w-full rounded-t-none !top-[68px] md:!top-[117px] text-white" style="background-color: #1a1d24;">
+    containerClass="py-6 w-full rounded-t-none !top-[108px] md:!top-[124px] text-white" 
+    style="background-color: #1a1d24; z-index: 25;">
     <div
       transition:fadeSlide={{ duration: 200 }}>
       <MaxWidthContainer>
@@ -143,8 +147,15 @@
             rel="noopener noreferrer"
             class="m-auto md:hidden underline underline-offset-2 text-mcswf-gold hover:text-mcswf-gold-dark">Learn how to apply</a>
         </div>
-        <!-- Moble Nav Header -->
+        <!-- Mobile Nav Header -->
         <div class="block md:hidden py-4 text-white fill-whith">
+          <!-- Theme Toggle for Mobile -->
+          <div class="flex justify-center items-center mb-6 pb-4 border-b border-gray-600">
+            <div class="flex items-center gap-3">
+              <span class="text-sm text-gray-300">Theme:</span>
+              <ThemeToggle />
+            </div>
+          </div>
           <Accordion flush>
             {#each dropdownLinks as link}
               <AccordionItem

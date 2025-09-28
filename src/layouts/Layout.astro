@@ -51,7 +51,7 @@ const { title = null, hideBackground = false } = Astro.props;
     />
     <title>MIU {title && '-'} {title}</title>
   </head>
-  <body class="overflow-auto h-full w-full font-roboto text-white bg-mcswf-red">
+  <body class="overflow-auto h-full w-full font-roboto text-white ">
     <SiteBanner />
     <SiteNavHeader client:only="svelte" />
     {!hideBackground && <SiteBackgroundImg />}

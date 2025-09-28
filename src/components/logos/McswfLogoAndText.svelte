@@ -14,10 +14,10 @@
   {/if}
   <div class="flex flex-col">
     <span
-      class="tracking-widest leading-normal sm:leading-snug text-[15px] sm:text-[21px] text-white font-roboto whitespace-nowrap bg-gradient-to-r from-white via-slate-50 to-slate-100 inline-block text-transparent bg-clip-text"
+      class="tracking-widest leading-normal sm:leading-snug text-[15px] sm:text-[21px] text-white font-roboto whitespace-nowrap font-bold bg-gradient-to-r from-white via-slate-50 to-slate-100 inline-block text-transparent bg-clip-text"
       >MIU Marine Coders</span>
     <span
       class="tracking-wider text-[10px] sm:text-[12px] text-mcswf-gold font-roboto whitespace-nowrap opacity-80"
-      >#AnyMarineACoder</span>
+      >Any Marine A Coder</span>
   </div>
 </a>

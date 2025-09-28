@@ -5,6 +5,7 @@ export const active = writable(0)
 
 export const displaySiteBanner = writable(false) // Show the site Banner.svelte component
 export const displaySiteClassificationBanner = writable(false) // Show the site ClassificationBanner.svelte component
+export const displaySiteOfficialBanner = writable(false) // Show the site OfficialBanner.svelte component
 
 // Theme management
 export const isDarkMode = writable(true) // Default to dark mode
@@ -12,4 +13,28 @@ export const isDarkMode = writable(true) // Default to dark mode
 // Theme toggle function
 export function toggleTheme() {
   isDarkMode.update(current => !current)
+}
+
+// Domain detection function
+export function checkDomainAndSetBanner() {
+  if (typeof window !== 'undefined') {
+    const hostname = window.location.hostname;
+    const isMilDomain = hostname.endsWith('.mil');
+    
+    console.log(hostname);
+    
+    if (isMilDomain) {
+      displaySiteOfficialBanner.set(true);
+    }
+    // Show classification banner for localhost (development) or other non-.mil domains
+    else if (hostname === 'localhost') {
+      displaySiteOfficialBanner.set(true);
+      displaySiteClassificationBanner.set(true);
+    }
+  }
+}
+
+// Initialize domain check on client side
+if (typeof window !== 'undefined') {
+  checkDomainAndSetBanner();
 }

@@ -11,6 +11,7 @@
   import { externalLinks } from '@content/externalLinks';
   import SiteClassificationBanner from '@components/SiteClassificationBanner.svelte';
   import { displaySiteClassificationBanner } from './stores.js';
+  import SiteOfficialBanner from '@components/SiteOfficialBanner.svelte';
 
   displaySiteClassificationBanner.set(true);
 
@@ -80,6 +81,7 @@
 <header
   id="header"
   class="w-full sticky top-0 z-30 shadow-sm shadow-stone-950" style="background-color: #1a1d24;">
+  <SiteOfficialBanner />
   <SiteClassificationBanner />
   <MaxWidthContainer>
     <div class="flex flex-row justify-between items-center w-full py-2 sm:py-4 md:gap-4 lg:gap-8">

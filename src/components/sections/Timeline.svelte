@@ -94,7 +94,7 @@
           
           <!-- Content Card -->
           <div class="ml-16 md:ml-0 md:w-5/12 {index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}">
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 border-l-4 {getTypeStyles(item.type).split(' ')[2]} hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div class="bg-white dark:bg-[#13151b] rounded-lg shadow-xl p-6 border-l-4 {getTypeStyles(item.type).split(' ')[2]} hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <!-- Date Badge -->
               <div class="flex items-center mb-4">
                 <div class="mr-3 p-2 rounded-full bg-mcswf-gold text-mcswf-red">
@@ -130,7 +130,7 @@
   </div>
   
   <!-- Timeline Legend -->
-  <div class="mt-16 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+  <div class="mt-16 bg-white dark:bg-[#13151b] rounded-lg shadow-lg p-6">
     <h3 class="text-xl font-bold text-mcswf-red dark:text-mcswf-gold mb-4 font-roboto">Timeline Legend</h3>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
       <div class="flex items-center">

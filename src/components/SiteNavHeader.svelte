@@ -27,11 +27,11 @@
   const dropdownLinks = [
     {
       text: 'PRODUCTS',
-      url: '/products',
+      url: '/products/sparta',
       image: '/images/products_card.png',
       subLinks: [
-        { url: '/products', text: 'OVERVIEW' },
         { url: '/products/sparta', text: 'SPARTA' },
+        { url: '/products/ares', text: 'ARES - HLZ' },
         { url: '/products/FlightMode', text: 'FlightMode' },
       ],
     },
@@ -49,9 +49,9 @@
     {
       text: 'CAREER',
       image: '/images/training_career_card.png',
-      url: '/training',
+      url: '/tour',
       subLinks: [
-        { url: '/training', text: 'TRAINING' },
+        { url: '/tour', text: 'TOUR OF DUTY' },
         { url: '/roles', text: 'ROLES' },
       ],
       titleClasses: 'text-sm lg:text-xl',

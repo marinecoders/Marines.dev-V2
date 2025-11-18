@@ -1,0 +1,25 @@
+product: 'Ares - Helicopter Landing Zone (HLZ) Application'
+description: "Ares HLZ Application  provides real-time helicopter landing zone assessment and management capabilities. This advanced system enables rapid evaluation of landing sites, weather conditions, and safety parameters to ensure secure helicopter operations in dynamic environments."
+background:
+  src: '/images/marine_flight_sim.jpeg'
+  alt: 'Marine flight simulation'
+image:
+  src: '/images/FlightMode-on-Galaxy-Tab-S6.svg'
+  alt: 'Ares HLZ on tablet device'
+image2:
+  src: '/images/ATAK-on-military-phone.svg'
+  alt: 'Ares HLZ mobile interface'
+order: 2
+heading: "Smart Landing Zone Management\nReal-Time Assessment\nSafety First"
+bullets:
+  - 'Real-Time Landing Zone Assessment'
+  - 'Weather and Environmental Monitoring'
+  - 'Safety Parameter Validation'
+  - 'Multi-Platform Integration'
+metrics:
+  - icon: '/icons/person.svg'
+    value: '8'
+    metric: 'Units Testing'
+  - metric: "Development Days"
+    value: '120'
+    icon: '/icons/calendar.svg'

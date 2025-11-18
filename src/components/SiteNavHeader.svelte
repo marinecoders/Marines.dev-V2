@@ -32,7 +32,6 @@
       subLinks: [
         { url: '/products', text: 'OVERVIEW' },
         { url: '/products/sparta', text: 'SPARTA' },
-        { url: '/products/my-career', text: 'MyCareer' },
         { url: '/products/FlightMode', text: 'FlightMode' },
       ],
     },

@@ -62,7 +62,6 @@
       url: '/contactUs',
       subLinks: [
         { url: '/contactUs/applyNow', text: 'LEARN HOW TO APPLY' },
-        { url: '/contactUs/proposeApp', text: 'PROPOSE AN APP' },
         { url: '/contactUs/getInTouch', text: 'GET IN TOUCH' },
       ],
     },

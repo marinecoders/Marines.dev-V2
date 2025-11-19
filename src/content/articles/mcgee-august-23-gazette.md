@@ -5,7 +5,7 @@ publishDate: 2023-08-18
 author: "Major David McGee"
 category: "External Analysis"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
-featured: true
+featured: false
 external: true
 externalUrl: "public/images/McGeeGazetteArticle0823.pdf"
 image:

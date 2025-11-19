@@ -5,7 +5,7 @@ publishDate: 2022-02-14
 author: "Major Erik Rye and Phoenix Cast Hosts"
 category: "Podcast"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
-featured: true
+featured: false
 external: true
 externalUrl: "https://podcasts.apple.com/us/podcast/to-dev-or-not-to-dev/id1508967644?i=1000551075629"
 image:

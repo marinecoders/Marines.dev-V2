@@ -5,7 +5,7 @@ publishDate: 2020-10-06
 author: "Jackson Barnett"
 category: "External Analysis"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
-featured: true
+featured: false
 external: true
 externalUrl: "https://fedscoop.com/marine-coders-software-development/"
 image:

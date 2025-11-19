@@ -5,7 +5,7 @@ publishDate: 2020-10-30
 author: "Captains Collin Chew, Drew Hutcheon, and Phoenix Cast Hosts"
 category: "Podcast"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
-featured: true
+featured: false
 external: true
 externalUrl: "https://podcasts.apple.com/au/podcast/the-marine-coders/id1508967644?i=1000496601162"
 image:

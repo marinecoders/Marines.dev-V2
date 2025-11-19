@@ -3,7 +3,7 @@ title: "Atlantic Council Recognizes MIU Marine Coders as Defense Innovators"
 description: "The Atlantic Council Commission on Software Defined Warfare presents a software-defined warfare approach, offering recommendations for the DoD to adopt modern software practices nd seamlessly integrate them into existing platforms to enhance and strengthen defense strategies"
 publishDate: 2025-03-27
 author: "Atlantic Council Commission on Software Defined Warfare"
-category: "External"
+category: "Award"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
 featured: true
 external: true

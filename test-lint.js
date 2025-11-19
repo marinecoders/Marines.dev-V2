@@ -1,0 +1,1 @@
+// Fast pre-commit test

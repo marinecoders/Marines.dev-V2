@@ -27,7 +27,8 @@ jobs:
           package-manager: pnpm@latest
 
       - name: Install Chrome for Puppeteer
-        run: npx @puppeteer/browsers install chrome@stable
+        run: npx puppeteer browsers install chrome
+        continue-on-error: true
 
       - name: Run integration tests
         run: pnpm run test:integration

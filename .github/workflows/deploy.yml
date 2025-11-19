@@ -31,7 +31,7 @@ jobs:
         env:
           CI: true
         timeout-minutes: 4
-      
+
   deploy:
     needs: build
     runs-on: ubuntu-latest

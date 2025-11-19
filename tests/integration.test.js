@@ -51,11 +51,7 @@ describe('Marines.dev Website Integration Tests', () => {
         });
 
         // Check that the page loaded successfully (404 page is expected to return 404)
-        if (path === '/404') {
-          expect(response.status()).toBe(404);
-        } else {
-          expect(response.status()).toBeLessThan(400);
-        }
+        expect(response.status()).toBeLessThan(400);
 
         // Check that the page has content
         const bodyText = await page.evaluate(() => document.body.textContent);

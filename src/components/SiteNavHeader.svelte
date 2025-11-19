@@ -6,7 +6,7 @@
   import ButtonCustom from '@components/buttons/ButtonCustom.svelte';
   import Hamburger from '@icons/Hamburger.svelte';
   import ForwardArrow from '@icons/ForwardArrow.svelte';
-  import McswfLogoAndText from '@components/logos/McswfLogoAndText.svelte';
+  import CodersLogoAndText from '@components/logos/CodersLogoAndText.svelte';
   import ThemeToggle from '@components/ThemeToggle.svelte';
   import { externalLinks } from '@content/externalLinks';
   import SiteClassificationBanner from '@components/SiteClassificationBanner.svelte';
@@ -78,12 +78,13 @@
 
 <header
   id="header"
-  class="w-full sticky top-0 z-30 shadow-sm shadow-stone-950" style="background-color: #1a1d24;">
+  class="w-full sticky top-0 z-30 shadow-sm shadow-stone-950"
+  style="background-color: #1a1d24;">
   <SiteOfficialBanner />
   <SiteClassificationBanner />
   <MaxWidthContainer>
     <div class="flex flex-row justify-between items-center w-full py-2 sm:py-4 md:gap-4 lg:gap-8">
-      <McswfLogoAndText displayImage={true} />
+      <CodersLogoAndText displayImage={true} />
       <div class="flex items-center gap-4">
         <!-- Theme toggle - hidden on mobile, shown on desktop -->
         <div class="hidden md:block">
@@ -112,10 +113,9 @@
   <Dropdown
     bind:open={dropdownOpen}
     triggeredBy="#site-header-hamburger"
-    containerClass="py-6 w-full rounded-t-none !top-[108px] md:!top-[124px] text-white" 
+    containerClass="py-6 w-full rounded-t-none !top-[108px] md:!top-[124px] text-white"
     style="background-color: #1a1d24; z-index: 25;">
-    <div
-      transition:fadeSlide={{ duration: 200 }}>
+    <div transition:fadeSlide={{ duration: 200 }}>
       <MaxWidthContainer>
         <!-- Desktop Nav Header -->
         <div class="hidden md:grid md:grid-cols-4 gap-2 md:gap-4 md:pr-12 lg:pr-32 xl:pr-64 px-0">

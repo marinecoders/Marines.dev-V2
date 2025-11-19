@@ -1,6 +1,6 @@
 <script>
   import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
-  import McswfLogoAndText from '@components/logos/McswfLogoAndText.svelte';
+  import CodersLogoAndText from '@components/logos/CodersLogoAndText.svelte';
   import MIUMCLogoAndText from '@components/logos/MIUMCLogoAndText.svelte';
   import Icon from '@iconify/svelte';
   import { externalLinks } from '@content/externalLinks';
@@ -17,20 +17,17 @@
       <div class="hidden lg:block container pb-28 mx-auto lg:py-8">
         <div class="flex justify-around py-4 border-b">
           <div class="flex w-2/5 align-middle mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
-            <MIUMCLogoAndText displayImage={true} />
+            <CodersLogoAndText displayImage={true} />
           </div>
           <div class="w-3/5">
-            <h1 class="text-lg font-bold">VISION</h1>
-            <p class="font-light">
-              Create a world class Marine-led software development capability enabling Marine Corps modernization efforts by developing applications for commanders at the speed of operations,
-              increasing lethality and readiness.
-            </p>
+            <h1 class="text-lg font-bold">MISSION</h1>
+            <p class="font-light">To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps</p>
           </div>
         </div>
         <div class="flex justify-around py-4 align-middle border-b">
           <div class="w-2/5">
             <a
-              href={externalLinks.miusite}
+              href={externalLinks.marinesDotCom}
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
@@ -43,11 +40,11 @@
           </div>
           <div class="w-3/5">
             <p class="font-light">
-              Product of The Marine Corps Software Factory, which proudly sits within the <a
-                href={externalLinks.deputyCommandantForInformation}
+              Website is a product of the Marine Coders, which proudly sits within the <a
+                href={externalLinks.miuSite}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="underline text-mcswf-gold">Deputy Commandant for Information</a
+                class="underline text-mcswf-gold">Marine Innovation Unit</a
               >.
             </p>
           </div>
@@ -67,6 +64,16 @@
                   class="text-white hover:text-blue-500 transition-colors" />
               </a>
               <a
+                href={externalLinks.miuSite}
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon
+                  icon="mdi:web"
+                  width="32"
+                  height="32"
+                  class="text-white hover:text-mcswf-gold transition-colors" />
+              </a>
+              <a
                 href={externalLinks.social.github}
                 target="_blank"
                 rel="noopener noreferrer">
@@ -75,16 +82,6 @@
                   width="32"
                   height="32"
                   class="text-white hover:text-gray-400 transition-colors" />
-              </a>
-              <a
-                href={externalLinks.miusite}
-                target="_blank"
-                rel="noopener noreferrer">
-                <Icon
-                  icon="mdi:web"
-                  width="32"
-                  height="32"
-                  class="text-white hover:text-mcswf-gold transition-colors" />
               </a>
               <a
                 href="mailto:{externalLinks.miuEmail}"
@@ -99,7 +96,7 @@
             </div>
           </div>
           <div class="w-3/5 font-light">
-            <p>Interested in joining MIU Marine Coders?</p>
+            <p>Interested in joining the Marine Coders at MIU?</p>
             <p>
               Email us at <a
                 href={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
@@ -136,26 +133,29 @@
         </div>
         <div class="flex justify-center py-4 border-b">
           <div class="w-full">
-            <h1 class="text-lg font-bold">VISION</h1>
-            <p class="font-light">
-              Create a world class Marine-led software development capability enabling Marine Corps modernization efforts by developing applications for commanders at the speed of operations,
-              increasing lethality and readiness.
-            </p>
+            <h1 class="text-lg font-bold">MISSION</h1>
+            <p class="font-light">To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps</p>
           </div>
         </div>
         <div class="flex justify-around py-4 border-b">
           <div class="w-full align-middle font-light">
-            <p>Interested in joining MIU Marine Coders?</p>
+            <p>Interested in joining the Marine Coders at MIU?</p>
             <p>
               Email us at <a
                 href={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="underline text-mcswf-gold">miu@usmc.mil</a>
+                class="underline text-mcswf-gold">{externalLinks.miuEmail}</a>
             </p>
           </div>
         </div>
-
+        <div class="flex justify-center py-4">
+          <div class="w-full">
+            <p class="font-light">
+              Website is a product of the Marine Coders, which proudly sits within the <span class="underline text-mcswf-gold">Marine Innovation Unit.</span>
+            </p>
+          </div>
+        </div>
         <h1 class="flex justify-start py-4">GET IN TOUCH</h1>
         <div class="flex justify-start text-sm font-light gap-4">
           <a
@@ -169,17 +169,8 @@
               class="text-white hover:text-blue-500 transition-colors" />
           </a>
           <a
-            href={externalLinks.github}
-            target="_blank"
-            rel="noopener noreferrer">
-            <Icon
-              icon="mdi:github"
-              width="32"
-              height="32"
-              class="text-white hover:text-gray-400 transition-colors" />
-          </a>
-          <a
-            href={externalLinks.miusite}
+            href={externalLinks.miuSite}
+            class="mr-4"
             target="_blank"
             rel="noopener noreferrer">
             <Icon
@@ -189,7 +180,19 @@
               class="text-white hover:text-mcswf-gold transition-colors" />
           </a>
           <a
+            href={externalLinks.social.github}
+            class="mr-4"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Icon
+              icon="mdi:github"
+              width="32"
+              height="32"
+              class="text-white hover:text-gray-400 transition-colors" />
+          </a>
+          <a
             href="mailto:{externalLinks.miuEmail}"
+            class="mr-4"
             target="_blank"
             rel="noopener noreferrer">
             <Icon

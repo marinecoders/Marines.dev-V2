@@ -6,7 +6,7 @@ author: "Majors Will McGee, Drew Hutcheon, and Collin Chew"
 category: "Article"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
 featured: true
-external: false
+external: true
 externalUrl: "https://warontherocks.com/2025/08/how-reservists-can-jumpstart-military-software-development/"
 image:
   src: "/images/mcswf_out_brief.jpeg"

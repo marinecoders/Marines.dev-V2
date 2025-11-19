@@ -26,10 +26,10 @@ const categories = [...new Set(allArticles.map(article => article.data.category)
       <!-- Page Header -->
       <div class="text-center mb-16">
         <h1 class="text-4xl md:text-5xl font-bold text-mcswf-red dark:text-mcswf-gold mb-4">
-          Articles & News
+          News and Events
         </h1>
         <p class="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-4">
-          Stay informed about Marine Coders initiatives, industry insights, and the latest developments in military software development.
+          Stay informed about Marine Coders initiatives, events, industry insights, and the latest developments in military software development.
         </p>
         <div class="flex justify-center">
           <a 
@@ -47,7 +47,7 @@ const categories = [...new Set(allArticles.map(article => article.data.category)
       <!-- Featured Articles Section -->
       {featuredArticles.length > 0 && (
         <section class="mb-16">
-          <h2 class="text-3xl font-bold text-mcswf-red dark:text-mcswf-gold mb-8">Featured Articles</h2>
+          <h2 class="text-3xl font-bold text-mcswf-red dark:text-mcswf-gold mb-8">Featured</h2>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {featuredArticles.map((article) => (
               <article class="bg-gray-300 dark:bg-gray-800 rounded-lg border-spacing-3 border-4 overflow-hidden border-mcswf-red dark:border-mcswf-gold hover:border-mcswf-battle-red dark:hover:border-mcswf-gold flex flex-col h-full">
@@ -118,7 +118,7 @@ const categories = [...new Set(allArticles.map(article => article.data.category)
       <!-- All Articles Section -->
       <section>
         <div class="flex items-center justify-between mb-8">
-          <h2 class="text-3xl font-bold text-mcswf-gold">All Articles</h2>
+          <h2 class="text-3xl font-bold text-mcswf-gold">All News and Events</h2>
           <div class="flex gap-2">
             {categories.map((category) => (
               <span class={`px-3 py-1 text-sm rounded-full ${

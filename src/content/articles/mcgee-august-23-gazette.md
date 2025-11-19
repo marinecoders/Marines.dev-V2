@@ -6,7 +6,7 @@ author: "Major David McGee"
 category: "Article"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
 featured: false
-external: false
+external: true
 externalUrl: "public/images/McGeeGazetteArticle0823.pdf"
 image:
   src: "/images/mcgee-august23-gazette-image.png"

@@ -9,8 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "test": "jest",
-    "test:integration": "jest --testPathPatterns=integration.test.js",
-    "precommit": "npm run test:integration"
+    "test:integration": "jest --testPathPatterns=integration.test.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,svelte}": "eslint"

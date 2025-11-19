@@ -7,7 +7,7 @@ category: "External Analysis"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
 featured: true
 external: true
-externalUrl: "https://marines.dev/assets/McGeeGazetteArticle0823.pdf"
+externalUrl: "public/images/McGeeGazetteArticle0823.pdf"
 image:
   src: "public/images/mcgee-august23-gazette-image.png"
   alt: "August 2023 Gazette article header"

@@ -7,8 +7,8 @@ category: "External Analysis"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
 featured: true
 external: true
-externalUrl: "https://www.mca-marines.org/gazette/"
+externalUrl: "public/images/McGeeGazetteArticle1025.pdf"
 image:
-  src: "public/images/gen_marine_network_wide.jpg"
-  alt: "Marine working on software development"
+  src: "public/images/mcgee-october25-gazette-image.png"
+  alt: "Marin Corps Gazette October 2025 Image"
 ---

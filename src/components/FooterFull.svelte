@@ -52,28 +52,54 @@
             </p>
           </div>
         </div>
-        <div class="flex justify-around items-center py-4 mb-8 border-b">
+        <div class="flex justify-around items-center py-4 mb-8">
           <div class="w-2/5">
             <h1 class="mb-2 font-light text-xs">GET IN TOUCH</h1>
             <div class="flex justify-start space-x-4">
               <a
                 href={externalLinks.social.linkedIn}
-                class="mr-4"
                 target="_blank"
                 rel="noopener noreferrer">
-                <Icon icon="mdi:linkedin" width="32" height="32" class="text-white hover:text-blue-500 transition-colors" />
+                <Icon
+                  icon="mdi:linkedin"
+                  width="32"
+                  height="32"
+                  class="text-white hover:text-blue-500 transition-colors" />
+              </a>
+              <a
+                href={externalLinks.social.github}
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon
+                  icon="mdi:github"
+                  width="32"
+                  height="32"
+                  class="text-white hover:text-gray-400 transition-colors" />
               </a>
               <a
                 href={externalLinks.miusite}
-                class="mr-4"
                 target="_blank"
                 rel="noopener noreferrer">
-                <Icon icon="mdi:web" width="32" height="32" class="text-white hover:text-mcswf-gold transition-colors" />
+                <Icon
+                  icon="mdi:web"
+                  width="32"
+                  height="32"
+                  class="text-white hover:text-mcswf-gold transition-colors" />
+              </a>
+              <a
+                href="mailto:{externalLinks.miuEmail}"
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon
+                  icon="mdi:email-outline"
+                  width="32"
+                  height="32"
+                  class="text-white hover:text-mcswf-red transition-colors" />
               </a>
             </div>
           </div>
           <div class="w-3/5 font-light">
-            <p>Interested in partnering with the Marine Corps Software Factory?</p>
+            <p>Interested in joining MIU Marine Coders?</p>
             <p>
               Email us at <a
                 href={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
@@ -119,7 +145,7 @@
         </div>
         <div class="flex justify-around py-4 border-b">
           <div class="w-full align-middle font-light">
-            <p>Interested in partnering with the Marine Corps Software Factory?</p>
+            <p>Interested in joining MIU Marine Coders?</p>
             <p>
               Email us at <a
                 href={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
@@ -129,28 +155,48 @@
             </p>
           </div>
         </div>
-        <div class="flex justify-center py-4">
-          <div class="w-full">
-            <p class="font-light">
-              Product of The Marine Innovation Unit, which proudly sits within the <span class="underline text-mcswf-gold">Deputy Commandant for Information.</span>
-            </p>
-          </div>
-        </div>
+
         <h1 class="flex justify-start py-4">GET IN TOUCH</h1>
         <div class="flex justify-start text-sm font-light gap-4">
           <a
             href={externalLinks.social.linkedIn}
-            class="mr-4"
             target="_blank"
             rel="noopener noreferrer">
-            <Icon icon="mdi:linkedin" width="32" height="32" class="text-white hover:text-blue-500 transition-colors" />
+            <Icon
+              icon="mdi:linkedin"
+              width="32"
+              height="32"
+              class="text-white hover:text-blue-500 transition-colors" />
+          </a>
+          <a
+            href={externalLinks.github}
+            target="_blank"
+            rel="noopener noreferrer">
+            <Icon
+              icon="mdi:github"
+              width="32"
+              height="32"
+              class="text-white hover:text-gray-400 transition-colors" />
           </a>
           <a
             href={externalLinks.miusite}
-            class="mr-4"
             target="_blank"
             rel="noopener noreferrer">
-            <Icon icon="mdi:web" width="32" height="32" class="text-white hover:text-mcswf-gold transition-colors" />
+            <Icon
+              icon="mdi:web"
+              width="32"
+              height="32"
+              class="text-white hover:text-mcswf-gold transition-colors" />
+          </a>
+          <a
+            href="mailto:{externalLinks.miuEmail}"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Icon
+              icon="mdi:email-outline"
+              width="32"
+              height="32"
+              class="text-white hover:text-mcswf-red transition-colors" />
           </a>
         </div>
       </div>

@@ -4,10 +4,10 @@ export const externalLinks = {
   miuEmailSubject: 'About MIU',
   social: {
     linkedIn: 'https://www.linkedin.com/company/marine-innovation-unit/',
+    github: 'https://github.com/marinecoders',
   },
   deputyCommandantForInformation: 'https://www.information.marines.mil/',
   marinesDotCom: 'https://www.marines.com/',
-  miusite: 'https://www.marforres.marines.mil/MIU/',
 };
 
 export const timerCountdown = {

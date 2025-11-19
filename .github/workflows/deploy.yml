@@ -26,9 +26,17 @@ jobs:
         with:
           package-manager: pnpm@latest
 
+      - name: Install Chrome for Puppeteer
+        run: npx @puppeteer/browsers install chrome@stable
+
       - name: Run integration tests
         run: pnpm run test:integration
         continue-on-error: true
+        env:
+          # Ensure Puppeteer runs in headless mode in CI
+          CI: true
+          # Set display for headless Chrome
+          DISPLAY: ':99.0'
       
   deploy:
     needs: build

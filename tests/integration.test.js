@@ -1,19 +1,102 @@
+import { spawn } from 'child_process';
+import { setTimeout } from 'timers/promises';
 import puppeteer from 'puppeteer';
 
 describe('Marines.dev Website Integration Tests', () => {
   let browser;
   let page;
+  let previewServer = null;
 
   beforeAll(async () => {
+    console.log('🚀 Starting Astro preview server for integration tests...');
+
+    // Build the site first
+    console.log('📦 Building the site...');
+    const buildProcess = spawn('npm', ['run', 'build'], {
+      stdio: 'pipe',
+      cwd: process.cwd()
+    });
+
+    await new Promise((resolve, reject) => {
+      buildProcess.on('close', (code) => {
+        if (code === 0) {
+          console.log('✅ Build completed successfully');
+          resolve();
+        } else {
+          reject(new Error(`Build failed with code ${code}`));
+        }
+      });
+    });
+
+    // Start preview server
+    previewServer = spawn('npm', ['run', 'preview'], {
+      stdio: 'pipe',
+      cwd: process.cwd()
+    });
+
+    // Wait for server to be ready
+    console.log('⏳ Waiting for preview server to be ready...');
+    let serverReady = false;
+    let attempts = 0;
+    const maxAttempts = 30;
+
+    while (!serverReady && attempts < maxAttempts) {
+      try {
+        const response = await fetch('http://localhost:4321');
+        if (response.ok) {
+          serverReady = true;
+          console.log('✅ Preview server is ready');
+        }
+      } catch (error) {
+        // Server not ready yet, wait and try again
+        await setTimeout(1000);
+        attempts++;
+      }
+    }
+
+    if (!serverReady) {
+      throw new Error('Preview server failed to start within timeout period');
+    }
+
+    // Launch browser
     browser = await puppeteer.launch({
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
-  });
+  }, 60000);
 
   afterAll(async () => {
+    // Close browser
     if (browser) {
       await browser.close();
+    }
+
+    // Stop preview server
+    if (previewServer) {
+      console.log('🧹 Stopping preview server...');
+      previewServer.kill('SIGTERM');
+
+      // Wait for the process to exit
+      await new Promise((resolve) => {
+        previewServer.on('exit', () => {
+          console.log('✅ Preview server stopped');
+          resolve();
+        });
+
+        // Force kill after 5 seconds if it doesn't exit gracefully
+        const forceKillTimeout = setTimeout(() => {
+          if (!previewServer.killed) {
+            previewServer.kill('SIGKILL');
+            console.log('⚠️ Preview server force killed');
+          }
+          resolve();
+        }, 5000);
+
+        // Clear timeout if process exits gracefully
+        previewServer.on('exit', () => {
+          clearTimeout(forceKillTimeout);
+        });
+      });
     }
   });
 

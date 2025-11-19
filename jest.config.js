@@ -1,13 +1,17 @@
 export default {
-  preset: 'jest-puppeteer',
   testEnvironment: 'node',
   testMatch: ['**/tests/**/*.test.js'],
-  setupFilesAfterEnv: ['<rootDir>/tests/setup.js'],
-  testTimeout: 30000,
+  testTimeout: 60000,
   verbose: true,
   collectCoverage: false,
   transform: {},
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1'
-  }
+  },
+  // Force Jest to exit after tests complete
+  forceExit: true,
+  // Detect open handles to help debug
+  detectOpenHandles: true,
+  // Set up globals
+  setupFilesAfterEnv: ['<rootDir>/tests/jest-setup.js']
 };

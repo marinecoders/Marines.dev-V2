@@ -1,6 +1,6 @@
 <script>
   import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
-  import McswfLogoAndText from '@components/logos/McswfLogoAndText.svelte';
+  import CodersLogoAndText from '@components/logos/CodersLogoAndText.svelte';
   import MIUMCLogoAndText from '@components/logos/MIUMCLogoAndText.svelte';
   import Icon from '@iconify/svelte';
   import { externalLinks } from '@content/externalLinks';
@@ -15,23 +15,19 @@
     <MaxWidthContainer>
       <!-- STANDARD FOOTER -->
       <div class="hidden lg:block container pb-28 mx-auto lg:py-8">
-        <!-- <div class="flex justify-around py-4 border-b">
+        <div class="flex justify-around py-4 border-b">
           <div class="flex w-2/5 align-middle mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
-            <MIUMCLogoAndText displayImage={true} />
+            <CodersLogoAndText displayImage={true} />
           </div>
           <div class="w-3/5">
             <h1 class="text-lg font-bold">MISSION</h1>
-            <p class="font-light">
-              The Marine Innovation Unit (MIU) is the Marine Corps Reserve's premier innovation organization, focused on developing cutting-edge solutions, emerging technologies, and innovative
-              approaches to enhance Marine Corps capabilities. We bridge the gap between traditional military operations and next-generation technology to provide decisive advantages on the
-              battlefield.
-            </p>
+            <p class="font-light">To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps</p>
           </div>
-        </div> -->
+        </div>
         <div class="flex justify-around py-4 align-middle border-b">
           <div class="w-2/5">
             <a
-              href={externalLinks.miusite}
+              href={externalLinks.marinesDotCom}
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
@@ -42,18 +38,19 @@
                 alt="MIU Logo" />
             </a>
           </div>
-
-          <div class="w-2/5 font-light">
-            <p>Interested in joining MIU Marine coders</p>
-            <p>
-              Email us at <a
-                href={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
+          <div class="w-3/5">
+            <p class="font-light">
+              Website is a product of the Marine Coders, which proudly sits within the <a
+                href={externalLinks.miuSite}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="underline text-mcswf-gold">{externalLinks.miuEmail}</a>
+                class="underline text-mcswf-gold">Marine Innovation Unit</a
+              >.
             </p>
           </div>
-          <div class="w-1/5">
+        </div>
+        <div class="flex justify-around items-center py-4 mb-8 border-b">
+          <div class="w-2/5">
             <h1 class="mb-2 font-light text-xs">GET IN TOUCH</h1>
             <div class="flex justify-start space-x-4">
               <a
@@ -68,7 +65,7 @@
                   class="text-white hover:text-blue-500 transition-colors" />
               </a>
               <a
-                href={externalLinks.miusite}
+                href={externalLinks.miuSite}
                 class="mr-4"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -80,6 +77,16 @@
               </a>
             </div>
           </div>
+          <div class="w-3/5 font-light">
+            <p>Interested in joining the Marine Coders at MIU?</p>
+            <p>
+              Email us at <a
+                href={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline text-mcswf-gold">{externalLinks.miuEmail}</a>
+            </p>
+          </div>
         </div>
         <div class="text-transparent">
           Proudly developed with<a
@@ -90,7 +97,7 @@
 
       <!-- MOBILE FOOTER -->
       <div class="block lg:hidden container pb-32 mx-auto">
-        <!-- <div class="flex justify-start py-4 border-b">
+        <div class="flex justify-start py-4 border-b">
           <MIUMCLogoAndText displayImage={true} />
         </div>
         <div class="flex justify-start py-4 align-middle border-b">
@@ -109,45 +116,28 @@
         <div class="flex justify-center py-4 border-b">
           <div class="w-full">
             <h1 class="text-lg font-bold">MISSION</h1>
-            <p class="font-light">
-              The Marine Innovation Unit (MIU) is the Marine Corps Reserve's premier innovation organization, focused on developing cutting-edge solutions, emerging technologies, and innovative
-              approaches to enhance Marine Corps capabilities. We bridge the gap between traditional military operations and next-generation technology to provide decisive advantages on the
-              battlefield.
-            </p>
+            <p class="font-light">To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps</p>
           </div>
-        </div> -->
-        <div class="w-full">
-          <a
-            href={externalLinks.miusite}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
-            <img
-              style="fill: white;"
-              src="/ega-full.svg"
-              class="h-12 text-white"
-              alt="MIU Logo" />
-          </a>
         </div>
         <div class="flex justify-around py-4 border-b">
           <div class="w-full align-middle font-light">
-            <p>Interested in joining MIU Marine coders</p>
+            <p>Interested in joining the Marine Coders at MIU?</p>
             <p>
               Email us at <a
                 href={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="underline text-mcswf-gold">miu@usmc.mil</a>
+                class="underline text-mcswf-gold">{externalLinks.miuEmail}</a>
             </p>
           </div>
         </div>
-        <!-- <div class="flex justify-center py-4">
+        <div class="flex justify-center py-4">
           <div class="w-full">
             <p class="font-light">
-              Product of The Marine Innovation Unit, which proudly sits within the <span class="underline text-mcswf-gold">Deputy Commandant for Information.</span>
+              Website is a product of the Marine Coders, which proudly sits within the <span class="underline text-mcswf-gold">Marine Innovation Unit.</span>
             </p>
           </div>
-        </div> -->
+        </div>
         <h1 class="flex justify-start py-4">GET IN TOUCH</h1>
         <div class="flex justify-start text-sm font-light gap-4">
           <a
@@ -162,7 +152,7 @@
               class="text-white hover:text-blue-500 transition-colors" />
           </a>
           <a
-            href={externalLinks.miusite}
+            href={externalLinks.miuSite}
             class="mr-4"
             target="_blank"
             rel="noopener noreferrer">

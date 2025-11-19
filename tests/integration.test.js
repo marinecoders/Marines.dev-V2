@@ -59,10 +59,24 @@ describe('Marines.dev Website Integration Tests', () => {
     }
 
     // Launch browser
-    browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
-    });
+    console.log('🌐 Launching Puppeteer browser...');
+    try {
+      browser = await puppeteer.launch({
+        headless: true,
+        args: [
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+          '--disable-dev-shm-usage',
+          '--disable-extensions',
+          '--disable-gpu',
+          '--no-first-run'
+        ]
+      });
+      console.log('✅ Browser launched successfully');
+    } catch (error) {
+      console.error('❌ Failed to launch browser:', error);
+      throw error;
+    }
   }, 60000);
 
   afterAll(async () => {

@@ -38,6 +38,7 @@ jobs:
           CI: true
           # Set display for headless Chrome
           DISPLAY: ':99.0'
+        timeout-minutes: 4
       
   deploy:
     needs: build

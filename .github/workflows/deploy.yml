@@ -26,18 +26,22 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-      
+          
+      - name: Build and upload your site output
+        uses: withastro/action@v2
+        with:
+          node-version: 20
+          package-manager: npm
+
       - name: Install dependencies
         run: npm install
       
       - name: Run integration tests
         run: npm run test:integration
       
-      - name: Build and upload your site output
-        uses: withastro/action@v2
-        with:
-          node-version: 20
-          package-manager: npm
+      
+
+  
 
   deploy:
     needs: build

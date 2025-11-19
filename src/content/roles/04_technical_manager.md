@@ -1,9 +1,9 @@
 ---
 role: TECHNICAL MANAGER
 url: technical_manager
-image: mcswf_marine.png
+image: miu-developer2.jpg
 icon: technical_manager.svg
-image_wide: seHeader.png
+image_wide: miu-developer3.jpg
 image_alt_text: Marine Technical Manager
 image_focus: right
 about: >

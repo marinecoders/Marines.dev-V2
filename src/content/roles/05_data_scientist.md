@@ -1,9 +1,9 @@
 ---
 role: DATA SCIENTIST/AI ENGINEER
 url: data_scientist
-image: mcswf_marine.png
+image: miu-developer4.jpg
 icon: data_scientist.svg
-image_wide: seHeader.png
+image_wide: miu-developer5.jpg
 image_alt_text: Marine Data Scientist/AI Engineer
 image_focus: left
 about: >

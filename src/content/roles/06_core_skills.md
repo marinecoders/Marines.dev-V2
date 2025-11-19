@@ -1,9 +1,9 @@
 ---
 role: CORE SKILLS FOR ALL MARINE CODERS
 url: core_skills
-image: mcswf_marine.png
+image: miu-activation.jpg
 icon: core_skills.svg
-image_wide: seHeader.png
+image_wide: miu-museum.jpg
 image_alt_text: Marine Coders Core Skills
 image_focus: center
 about: >

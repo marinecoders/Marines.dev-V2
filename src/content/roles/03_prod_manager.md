@@ -1,9 +1,9 @@
 ---
 role: PRODUCT MANAGER
 url: product_manager
-image: marine_pm.png
+image: miu-product-manager.jpg
 icon: product_manager.svg
-image_wide: marine_pm_wide.png
+image_wide: miu-group-discussion.jpg
 image_alt_text: Marine Product Manager
 image_focus: right
 about: >

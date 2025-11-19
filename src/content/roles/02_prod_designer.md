@@ -1,9 +1,9 @@
 ---
 role: DESIGN STRATEGIST
 url: design_strategist
-image: marine_product_designer.png
+image: miu-designer2.jpg
 icon: product_designer.svg
-image_wide: designer.png
+image_wide: miu-working-group.jpg
 image_alt_text: Marine Design Strategist
 image_focus: left
 about: >

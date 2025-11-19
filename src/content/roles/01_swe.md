@@ -1,7 +1,7 @@
 ---
 role: SOFTWARE ENGINEER
 url: swe
-image: mcswf_marine.png
+image: marine-swe-resized.jpg
 image_wide: seHeader.png
 icon: software_engineer.svg
 image_alt_text: Marine Software Engineer
@@ -32,8 +32,3 @@ This billet requires asynchronous, continuous training and participation, with M
 
 # PREFERRED SKILLS AND EXPERIENCE
 
-- Proficiency in one or more of the following: React, Spring Boot, Python, Java, Android/Kotlin, SQL, TypeScript, Docker, Git
-- Familiarity with tactical environments, military workflows, or digital modernization efforts within the DoD
-- Experience with geospatial data formats (GeoPackage, KML, MBTiles) and platforms such as TAK is highly desirable
-- Ability to work independently and as part of a remote, distributed team
-- DevSecOps expertise

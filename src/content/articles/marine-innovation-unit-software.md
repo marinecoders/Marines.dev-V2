@@ -3,7 +3,7 @@ title: "For Warfighters, By Warfighters: Marine Innovation Unit and Marine Corps
 description: "Exploring how the Marine Innovation Unit and Marine Corps Software Factory are revolutionizing military software development through warfighter-driven innovation and agile development practices."
 publishDate: 2025-01-21
 author: "MARFORRES News"
-category: "Military Innovation"
+category: "News"
 tags: ["marine innovation unit", "marine corps software", "warfighter innovation", "military software development", "agile development", "defense technology"]
 featured: true
 external: true

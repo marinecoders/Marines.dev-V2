@@ -49,7 +49,7 @@
             </p>
           </div>
         </div>
-        <div class="flex justify-around items-center py-4 mb-8 border-b">
+        <div class="flex justify-around items-center py-4 mb-8">
           <div class="w-2/5">
             <h1 class="mb-2 font-light text-xs">GET IN TOUCH</h1>
             <div class="flex justify-start space-x-4">
@@ -160,7 +160,6 @@
         <div class="flex justify-start text-sm font-light gap-4">
           <a
             href={externalLinks.social.linkedIn}
-            class="mr-4"
             target="_blank"
             rel="noopener noreferrer">
             <Icon

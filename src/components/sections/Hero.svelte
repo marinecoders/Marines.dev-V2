@@ -14,7 +14,7 @@
   export let externalLink = false;
   export let backgroundImg = '';
   export let componentHeightClasses = '';
-  $: formattedDescription = description.replace(/\n/g, "<br>");
+  $: descriptionLines = description && typeof description === 'string' ? description.split('\n') : [];
   const colorSpecificClasses = {
     white: 'from-white via-slate-50 to-slate-200',
     yellow: 'from-mcswf-gold via-yellow-300 to-mcswf-gold',
@@ -42,7 +42,9 @@
           {#if $$slots.description}
             <slot name="description" />
           {:else if description}
-            {@html formattedDescription}
+            {#each descriptionLines as line, index}
+              {line}{#if index < descriptionLines.length - 1}<br>{/if}
+            {/each}
           {/if}
         </p>
       {/if}

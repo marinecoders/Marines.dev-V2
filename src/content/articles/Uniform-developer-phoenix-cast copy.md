@@ -9,6 +9,6 @@ featured: true
 external: true
 externalUrl: "https://podcasts.apple.com/us/podcast/to-dev-or-not-to-dev/id1508967644?i=1000551075629"
 image:
-  src: "public/images/Phoenix-cast.png"
+  src: "/images/Phoenix-cast.png"
   alt: "Marine working on software development"
 ---

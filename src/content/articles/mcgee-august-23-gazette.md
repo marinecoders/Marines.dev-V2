@@ -9,6 +9,6 @@ featured: true
 external: true
 externalUrl: "public/images/McGeeGazetteArticle0823.pdf"
 image:
-  src: "public/images/mcgee-august23-gazette-image.png"
+  src: "/images/mcgee-august23-gazette-image.png"
   alt: "August 2023 Gazette article header"
 ---

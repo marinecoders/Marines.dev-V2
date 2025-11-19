@@ -9,6 +9,6 @@ featured: true
 external: true
 externalUrl: "public/images/McGeeGazetteArticle1025.pdf"
 image:
-  src: "public/images/mcgee-october25-gazette-image.png"
-  alt: "Marin Corps Gazette October 2025 Image"
+  src: "/images/mcgee-october25-gazette-image.png"
+  alt: "Marin Corps Gazette October 2025 Imagegi"
 ---

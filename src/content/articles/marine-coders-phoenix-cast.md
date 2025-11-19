@@ -9,6 +9,6 @@ featured: true
 external: true
 externalUrl: "https://podcasts.apple.com/au/podcast/the-marine-coders/id1508967644?i=1000496601162"
 image:
-  src: "public/images/mc-phoenix-cast.png"
+  src: "/images/mc-phoenix-cast.png"
   alt: "Phoenix Cast Marine Coders"
 ---

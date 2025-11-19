@@ -28,7 +28,6 @@ jobs:
 
       - name: Run integration tests
         run: pnpm run test:integration
-        continue-on-error: true
         env:
           CI: true
         timeout-minutes: 4

@@ -4,6 +4,7 @@ export const externalLinks = {
   miuEmailSubject: 'MIU Marine Coders',
   social: {
     linkedIn: 'https://www.linkedin.com/company/marine-innovation-unit/',
+    github: 'https://github.com/marinecoders',
   },
   deputyCommandantForInformation: 'https://www.information.marines.mil/',
   marinesDotCom: 'https://www.marines.com/',

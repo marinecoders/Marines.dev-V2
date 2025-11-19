@@ -55,7 +55,6 @@
             <div class="flex justify-start space-x-4">
               <a
                 href={externalLinks.social.linkedIn}
-                class="mr-4"
                 target="_blank"
                 rel="noopener noreferrer">
                 <Icon
@@ -66,7 +65,6 @@
               </a>
               <a
                 href={externalLinks.miuSite}
-                class="mr-4"
                 target="_blank"
                 rel="noopener noreferrer">
                 <Icon
@@ -74,6 +72,26 @@
                   width="32"
                   height="32"
                   class="text-white hover:text-mcswf-gold transition-colors" />
+              </a>
+              <a
+                href={externalLinks.social.github}
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon
+                  icon="mdi:github"
+                  width="32"
+                  height="32"
+                  class="text-white hover:text-gray-400 transition-colors" />
+              </a>
+              <a
+                href="mailto:{externalLinks.miuEmail}"
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon
+                  icon="mdi:email-outline"
+                  width="32"
+                  height="32"
+                  class="text-white hover:text-mcswf-red transition-colors" />
               </a>
             </div>
           </div>
@@ -161,6 +179,28 @@
               width="32"
               height="32"
               class="text-white hover:text-mcswf-gold transition-colors" />
+          </a>
+          <a
+            href={externalLinks.social.github}
+            class="mr-4"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Icon
+              icon="mdi:github"
+              width="32"
+              height="32"
+              class="text-white hover:text-gray-400 transition-colors" />
+          </a>
+          <a
+            href="mailto:{externalLinks.miuEmail}"
+            class="mr-4"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Icon
+              icon="mdi:email-outline"
+              width="32"
+              height="32"
+              class="text-white hover:text-mcswf-red transition-colors" />
           </a>
         </div>
       </div>

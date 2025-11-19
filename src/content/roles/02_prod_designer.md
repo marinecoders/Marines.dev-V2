@@ -1,42 +1,43 @@
 ---
-role: PRODUCT DESIGNER
-url: product_designer
+role: DESIGN STRATEGIST
+url: design_strategist
 image: marine_product_designer.png
 icon: product_designer.svg
 image_wide: designer.png
-image_alt_text: Marine Product Designer
+image_alt_text: Marine Design Strategist
 image_focus: left
 about: >
-  MIU Product Designers are innovation catalysts who transform complex military requirements into intuitive, effective user experiences. They specialize in creating user interfaces and experiences for cutting-edge military applications, working at the intersection of technology and operational needs. Their expertise spans user research, experience design, and visual design, all focused on enhancing Marine Corps capabilities.
+  Marine Coders Design Strategists serve as the primary advocate for the end user within development teams, ensuring that software solutions are intuitive, usable, and tailored to the operational needs of Marines. They bridge the gap between users and developers by conducting research that informs design decisions across the full product lifecycle, translating complex operational requirements into user-centered designs.
 
 
-  MIU Designers work in collaborative innovation teams alongside military subject matter experts, engineers, and industry partners. They translate complex operational requirements into user-centered designs that enhance Marine effectiveness in challenging environments. Their work directly impacts mission success by creating interfaces that Marines can rely on in high-stress, time-critical situations.
+  Design Strategists work closely with product managers, analysts, other designers, and developers to translate research findings into actionable recommendations. They leverage research and creative problem-solving to improve outcomes at tactical and operational levels, consistently advocating for user needs throughout the product lifecycle.
 ---
 
-# ABOUT THE JOB
+# BILLET DESCRIPTION
 
-MIU Product Designers are at the forefront of military technology innovation, creating user experiences for next-generation Marine Corps applications. This role combines design expertise with deep understanding of military operations, focusing on creating interfaces that enhance Marine effectiveness in complex, high-stakes environments.
+The Design Strategist serves as the primary advocate for the end user within the Marine Coders team, ensuring that software solutions are intuitive, usable, and tailored to the operational needs of Marines. This billet plays a critical role in bridging the gap between users and developers by conducting research that informs design decisions across the full product lifecycle.
 
-MIU Designers work in a unique environment that bridges military operations and cutting-edge technology. They collaborate with operational Marines, military strategists, industry experts, and academic researchers to create designs that solve real-world military challenges. Their work spans from tactical mobile applications to complex command and control systems, all designed to provide Marines with decisive advantages.
+Design Strategists are responsible for planning, conducting, and synthesizing research data in order to develop user insights, design principles, and artifacts such as UI/UX designs and/or wireframes. This research can be gathered through industry analysis, user interviews, usability testing, prototyping, field observation, UI/UX tools (ie: Google Analytics, Microsoft Clarity, etc.), and other methods. Design Strategists work closely with product managers, analysts, other designers, and developers to translate research findings into actionable recommendations to build and improve upon the functionality, accessibility, usability, and overall effectiveness of Marine Coders-developed software.
 
-The role requires exceptional communication skills to translate complex military requirements into intuitive designs, while working effectively with diverse teams including active-duty Marines, reservists, civilian contractors, and industry partners. MIU Designers play a critical role in ensuring that innovative technologies are accessible and effective for their intended military users.
+This billet requires deep expertise in user-centered design, operational empathy, and collaboration within an agile, distributed development team. The Design Strategist leverages research and creative problem-solving to improve outcomes at tactical and operational levels, effectively identifies user insights, and clearly communicates recommendations. They consistently advocate for user needs throughout the product lifecycle.
 
-# MIU PRODUCT DESIGNER RESPONSIBILITIES
+# PRIMARY DUTIES AND RESPONSIBILITIES
 
-- Conduct user research with operational Marines to understand mission-critical requirements and design constraints in military environments.
-- Collaborate with military subject matter experts, engineers, and industry partners to translate complex operational needs into intuitive user experiences.
-- Design interfaces for applications that must function reliably in austere, contested, and high-stress operational environments.
-- Create design systems and prototypes for cutting-edge military technologies including AI/ML interfaces, tactical mobile apps, and command systems.
-- Ensure designs meet military security standards while maintaining usability and effectiveness for Marine users.
-- Lead design thinking workshops and innovation sessions to explore new approaches to military technology challenges.
+- Plan and execute user research efforts, including interviews, contextual inquiries, usability tests, and surveys
+- Synthesize research findings into clear, actionable insights to inform design and development decisions
+- Collaborate with product managers, designers, and developers to align software features with user needs and workflows
+- Create user personas, journey maps, task flows, and other UX artifacts to communicate findings and design direction
+- Validate design concepts and prototypes through iterative testing with representative users
+- Advocate for accessibility, usability, and mission effectiveness in all user-facing aspects of the application
+- Contribute to the creation of style guides and interface standards to ensure consistent and user-friendly experiences
 
-# WHAT'S IN IT FOR ME?
+# PREFERRED SKILLS AND EXPERIENCE
 
-- Work on cutting-edge innovation projects that directly enhance Marine Corps capabilities and operational effectiveness.
-- Collaborate with industry leaders, military experts, and academic researchers in a unique innovation environment.
-- Design interfaces for applications that Marines rely on in critical situations, with direct impact on mission success and safety.
-- Access to the latest design tools, technologies, and methodologies used in both military and commercial innovation.
-- Opportunities to present design solutions to senior Marine Corps leadership and influence future technology investments.
-- Contribute to national security through innovative design that provides Marines with decisive technological advantages.
-
----
+- Experience conducting, synthesizing, and communicating UX research using both qualitative and quantitative methods
+- Creation of design artifacts such as journey maps, wireframes, prototypes
+- Familiarity with design, research, and collaboration tools such as Figma, Adobe Suite, Sketch, Miro, Tableau or similar platforms
+- Ability to produce clear research documentation and communicate insights to technical and non-technical audiences
+- Understanding of agile software development and working within cross-functional teams
+- Experience designing for users in complex or high-stakes environments (e.g., military, medical, industrial)
+- Strong interpersonal skills and the ability to build trust and rapport with end users and stakeholders
+- Self-directed and able to contribute meaningfully in a distributed, asynchronous work environment

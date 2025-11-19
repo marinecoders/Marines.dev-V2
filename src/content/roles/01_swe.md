@@ -7,28 +7,33 @@ icon: software_engineer.svg
 image_alt_text: Marine Software Engineer
 image_focus: right
 about: >
-  MIU Software Development Engineers are at the forefront of Marine Corps innovation, responsible for creating cutting-edge applications that enhance Marine Corps capabilities. They focus on rapid prototyping, emerging technology integration, and scalable solutions that can be deployed in challenging operational environments. Their approach combines agile development methodologies with military-specific requirements to deliver innovative solutions quickly and effectively.
+  Marine Coders Software Engineers develop mission-critical applications using modern frameworks and DevSecOps principles. They write and maintain secure, scalable, and high-performance code to support warfighting operations, logistics, and intelligence functions. Their expertise includes cloud-native development, containerization, and full-stack application development that directly enhances Marine Corps operational effectiveness.
 
 
-  MIU Software Engineers work in collaborative, cross-functional teams that include industry partners, academic researchers, and military subject matter experts. This unique environment enables rapid innovation and knowledge transfer between civilian and military domains.
+  As part of cross-functional development teams, Software Engineers collaborate with Technical Managers, Product Managers, Design Strategists, and Data Scientists to deliver software solutions that address critical operational challenges. They work in an agile, distributed environment where technical excellence and mission focus drive every line of code.
 --- 
-# ABOUT THE JOB
-  MIU Software Engineering represents the cutting edge of military technology development, where engineers work on innovative projects that directly impact Marine Corps operations. This role involves rapid prototyping, emerging technology evaluation, and the development of next-generation capabilities that enhance Marine Corps effectiveness across all domains.
 
-  MIU Software Engineers collaborate with a diverse team including military strategists, industry experts, academic researchers, and operational Marines to develop solutions that address real-world military challenges. They work with cutting-edge technologies including AI/ML, cloud computing, mobile applications, and emerging platforms to create innovative solutions.
+# BILLET DESCRIPTION
 
-  Projects range from tactical mobile applications to complex AI-driven systems, all designed to provide Marines with decisive advantages on the battlefield. MIU engineers play a critical role in bridging the gap between emerging commercial technologies and military applications, ensuring the Marine Corps remains at the forefront of technological innovation.
-# MIU SOFTWARE ENGINEER RESPONSIBILITIES
-  - Leading rapid prototyping and innovation projects that enhance Marine Corps capabilities across all operational domains.
-  - Collaborating with military subject matter experts to understand operational requirements and translate them into technical solutions.
-  - Evaluating and integrating emerging technologies including AI/ML, cloud computing, and mobile platforms for military applications.
-  - Developing secure, scalable software solutions that can operate in contested and austere environments.
-  - Working with industry partners and academic institutions to leverage cutting-edge research and development.
-  - Providing technical leadership and mentoring to junior engineers while fostering innovation culture.
-# WHATS IN IT FOR ME?
-  - Work on cutting-edge innovation projects that directly enhance Marine Corps capabilities and operational effectiveness.
-  - Collaborate with industry leaders, academic researchers, and military experts in a unique innovation environment.
-  - Access to the latest technologies, training programs, and certifications that enhance both military and civilian career prospects.
-  - Opportunities to present innovative solutions to senior Marine Corps leadership and influence future technology investments.
-  - Contribute to national security through technological innovation that provides Marines with decisive advantages.
-  - Lead and mentor in MIU's innovation programs, helping develop the next generation of military technologists.
+The Marine Corps Reserve Software Developer serves as a key member of a cross-functional development team responsible for the design, development, deployment, and maintenance of software solutions in direct support of Marine Corps operational and administrative needs. This billet supports the mission of the Marine Coders and other Reserve-led digital initiatives by providing technically proficient Marines who can develop mission-relevant applications in an agile and responsive manner.
+
+Software developers are expected to contribute across the entire software development lifecycle, including requirements gathering, system design, code implementation, testing, and deployment. Applications may include tactical decision aids, internal tools, web applications, data dashboards, and integrations with existing Marine Corps systems, including TAK-based platforms.
+
+This billet requires asynchronous, continuous training and participation, with Marines responsible for maintaining the skills and certifications necessary to perform in a modern software environment. Collaboration with other developers, product owners, and end-users is essential, and Marines in this billet must demonstrate maturity, operational awareness, and a continuous learning mindset.
+
+# PRIMARY DUTIES AND RESPONSIBILITIES
+
+- Develop and maintain software applications using modern programming languages and frameworks (e.g., React, Spring Boot, Python, TypeScript, SQL)
+- Contribute to tactical applications such as ATAK plugins or edge-deployable web applications
+- Participate in agile development practices, including sprint planning, code reviews, and user feedback cycles
+- Collaborate with active duty and Reserve components to understand operational requirements and translate them into functional software
+- Conduct testing, debugging, documentation, and deployment of software solutions
+- Continuously train to remain proficient in relevant technologies and software development practices
+
+# PREFERRED SKILLS AND EXPERIENCE
+
+- Proficiency in one or more of the following: React, Spring Boot, Python, Java, Android/Kotlin, SQL, TypeScript, Docker, Git
+- Familiarity with tactical environments, military workflows, or digital modernization efforts within the DoD
+- Experience with geospatial data formats (GeoPackage, KML, MBTiles) and platforms such as TAK is highly desirable
+- Ability to work independently and as part of a remote, distributed team
+- DevSecOps expertise

@@ -7,34 +7,37 @@ image_wide: marine_pm_wide.png
 image_alt_text: Marine Product Manager
 image_focus: right
 about: >
-  MIU Product Managers are innovation leaders who orchestrate the development of cutting-edge military technologies that enhance Marine Corps capabilities. They balance operational requirements, strategic objectives, and technical feasibility while driving rapid innovation in a collaborative environment that includes military experts, industry partners, and academic researchers.
+  Marine Coders Product Managers serve as the strategic and operational lead for software product development within cross-functional teams. They define and prioritize operational needs, translating them into actionable product requirements, and guiding teams through the delivery of effective, user-centered software solutions in support of the warfighter.
 
 
-  MIU Product Managers work in cross-functional innovation teams that include military subject matter experts, engineers, designers, and industry partners. They translate complex military requirements into actionable product strategies, manage innovation backlogs, and ensure that development efforts align with Marine Corps strategic objectives. Their role is crucial in maintaining innovation momentum while managing the unique challenges of military technology development.
+  Product Managers define product vision, manage roadmaps, and ensure alignment between Marine Corps operational challenges and technical efforts. They serve as the connective tissue between stakeholders, developers, designers, and end users—ensuring that each product delivered is focused, mission-relevant, and built to enhance operational effectiveness.
 ---
 
-# ABOUT THE JOB
+# BILLET DESCRIPTION
 
-MIU Product Managers are at the forefront of military innovation, leading teams to develop cutting-edge technologies that enhance Marine Corps capabilities. This role combines strategic product vision with deep understanding of military operations, focusing on delivering innovative solutions that provide Marines with decisive advantages in complex operational environments.
+The Product Manager serves as the strategic and operational lead for software product development within the Marine Coders team. This billet is responsible for identifying and prioritizing operational needs, translating them into actionable product requirements, and guiding cross-functional teams through the delivery of effective, user-centered software solutions in support of the warfighter.
 
-MIU Product Managers work in a unique environment that bridges military operations and technological innovation. They collaborate with operational Marines, military strategists, industry experts, and academic researchers to define product strategies that address real-world military challenges. Their work spans from tactical mobile applications to complex AI-driven systems, all designed to enhance Marine Corps effectiveness.
+Product Managers define product vision, manage roadmaps, and ensure alignment between Marine Corps operational challenges and technical efforts. They serve as the connective tissue between stakeholders, developers, designers, and end users—ensuring that each product delivered by the team is focused, mission-relevant, and built to enhance operational effectiveness.
 
-The role requires exceptional leadership skills to navigate complex stakeholder relationships, including active-duty Marines, reservists, civilian contractors, industry partners, and senior military leadership. MIU Product Managers play a critical role in ensuring that innovative technologies align with military strategic objectives while delivering practical value to operational Marines.
+This role requires strong operational awareness, technical fluency, and communication skills, as well as the ability to lead in a dynamic, distributed, and often asynchronous team environment. Product Managers must be comfortable operating in ambiguity and making informed decisions based on user feedback, strategic guidance, and tactical realities.
 
-# MIU PRODUCT MANAGER RESPONSIBILITIES
+# PRIMARY DUTIES AND RESPONSIBILITIES
 
-- Leading innovation projects that enhance Marine Corps capabilities across all operational domains, from tactical edge to strategic headquarters.
-- Collaborating with military subject matter experts to understand operational requirements and translate them into product strategies.
-- Managing innovation backlogs and roadmaps that balance rapid prototyping with long-term strategic objectives.
-- Working with industry partners and academic institutions to leverage cutting-edge research and development capabilities.
-- Ensuring that innovative solutions meet military security standards while delivering practical value to operational Marines.
-- Building and maintaining relationships with diverse stakeholders including military leadership, industry partners, and operational units.
+- Define product goals, roadmaps, and success criteria in collaboration with stakeholders and users
+- Translate operational needs into clear, prioritized user stories and technical requirements
+- Lead agile ceremonies including sprint planning, backlog refinement, and retrospectives
+- Coordinate closely with developers, UX researchers, designers, and data analysts to ensure cohesive product delivery
+- Gather and synthesize user feedback to inform product direction and ongoing iteration
+- Communicate product vision and progress to stakeholders, both technical and operational
+- Manage scope, timelines, and prioritization to ensure delivery of mission-relevant outcomes
+- Maintain awareness of Marine Corps modernization efforts and digital priorities to inform product strategy
 
-# WHAT'S IN IT FOR ME?
+# PREFERRED SKILLS AND EXPERIENCE
 
-- Lead cutting-edge innovation projects that directly enhance Marine Corps capabilities and operational effectiveness.
-- Collaborate with industry leaders, military experts, and academic researchers in a unique innovation environment.
-- Manage products that Marines rely on in critical situations, with direct impact on mission success and national security.
-- Access to the latest product management methodologies, technologies, and training programs used in both military and commercial innovation.
-- Opportunities to present product strategies to senior Marine Corps leadership and influence future technology investments.
-- Contribute to national security through innovative product management that provides Marines with decisive technological advantages.
+- Experience leading software or digital product development efforts using agile or lean methodologies
+- Strong skills in requirements gathering, user story writing, and backlog management
+- Familiarity with tools such as Jira, Trello, GitHub Projects, or similar platforms
+- Understanding of software development processes, technical architecture, and design constraints
+- Experience working directly with military end users or in support of operational units
+- Ability to communicate effectively across technical and non-technical audiences
+- Demonstrated ability to manage competing priorities and deliver results in resource-constrained environments

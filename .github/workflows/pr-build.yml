@@ -1,0 +1,32 @@
+name: PR Build and Test
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+# Allow this job to clone the repo and run tests
+permissions:
+  contents: read
+  pull-requests: write
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - name: Build and upload your site output
+        uses: withastro/action@v2
+        with:
+          package-manager: pnpm@latest
+
+
+      - name: Run integration tests
+        run: pnpm run test:integration
+        env:
+          CI: true
+        timeout-minutes: 4
+        

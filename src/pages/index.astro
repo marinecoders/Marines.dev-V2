@@ -25,61 +25,39 @@ products.sort((a, b) => a.data.order - b.data.order);
 
 <Layout title="Home">
   <Hero
-    title="WE ARE THE MARINE INNOVATION UNIT"
-    content="Innovate. Develop. Deploy. Transform the Marine Corps"
-    link="/about"
-    linkText="LEARN MORE"
-    contentClasses={'text-base md:text-2xl'}
-    backgroundImg="/images/headset_marine.png"
+    title="WHO WE ARE"
+    titleColor="yellow"
+    description="Marine Coders are the digital warfighters of the Marine Corps, bringing world-class software development skills to enhance operational effectiveness and modern warfighting capabilities. \n\n As a part of the Marine Innovation Unit (MIU), Marine Coders leverage the vast expertise of Marine Reservists who have excelled in the technology sector, bringing cutting-edge innovation, industry best practices, and real-world experience to Marine Corps modernization efforts."
+    descriptionClasses="w-full md:w-[500px] lg:w-[750px] font-light"
+    backgroundImg="/images/mcswf_and_miu.jpeg"
   />
   <MaxWidthContainer>
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
       <h1 class="text-left md:text-center font-bold text-[32px] md:text-[40px] text-mcswf-gold pt-16 px-8">OUR MISSION</h1>
       <p class="text-left md:text-center text-base lg:text-2xl py-16 px-8">
-        The Marine Innovation Unit (MIU) is the Marine Corps Reserve's premier innovation organization, focused on developing cutting-edge solutions, emerging technologies, and innovative approaches
-        to enhance Marine Corps capabilities. We bridge the gap between traditional military operations and next-generation technology to provide decisive advantages on the battlefield.
+        To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps
       </p>
-
-      <!-- <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full justify-items-center">
-        {
-          metrics?.map((item) =>
-            item.data.metrics?.map((p) => (
-              <div class="text-center my-6">
-                <MetricCard
-                  icon={p.icon}
-                  value={p.value}
-                  metric={p.metric}
-                />
-              </div>
-            ))
-          )
-        }
-      </div> -->
     </div>
     <ContentImageFull
-      image="/images/matt-11.png"
-      link="#"
+      link="/publication"
       linkText="LEARN MORE"
-      title="WHAT WE DO"
-      content="The Marine Innovation Unit focuses on rapid prototyping, technology integration, and innovative solutions for Marine Corps challenges. Our Marines work with cutting-edge technologies, industry partners, and academic institutions to develop next-generation capabilities that enhance Marine Corps readiness and effectiveness."
+      title="OUR VISION"
+      content="To transform the Marine Corps’ software philosophy to a warfighting-first mindset that prioritizes lethality, agility, and operational effectiveness over acquisition cycles, centralization, and bureaucracy. Our vision is a Marine Corps where software is not just a support function but a combat multiplier - where Marines at the edge have the capability to build, modify, and deploy mission-critical software solutions in real-time."
+      image="/images/ega_network.jpg"
       imagePosition="right"
     />
     <ContentImageFull
-      flipped
-      image="/images/GenPuma.png"
-      link="#"
+      link="/roles"
       linkText="LEARN MORE"
-      title="THE IMPACT"
-      content="The MIU creates a unique environment where Marines can explore emerging technologies, develop innovative solutions, and apply cutting-edge capabilities to real-world Marine Corps challenges. Our approach combines military expertise with technological innovation to deliver transformative solutions that enhance Marine Corps effectiveness across all domains."
+      title="OUR CAPABILITIES"
+      content="The Marine Coders team maintains six core capabilities: Tactical Application Development (TAK-Specific), Web Development, Backend Development, DevSecOps & Deployment, Agile & Cross-Functional Collaboration, Data Science and AI Development"
+      image="/images/marine_flight_sim.jpeg"
       imagePosition="left"
     />
-    <!-- <div class="h-fit pt-20">
-        <Products {products} />
-      </div> -->
     <Countdown
       client:only="svelte"
-      title="MIU INNOVATION PROGRAM APPLICATION DEADLINE"
-      content="Applications for the next MIU Innovation Program cohort are due before January 15, 2025. Selected Marines will join our innovation teams to work on cutting-edge projects that directly impact Marine Corps capabilities."
+      title="APPLICATION DEADLINE"
+      content="The application portal re-opens in January 2026! This is your chance to join our detachment teams tackling the toughest technical challenges and driving real-world innovation for the Marine Corps. Step up to work on groundbreaking projects where your skills directly accelerate the future capabilities of Marines on the front lines."
     />
   </MaxWidthContainer>
   <FooterFull client:only="svelte" />

@@ -9,6 +9,6 @@ featured: true
 external: true
 externalUrl: "https://www.mca-marines.org/gazette/"
 image:
-  src: "images/gen_marine_network_wide.jpg"
+  src: "public/images/gen_marine_network_wide.jpg"
   alt: "Marine working on software development"
 ---

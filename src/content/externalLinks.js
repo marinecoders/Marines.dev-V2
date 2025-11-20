@@ -5,7 +5,7 @@ export const externalLinks = {
   social: {
     linkedIn: 'https://www.linkedin.com/company/marine-innovation-unit/',
   },
-  deputyCommandantForInformation: 'https://www.information.marines.mil/',
+  marineInnovationUnit: 'https://www.information.marines.mil/',
   marinesDotCom: 'https://www.marines.com/',
   miusite: 'https://www.marforres.marines.mil/MIU/',
 };

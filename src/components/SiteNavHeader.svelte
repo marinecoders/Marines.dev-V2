@@ -76,7 +76,7 @@
   id="header"
   class="w-full sticky top-0 z-30 shadow-sm shadow-stone-950"
   style="background-color: #1a1d24;">
-  <SiteOfficialBanner />
+  <!-- <SiteOfficialBanner /> -->
   <SiteClassificationBanner />
   <MaxWidthContainer>
     <div class="flex flex-row justify-between items-center w-full py-2 sm:py-4 md:gap-4 lg:gap-8">
@@ -109,7 +109,7 @@
   <Dropdown
     bind:open={dropdownOpen}
     triggeredBy="#site-header-hamburger"
-    containerClass="py-6 w-full rounded-t-none !top-[128px] md:!top-[150px] text-white"
+    containerClass="py-6 w-full rounded-t-none !top-[108px] md:!top-[120px] text-white"
     style="background-color: #1a1d24; z-index: 25;">
     <div transition:fadeSlide={{ duration: 200 }}>
       <MaxWidthContainer>

@@ -25,30 +25,23 @@ const metrics = await getCollection('aboutMetrics');
   />
   <MaxWidthContainer>
     <ContentImageFull
-      link="/roles"
+      link="/publication"
       linkText="LEARN MORE"
-      title="OUR VISION"
-      content="Upon joining the Marine Innovation Unit, Marines are trained to fill key innovation roles: product manager, software developer, and UI/UX designer. Over the course of their assignment with MIU, they develop cutting-edge technologies and innovative solutions to support warfighters at the tactical edge. After their tour with MIU, the teams are reassigned to continue supporting Marine Corps units throughout the fleet with their innovation expertise."
-      image="/images/marine_start_with_why.jpeg"
+      title="RELEVANCE TO FORCE DESIGN"
+      content="The Marine Corps’ Force Design initiative is a transformative effort to reshape the force to meet the demands of the future fight. As the modern battlefield becomes increasingly digitized, the ability to develop software at the tactical edge is no longer a luxury—it is a necessity. Marine Coders directly support Force Design by enabling rapid, adaptive, and secure software solutions that enhance warfighting capabilities across all domains. "
+      image="/images/ega_network.jpg"
       imagePosition="right"
     />
     <ContentImageFull
-      link="/training"
+      flipped
+      image="/images/marine_pm_wide.png"
+      link="/publication"
       linkText="LEARN MORE"
-      title="OUR MISSION"
-      content="We provide innovative technology development, data analytics, and artificial intelligence capabilities to Marine Corps commanders to help them close joint, coalition, and naval kill webs. These cutting-edge capabilities enhance Marine commanders' decision advantage across the full spectrum of military operations."
-      image="/images/ega_network.jpg"
+      title="CORE VALUES"
+      content="We are Marines first—regardless of our technical specialty or billet. Our work is grounded in the Marine Corps’ core values of honor, courage, and commitment. As we lead in digital modernization efforts, we do so with a warfighting mindset, understanding that our software solutions must be as disciplined, reliable, and resilient as the Marines who depend on them. We view technology as a force multiplier, but never as a substitute for the ethos that defines us."
       imagePosition="left"
     />
-    <ContentImageFull
-      link="/products"
-      linkText="LEARN MORE"
-      title="OUR IMPACT"
-      content="By providing Marines with the skills to develop innovative technologies and implement cutting-edge artificial intelligence, we are giving commanders the ability to quickly produce advanced solutions at the tactical edge."
-      image="/images/marine_flight_sim.jpeg"
-      imagePosition="right"
-    />
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full justify-around">
+    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full justify-around">
       {
         metrics?.map((item) =>
           item.data.metrics?.map((p) => (
@@ -62,13 +55,13 @@ const metrics = await getCollection('aboutMetrics');
           ))
         )
       }
-    </div>
+    </div> -->
     <!-- last section of the page, can't use ContentImageFull because of the CTA icon... -->
     <div class="items-center max-w-screen-xl gap-16 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-8 lg:px-6">
       <div class="flex justify-center">
         <img
           class="w-3/4 rounded-lg aspect-square object-cover"
-          src="/images/marine_mcswf_coder.jpeg"
+          src="/images/Atlantic Council Software Defined Warfare.png"
         />
       </div>
       <div class="font-light text-white sm:text-lg">
@@ -80,7 +73,7 @@ const metrics = await getCollection('aboutMetrics');
         </div>
         <h2
           class="mb-4 pt-8 leading-normal lg:pt-8 text-xl lg:text-[40px] font-extrabold tracking-tight text-center bg-gradient-to-r text-transparent bg-clip-text from-mcswf-gold via-yellow-300 to-mcswf-gold">
-          INTERESTED IN BEING A <br />PART OF THE MIU?
+          INTERESTED IN BEING A <br />PART OF THE MARINE CODERS?
         </h2>
         <div class="grid w-full gap-3 mt-8 sm:inline-flex sm:justify-center">
           <ButtonCustom

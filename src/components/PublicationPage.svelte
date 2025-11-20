@@ -6,21 +6,21 @@
   let drawer;
   let overlay;
 
-  function openDrawer() {
+  function openDrawer () {
     drawerOpen = true;
     document.body.style.overflow = 'hidden';
   }
 
-  function closeDrawer() {
+  function closeDrawer () {
     drawerOpen = false;
     document.body.style.overflow = '';
   }
 
-  function handleTocLinkClick() {
+  function handleTocLinkClick () {
     setTimeout(closeDrawer, 100);
   }
 
-  function handleKeydown(event) {
+  function handleKeydown (event) {
     if (event.key === 'Escape' && drawerOpen) {
       closeDrawer();
     }
@@ -984,7 +984,7 @@
 
             <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
               <p class="mb-2">"The most dangerous phrase: we've always done it this way."</p>
-              <p class="text-sm">- Dr. Admiral Grace Hooper</p>
+              <p class="text-sm">- Dr. Admiral Grace Hopper</p>
             </blockquote>
 
             <p class="text-black dark:text-white mb-4">

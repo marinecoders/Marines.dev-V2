@@ -7,7 +7,7 @@ category: "Article"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
 featured: false
 external: true
-externalUrl: "public/images/McGeeGazetteArticle0823.pdf"
+externalUrl: "/documents/McGeeGazetteArticle0823.pdf"
 image:
   src: "/images/mcgee-august23-gazette-image.png"
   alt: "August 2023 Gazette article header"

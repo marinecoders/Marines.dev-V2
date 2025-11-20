@@ -26,6 +26,16 @@
 
   const dropdownLinks = [
     {
+      text: 'ABOUT',
+      image: '/images/about_card.png',
+      url: '/about',
+      subLinks: [
+        { url: '/about', text: 'WHO WE ARE' },
+        { url: '/timeline', text: 'CODERS HISTORY' },
+        { url: '/publication', text: 'PUBLICATION 1' },
+      ],
+    },
+    {
       text: 'PRODUCTS',
       url: '/products/sparta',
       image: '/images/products_card.png',
@@ -36,34 +46,20 @@
       ],
     },
     {
-      text: 'ABOUT',
-      image: '/images/about_card.png',
-      url: '/about',
-      subLinks: [
-        { url: '/about', text: 'WHO WE ARE' },
-        { url: '/timeline', text: 'CODERS HISTORY' },
-        { url: '/publication', text: 'PUBLICATION 1' },
-        { url: '/articles', text: 'ARTICLES & NEWS' },
-      ],
-    },
-    {
       text: 'CAREER',
       image: '/images/training_career_card.png',
       url: '/tour',
       subLinks: [
-        { url: '/tour', text: 'TOUR OF DUTY' },
         { url: '/roles', text: 'ROLES' },
+        { url: '/contactUs/applyNow', text: 'HOW TO APPLY' },
       ],
       titleClasses: 'text-sm lg:text-xl',
     },
     {
-      text: 'CONTACT',
+      text: 'NEWS',
       image: '/images/contact_card.png',
-      url: '/contactUs',
-      subLinks: [
-        { url: '/contactUs/applyNow', text: 'LEARN HOW TO APPLY' },
-        { url: '/contactUs/getInTouch', text: 'GET IN TOUCH' },
-      ],
+      url: '/articles',
+      subLinks: [{ url: '/articles', text: 'ARTICLES AND EVENTS' }],
     },
   ];
 
@@ -87,10 +83,10 @@
       <CodersLogoAndText displayImage={true} />
       <div class="flex items-center gap-4">
         <!-- Theme toggle - hidden on mobile, shown on desktop -->
-        <div class="hidden md:block">
+        <!-- <div class="hidden md:block">
           <ThemeToggle />
-        </div>
-        {#if dropdownOpen}
+        </div> -->
+        <!-- {#if dropdownOpen}
           <div
             class="ml-auto hidden md:block"
             transition:fade={{ duration: 300, easing: quintOut }}>
@@ -101,7 +97,7 @@
               link="/contactUs/getInTouch"
               externalLink={true}>GET IN TOUCH</ButtonCustom>
           </div>
-        {/if}
+        {/if} -->
         <Hamburger
           bind:open={dropdownOpen}
           class="bg-zinc-200"
@@ -113,7 +109,7 @@
   <Dropdown
     bind:open={dropdownOpen}
     triggeredBy="#site-header-hamburger"
-    containerClass="py-6 w-full rounded-t-none !top-[108px] md:!top-[124px] text-white"
+    containerClass="py-6 w-full rounded-t-none !top-[128px] md:!top-[150px] text-white"
     style="background-color: #1a1d24; z-index: 25;">
     <div transition:fadeSlide={{ duration: 200 }}>
       <MaxWidthContainer>
@@ -150,12 +146,12 @@
         <!-- Mobile Nav Header -->
         <div class="block md:hidden py-4 text-white fill-whith">
           <!-- Theme Toggle for Mobile -->
-          <div class="flex justify-center items-center mb-6 pb-4 border-b border-gray-600">
+          <!-- <div class="flex justify-center items-center mb-6 pb-4 border-b border-gray-600">
             <div class="flex items-center gap-3">
               <span class="text-sm text-gray-300">Theme:</span>
               <ThemeToggle />
             </div>
-          </div>
+          </div> -->
           <Accordion flush>
             {#each dropdownLinks as link}
               <AccordionItem

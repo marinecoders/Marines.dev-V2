@@ -10,5 +10,5 @@ external: false
 externalUrl: ""
 image:
   src: "/images/mcswf_sept25.jpg"
-  alt: "MIU Marine Coders at March Sprint"
+  alt: "MIU Marine Coders at September 2025 Sprint"
 ---

@@ -6,7 +6,7 @@ export const externalLinks = {
     linkedIn: 'https://www.linkedin.com/company/marine-innovation-unit/',
     github: 'https://github.com/marinecoders',
   },
-  deputyCommandantForInformation: 'https://www.information.marines.mil/',
+  marineInnovationUnit: 'https://www.information.marines.mil/',
   marinesDotCom: 'https://www.marines.com/',
   miuSite: 'https://www.marforres.marines.mil/MIU/',
   codersSite: 'https://dev-coders.usmc.dev/',

@@ -1,14 +1,14 @@
 ---
-title: "Tactical Assault Kit (TAK) Offsite 2025"
-description: "Eight Marine Coders from MIU attended the 2025 TAK Offsite, a forum for developers and users of the Tactical Assault Kit (TAK) ecosystem. The team presented their work on an updated Augmented Reconnaissance and Estimate of the Situation (ARES) software which includes a TAK plugin for predicting helicopter landing zones (HLZ) based on topographical data. This project, developed in coordination with the Marine Corps Software Factory, demonstrates how the Marine Corps is leveraging internal talent to create software solutions that address critical operational needs and enhance readiness."
-publishDate: 2025-08-22
+title: "Tactical Assault Kit (TAK) Offsite 2024"
+description: "Marine Coders from the Marine Innovation Unit (MIU) attended the 2024 TAK Offsite to focus on professional development and collaboration within the Tactical Assault Kit (TAK) ecosystem. The Marines participated in various sessions, learning from keynote speeches on the TAK framework and public safety applications, and networking with members from other military branches, the intelligence community, and public safety agencies. This event provided a valuable opportunity for the coders to share best practices, gather community feedback on the software developer kit, and build connections that help accelerate the development of new capabilities for the Marine Corps."
+publishDate: 2024-07-12
 author: "Major Drew Hutcheon"
 category: "Event"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
 featured: false
 external: true
-externalUrl: "https://tak.gov/events/2025_Offsite"
+externalUrl: "https://tak.gov/events/2024_Offsite"
 image:
-  src: "/images/TAK_Offsite2025.jpeg"
-  alt: "MIU Marine Coders presenting at August 2025 TAK Offsite"
+  src: "images/TAK-background.jpg"
+  alt: "MIU Marine Coders presenting at August 2024 TAK Offsite"
 ---

@@ -25,19 +25,19 @@ products.sort((a, b) => a.data.order - b.data.order);
 
 <Layout title="Home">
   <Hero
-    title="WHO WE ARE"
     titleColor="yellow"
-    description="Marine Coders are the digital warfighters of the Marine Corps, bringing world-class software development skills to enhance operational effectiveness and modern warfighting capabilities. \n\n As a part of the Marine Innovation Unit (MIU), Marine Coders leverage the vast expertise of Marine Reservists who have excelled in the technology sector, bringing cutting-edge innovation, industry best practices, and real-world experience to Marine Corps modernization efforts."
+    title="OUR MISSION"
+    description="To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps"
     descriptionClasses="w-full md:w-[500px] lg:w-[750px] font-light"
-    backgroundImg="/images/mcswf_and_miu.jpeg"
+    backgroundImg="/images/signal-2025-hero.jpeg"
   />
   <MaxWidthContainer>
-    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+    <!-- <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
       <h1 class="text-left md:text-center font-bold text-[32px] md:text-[40px] text-mcswf-gold pt-16 px-8">OUR MISSION</h1>
       <p class="text-left md:text-center text-base lg:text-2xl py-16 px-8">
         To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps
       </p>
-    </div>
+    </div> -->
     <ContentImageFull
       link="/publication"
       linkText="LEARN MORE"
@@ -51,7 +51,7 @@ products.sort((a, b) => a.data.order - b.data.order);
       linkText="LEARN MORE"
       title="OUR CAPABILITIES"
       content="The Marine Coders team maintains six core capabilities: Tactical Application Development (TAK-Specific), Web Development, Backend Development, DevSecOps & Deployment, Agile & Cross-Functional Collaboration, Data Science and AI Development"
-      image="/images/ega_network.jpg"
+      image="/images/miu-laptop-screen.jpg"
       imagePosition="left"
     />
     <Countdown
@@ -60,5 +60,10 @@ products.sort((a, b) => a.data.order - b.data.order);
       content="The application portal re-opens in January 2026! This is your chance to join our detachment teams tackling the toughest technical challenges and driving real-world innovation for the Marine Corps. Step up to work on groundbreaking projects where your skills directly accelerate the future capabilities of Marines on the front lines."
     />
   </MaxWidthContainer>
+  <Hero
+    titleColor="yellow"
+    descriptionClasses="w-full md:w-[500px] lg:w-[750px] font-light"
+    backgroundImg="/images/coders-group-office.jpeg"
+  />
   <FooterFull client:only="svelte" />
 </Layout>

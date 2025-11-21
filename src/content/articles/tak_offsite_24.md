@@ -10,5 +10,5 @@ external: true
 externalUrl: "https://tak.gov/events/2024_Offsite"
 image:
   src: "images/TAK-background.jpg"
-  alt: "MIU Marine Coders presenting at August 2024 TAK Offsite"
+  alt: "MIU Marine Coders presenting at 2024 TAK Offsite"
 ---

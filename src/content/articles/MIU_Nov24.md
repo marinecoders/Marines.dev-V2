@@ -5,7 +5,7 @@ publishDate: 2025-11-22
 author: "Major Drew Hutcheon"
 category: "Event"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
-featured: true
+featured: false
 external: false
 externalUrl: ""
 image:

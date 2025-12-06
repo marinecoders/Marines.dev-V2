@@ -9,6 +9,6 @@ featured: true
 external: false
 externalUrl: ""
 image:
-  src: "/images/mcswf_sept25.jpg"
-  alt: "MIU Marine Coders at September 2025 Sprint"
+  src: "/images/MIU_2024Ball.jpg"
+  alt: "MIU Marine Coders at November 2024 Ball"
 ---

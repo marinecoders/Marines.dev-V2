@@ -7,8 +7,8 @@ category: "Event"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
 featured: true
 external: false
-externalUrl: "/images/MIU_2025Ball.jpg"
+externalUrl: ""
 image:
-  src: ""
+  src: "/images/MIU_2025Ball.jpg"
   alt: "MIU Marine Coders at November 2025 Ball"
 ---

@@ -6,21 +6,21 @@
   let drawer;
   let overlay;
 
-  function openDrawer () {
+  function openDrawer() {
     drawerOpen = true;
     document.body.style.overflow = 'hidden';
   }
 
-  function closeDrawer () {
+  function closeDrawer() {
     drawerOpen = false;
     document.body.style.overflow = '';
   }
 
-  function handleTocLinkClick () {
+  function handleTocLinkClick() {
     setTimeout(closeDrawer, 100);
   }
 
-  function handleKeydown (event) {
+  function handleKeydown(event) {
     if (event.key === 'Escape' && drawerOpen) {
       closeDrawer();
     }
@@ -597,9 +597,9 @@
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">VISION</h4>
             <p class="text-black dark:text-white mb-4">
-              To transform the Marine Corps' software philosophy to a warfighting-first mindset that prioritizes lethality, agility, and operational effectiveness over acquisition cycles,
-              centralization, and bureaucracy. Our vision is a Marine Corps where software is not just a support function but a combat multiplier - where Marines at the edge have the capability to
-              build, modify, and deploy mission-critical software solutions in real-time.
+              Transform the Marine Corps' software philosophy to a warfighting-first mindset that prioritizes lethality, agility, and operational effectiveness over acquisition cycles, centralization,
+              and bureaucracy. Our vision is a Marine Corps where software is not just a support function but a combat multiplier - where Marines at the edge have the capability to build, modify, and
+              deploy mission-critical software solutions in real-time.
             </p>
           </div>
 
@@ -1482,7 +1482,6 @@
             </ul>
           </div>
         </section>
-
       </main>
     </div>
   </div>

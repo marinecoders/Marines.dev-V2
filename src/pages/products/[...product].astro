@@ -24,8 +24,6 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const metrics = entry.data.metrics || [];
-const metricLength = metrics.length;
-const bgString = 'background-image:url(' + entry.data.background.src + ')';
 ---
 
 <Layout title={entry.data.product}>

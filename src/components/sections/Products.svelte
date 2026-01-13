@@ -1,21 +1,15 @@
 <script>
-    import Card from '../cards/MCCard.svelte';
+  import Card from '../cards/MCCard.svelte';
 
-    export let products = [];
+  export let products = [];
 
-    // Since 'products' is a prop, it will be passed from the parent component
-    // where this component is used.
-
-    // Define the function to expand link
-    function expandLink(link) {
-        return "products/" + link;
-    }
+  function expandLink(link) {
+    return 'products/' + link;
+  }
 </script>
 
 <div class="flex flex-row justify-center pt-12 pb-4 px-8">
-  <h1 class="text-center font-bold text-3xl">
-    BUILDING PRODUCTS THAT MAKE A DIFFERENCE
-  </h1>
+  <h1 class="text-center font-bold text-3xl">BUILDING PRODUCTS THAT MAKE A DIFFERENCE</h1>
 </div>
 <div class="flex flex-row">
   <div class="flex-initial basis-1/12"></div>
@@ -25,8 +19,7 @@
         <Card
           title={product.data.product}
           link={expandLink(product.id)}
-          imageSrc="https://dummyimage.com/25x25/fff/aaa"
-        />
+          imageSrc="https://dummyimage.com/25x25/fff/aaa" />
       </div>
     {/each}
   </div>

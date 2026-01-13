@@ -49,7 +49,7 @@
     {
       text: 'CAREER',
       image: '/images/training_career_card.png',
-      url: '/tour',
+      url: '/roles',
       subLinks: [
         { url: '/roles', text: 'ROLES' },
         { url: '/contactUs/applyNow', text: 'HOW TO APPLY' },

@@ -2,10 +2,8 @@
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/sections/Hero.svelte';
 import FooterFull from '@components/FooterFull.svelte';
-import CohortGroup from '@components/sections/CohortGroup.svelte';
 import { displaySiteBanner } from '@components/stores.js';
 import { externalLinks } from '@content/externalLinks.js';
-import { getCollection } from 'astro:content';
 import '../../styles/global.css';
 
 displaySiteBanner.set(false);
@@ -21,7 +19,6 @@ export async function getStaticPaths() {
 }
 const { frontmatter, compiledContent } = Astro.props;
 const content = compiledContent();
-const entries = await getCollection('cohorts');
 ---
 
 <Layout title={frontmatter.role}>
@@ -41,10 +38,6 @@ const entries = await getCollection('cohorts');
     />
   </div>
   <div class="relative z-20 max-h-screen scrollbar-hide">
-    <CohortGroup
-      entries={entries}
-      client:only="svelte"
-    />
     <div class="relative z-20">
       <FooterFull
         background="bg-[#f0f0f0]"

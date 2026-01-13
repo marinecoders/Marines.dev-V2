@@ -11,7 +11,7 @@ describe('Marines.dev Website Integration Tests', () => {
     console.log('📦 Building the site...');
     const buildProcess = spawn('npm', ['run', 'build'], {
       stdio: 'pipe',
-      cwd: process.cwd()
+      cwd: process.cwd(),
     });
 
     await new Promise((resolve, reject) => {
@@ -28,7 +28,7 @@ describe('Marines.dev Website Integration Tests', () => {
     // Start preview server
     previewServer = spawn('npm', ['run', 'preview'], {
       stdio: 'pipe',
-      cwd: process.cwd()
+      cwd: process.cwd(),
     });
 
     // Wait for server to be ready
@@ -90,13 +90,11 @@ describe('Marines.dev Website Integration Tests', () => {
   const mainPages = [
     { path: '/', name: 'Home page' },
     { path: '/about', name: 'About page' },
-    { path: '/cohort', name: 'Cohort page' },
     { path: '/easter-egg', name: 'Easter egg page' },
     { path: '/publication', name: 'Publication page' },
     { path: '/timeline', name: 'Timeline page' },
-    { path: '/tour', name: 'Tour page' },
     { path: '/articles', name: 'Articles index page' },
-    { path: '/roles', name: 'Roles index page' }
+    { path: '/roles', name: 'Roles index page' },
   ];
 
   mainPages.forEach(({ path, name }) => {

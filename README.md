@@ -53,25 +53,28 @@ This will create a dist/ directory with your built site.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                      |
-| :--------------------- | :------------------------------------------ |
-| `npm install`          | Installs dependencies                       |
-| `npm run dev`          | Starts local dev server at `localhost:4321` |
-| `npm run build`        | Build your production site to `./dist/`     |
-| `npm run test`         | Run all tests                               |
-| `npm run test:integration` | Run integration tests only              |
+| Command                    | Action                                      |
+| :------------------------- | :------------------------------------------ |
+| `npm install`              | Installs dependencies                       |
+| `npm run dev`              | Starts local dev server at `localhost:4321` |
+| `npm run build`            | Build your production site to `./dist/`     |
+| `npm run test`             | Run all tests                               |
+| `npm run test:integration` | Run integration tests only                  |
 
 ## 🧪 Testing & Quality Assurance
 
 This project includes comprehensive testing with automated quality gates to ensure code quality and site functionality.
 
 ### Pre-commit Hook Features
+
 - **Fast Linting**: Runs ESLint on JavaScript, TypeScript, and Svelte files
 - **Quick Validation**: Only runs fast checks to avoid blocking development workflow
 - **Code Quality**: Ensures consistent code style and catches syntax errors
 
 ### Integration Testing (CI/CD Pipeline)
+
 Comprehensive integration tests run automatically in GitHub Actions before deployment:
+
 - ✅ All pages build and load successfully
 - ✅ Page performance (load times under 5 seconds)
 - ✅ Mobile responsiveness validation
@@ -82,13 +85,16 @@ Comprehensive integration tests run automatically in GitHub Actions before deplo
 - ✅ Proper HTML structure and SEO meta tags
 
 ### How It Works
+
 1. **On Commit**: Fast linting runs via pre-commit hook (< 5 seconds)
 2. **On Push to Main**: GitHub Actions triggers comprehensive integration tests
 3. **Quality Gate**: Deployment only proceeds if all tests pass
 4. **Build & Deploy**: Site builds and deploys to GitHub Pages after successful tests
 
 ### Manual Testing
+
 You can run tests manually at any time:
+
 ```bash
 # Run integration tests locally
 npm run test:integration
@@ -98,15 +104,19 @@ npm run test
 ```
 
 ### CI/CD Pipeline
+
 The deployment workflow includes:
+
 1. **Integration Tests**: Full site testing with Puppeteer (18 test cases)
 2. **Build**: Astro site compilation
 3. **Deploy**: GitHub Pages deployment (only if tests pass)
 
 ### Test Coverage
+
 Tests cover all major pages:
+
 - Home page (/)
-- About, Cohort, Timeline, Tour, Publication pages
+- About, Timeline, Publication pages
 - Articles and Roles sections
 - 404 error handling
 

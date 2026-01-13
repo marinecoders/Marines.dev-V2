@@ -12,6 +12,7 @@
   import SiteClassificationBanner from '@components/SiteClassificationBanner.svelte';
   import { displaySiteClassificationBanner } from './stores.js';
   import SiteOfficialBanner from '@components/SiteOfficialBanner.svelte';
+  import BackgroundBeams from '@components/effects/BackgroundBeams.svelte';
 
   displaySiteClassificationBanner.set(true);
 
@@ -117,7 +118,7 @@
         <div class="hidden md:grid md:grid-cols-4 gap-2 md:gap-4 md:pr-12 lg:pr-32 xl:pr-64 px-0">
           {#each dropdownLinks as link}
             <div class="col-span-1 tracking-wide">
-              <h2 class="inline-block text-lg lg:text-xl font-bold bg-gradient-to-r from-white via-slate-100 to-slate-200 text-transparent bg-clip-text pb-2">{link.text}</h2>
+              <h2 class="inline-block text-sm lg:text-base font-semibold text-slate-300 tracking-widest pb-2 mb-2 border-b border-mcswf-gold/30 uppercase">{link.text}</h2>
               {#if link.subLinks}
                 <ul class="text-base lg:text-lg font-bold">
                   {#each link.subLinks as subLink}
@@ -162,7 +163,7 @@
                 class="py-2">
                 <h2
                   slot="header"
-                  class="inline-block text-xl font-bold w-full">
+                  class="inline-block text-lg font-semibold w-full tracking-widest uppercase opacity-90">
                   {link.text}
                 </h2>
                 <div
@@ -200,4 +201,5 @@
       </MaxWidthContainer>
     </div>
   </Dropdown>
+  <BackgroundBeams className="pointer-events-none" />
 </header>

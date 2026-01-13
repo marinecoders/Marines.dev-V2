@@ -2,6 +2,7 @@
   import { twMerge } from 'tailwind-merge';
   import ButtonCustom from '@components/buttons/ButtonCustom.svelte';
   import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
+  import TextGenerateEffect from '@components/effects/TextGenerateEffect.svelte';
 
   export let title = '';
   export let titleColor = 'white';
@@ -14,6 +15,9 @@
   export let externalLink = false;
   export let backgroundImg = '';
   export let componentHeightClasses = '';
+  export let fadeInDescription = false;
+  export let color = 'white'; // button color
+
   $: descriptionLines = description && typeof description === 'string' ? description.split('\n') : [];
   const colorSpecificClasses = {
     white: 'from-white via-slate-50 to-slate-200',
@@ -42,16 +46,20 @@
           {#if $$slots.description}
             <slot name="description" />
           {:else if description}
-            {#each descriptionLines as line, index}
-              {line}{#if index < descriptionLines.length - 1}<br>{/if}
-            {/each}
+            {#if fadeInDescription}
+              <TextGenerateEffect words={description} />
+            {:else}
+              {#each descriptionLines as line, index}
+                {line}{#if index < descriptionLines.length - 1}<br />{/if}
+              {/each}
+            {/if}
           {/if}
         </p>
       {/if}
       <!-- Buttons -->
       {#if link}
         <ButtonCustom
-          color="white"
+          {color}
           size="xl"
           class="w-52 md:w-72"
           {link}

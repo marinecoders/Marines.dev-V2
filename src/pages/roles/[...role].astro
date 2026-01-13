@@ -32,6 +32,7 @@ const entries = await getCollection('cohorts');
     linkText="APPLY NOW"
     backgroundImg=`/images/${frontmatter.image_wide}`
     class=`bg-${frontmatter.image_focus}`
+    client:only="svelte"
   />
   <div class="relative z-20 flex h-fill py-12 place-content-center px-2">
     <article

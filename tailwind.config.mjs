@@ -1,4 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+
+import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
+// import aspectRatio from 'tailwindcss/lib/util/aspect-ratio';
+// import aspectRatio from 'tailwindcss/lib/aspect-ratio';
+
+function addVariablesForColors({ addBase, theme }) {
+  const allColors = flattenColorPalette(theme('colors'));
+  const newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
+
+  addBase({
+    ':root': newVars,
+  });
+}
+
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'],
   darkMode: 'selector',
@@ -45,5 +59,5 @@ export default {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography'), require('flowbite/plugin')],
+  plugins: [require('@tailwindcss/typography'), require('flowbite/plugin'), addVariablesForColors, require('@tailwindcss/aspect-ratio')],
 };

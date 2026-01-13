@@ -35,7 +35,7 @@
                 style="fill: white;"
                 src="/ega-full.svg"
                 class="h-12 text-white"
-                alt="MIU Logo" />
+                alt="USMC Logo" />
             </a>
           </div>
           <div class="w-3/5">
@@ -128,7 +128,7 @@
               style="fill: white;"
               src="/ega-full.svg"
               class="h-16 text-white"
-              alt="MCSWF Logo" />
+              alt="USMC Logo" />
           </a>
         </div>
         <div class="flex justify-center py-4 border-b">

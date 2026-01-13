@@ -30,6 +30,8 @@ products.sort((a, b) => a.data.order - b.data.order);
     description="To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps"
     descriptionClasses="w-full md:w-[500px] lg:w-[750px] font-light"
     backgroundImg="/images/signal-2025-hero.jpeg"
+    client:only="svelte"
+    fadeInDescription={true}
   />
   <MaxWidthContainer>
     <!-- <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
@@ -38,6 +40,8 @@ products.sort((a, b) => a.data.order - b.data.order);
         To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps
       </p>
     </div> -->
+    <!-- <BackgroundBeams client:only /> -->
+
     <ContentImageFull
       link="/publication"
       linkText="LEARN MORE"
@@ -45,6 +49,8 @@ products.sort((a, b) => a.data.order - b.data.order);
       content="To transform the Marine Corps’ software philosophy to a warfighting-first mindset that prioritizes lethality, agility, and operational effectiveness over acquisition cycles, centralization, and bureaucracy. Our vision is a Marine Corps where software is not just a support function but a combat multiplier - where Marines at the edge have the capability to build, modify, and deploy mission-critical software solutions in real-time."
       image="/images/gen_marine_network_wide.jpg"
       imagePosition="right"
+      gradientBackground={true}
+      client:only="svelte"
     />
     <ContentImageFull
       link="/roles"
@@ -53,6 +59,8 @@ products.sort((a, b) => a.data.order - b.data.order);
       content="The Marine Coders team maintains six core capabilities: Tactical Application Development (TAK-Specific), Web Development, Backend Development, DevSecOps & Deployment, Agile & Cross-Functional Collaboration, Data Science and AI Development"
       image="/images/miu-laptop-screen.jpg"
       imagePosition="left"
+      gradientBackground={true}
+      client:only="svelte"
     />
     <Countdown
       client:only="svelte"
@@ -64,6 +72,7 @@ products.sort((a, b) => a.data.order - b.data.order);
     titleColor="yellow"
     descriptionClasses="w-full md:w-[500px] lg:w-[750px] font-light"
     backgroundImg="/images/coders-group-office-clean.jpeg"
+    client:only="svelte"
   />
   <FooterFull client:only="svelte" />
 </Layout>

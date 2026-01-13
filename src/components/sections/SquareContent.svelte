@@ -7,6 +7,8 @@
   export let content = null;
   export let link = null;
   export let linkText = null;
+  export let evervaultBackground = true;
+  export let color = 'white';
 </script>
 
 <div class="w-full flex flex-col gap-6 lg:gap-12 mt-6 lg:mt-0">
@@ -31,10 +33,11 @@
   {#if link}
     <div class="grid w-full gap-3 md:inline-flex md:justify-center justify-items-center">
       <ButtonCustom
-        color="white"
+        {color}
         size="xl"
         class="w-full md:w-64"
-        {link}>
+        {link}
+        {evervaultBackground}>
         {linkText}
       </ButtonCustom>
     </div>

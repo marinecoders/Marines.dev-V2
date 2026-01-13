@@ -6,6 +6,6 @@
 </script>
 
 <img
-  class={twMerge('w-full rounded-lg object-cover aspect-square', $$props.class)}
+  class={twMerge('w-full rounded-xl object-cover aspect-square', $$props.class)}
   src={image}
   alt={imageAltText} />

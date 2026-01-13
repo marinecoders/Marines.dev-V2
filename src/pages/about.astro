@@ -22,6 +22,7 @@ const metrics = await getCollection('aboutMetrics');
     description="Marine Coders are the digital warfighters of the Marine Corps, bringing world-class software development skills to enhance operational effectiveness and modern warfighting capabilities. \n\n As a part of the Marine Innovation Unit (MIU), Marine Coders leverage the vast expertise of Marine Reservists who have excelled in the technology sector, bringing cutting-edge innovation, industry best practices, and real-world experience to Marine Corps modernization efforts."
     descriptionClasses="w-full md:w-[500px] lg:w-[750px] font-light"
     backgroundImg="/images/mcswf_and_miu.jpeg"
+    client:only="svelte"
   />
   <MaxWidthContainer>
     <ContentImageFull
@@ -31,6 +32,8 @@ const metrics = await getCollection('aboutMetrics');
       content="The Marine Corps’ Force Design initiative is a transformative effort to reshape the force to meet the demands of the future fight. As the modern battlefield becomes increasingly digitized, the ability to develop software at the tactical edge is no longer a luxury—it is a necessity. Marine Coders directly support Force Design by enabling rapid, adaptive, and secure software solutions that enhance warfighting capabilities across all domains. "
       image="/images/ega_network.jpg"
       imagePosition="right"
+      gradientBackground={true}
+      client:only="svelte"
     />
     <ContentImageFull
       flipped
@@ -40,6 +43,8 @@ const metrics = await getCollection('aboutMetrics');
       title="CORE VALUES"
       content="We are Marines first—regardless of our technical specialty or billet. Our work is grounded in the Marine Corps’ core values of honor, courage, and commitment. As we lead in digital modernization efforts, we do so with a warfighting mindset, understanding that our software solutions must be as disciplined, reliable, and resilient as the Marines who depend on them. We view technology as a force multiplier, but never as a substitute for the ethos that defines us."
       imagePosition="left"
+      gradientBackground={true}
+      client:only="svelte"
     />
     <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full justify-around">
       {

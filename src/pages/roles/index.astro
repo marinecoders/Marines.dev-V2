@@ -25,6 +25,7 @@ const { frontmatter, compiledContent } = Astro.props;
     externalLink={true}
     linkText="APPLY NOW"
     description={'Marine Coders is a section within the Marine Innovation Unit. Applicants are limited to reservists or Active Duty Marines interested in Direct Affiliating to the Marine Corps Reserves. \n\n MIU manages hiring and onboarding for new MIU Marines on a rolling basis, based on available billets and required skillsets. Hiring and onboarding is currently closed for the remainder of FY25, and will reopen in FY26.'}
+    client:only="svelte"
   />
   <MaxWidthContainer>
     {
@@ -39,6 +40,9 @@ const { frontmatter, compiledContent } = Astro.props;
             image={`/images/${post.frontmatter.image}`}
             imageAltText={post.frontmatter.image_alt_text}
             imagePosition={index % 2 === 0 ? 'right' : 'left'}
+            gradientBackground={true}
+            client:only="svelte"
+            color="yellow"
           />
         );
       })

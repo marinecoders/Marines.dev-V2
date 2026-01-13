@@ -4,15 +4,10 @@ import Hero from '@components/sections/Hero.svelte';
 import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
 import ContentImageFull from '@components/sections/ContentImageFull.svelte';
 import FooterFull from '@components/FooterFull.svelte';
-import ButtonCustom from '@components/buttons/ButtonCustom.svelte';
-import MetricCard from '@components/cards/MetricCard.svelte';
 import { displaySiteBanner } from '@components/stores.js';
-import { externalLinks } from '@content/externalLinks.js';
-import { getCollection, type CollectionEntry } from 'astro:content';
 import '../styles/global.css';
 
 displaySiteBanner.set(true);
-const metrics = await getCollection('aboutMetrics');
 ---
 
 <Layout title="About">
@@ -46,53 +41,6 @@ const metrics = await getCollection('aboutMetrics');
       gradientBackground={true}
       client:only="svelte"
     />
-    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full justify-around">
-      {
-        metrics?.map((item) =>
-          item.data.metrics?.map((p) => (
-            <div class="text-center justify-self-center my-8">
-              <MetricCard
-                icon={p.icon}
-                value={p.value}
-                metric={p.metric}
-              />
-            </div>
-          ))
-        )
-      }
-    </div> -->
-    <!-- last section of the page, can't use ContentImageFull because of the CTA icon... -->
-    <!-- <div class="items-center max-w-screen-xl gap-16 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-8 lg:px-6">
-      <div class="flex justify-center">
-        <img
-          class="w-3/4 rounded-lg aspect-square object-cover"
-          src="/images/Atlantic Council Software Defined Warfare.png"
-        />
-      </div>
-      <div class="font-light text-white sm:text-lg">
-        <div class="flex justify-center">
-          <img
-            src="/icons/cta.svg"
-            class="pt-12 lg:pt-0 lg:h-28 lg:w-28 lg:min-w-28"
-          />
-        </div>
-        <h2
-          class="mb-4 pt-8 leading-normal lg:pt-8 text-xl lg:text-[40px] font-extrabold tracking-tight text-center bg-gradient-to-r text-transparent bg-clip-text from-mcswf-gold via-yellow-300 to-mcswf-gold">
-          INTERESTED IN BEING A <br />PART OF THE MARINE CODERS?
-        </h2>
-        <div class="grid w-full gap-3 mt-8 sm:inline-flex sm:justify-center">
-          <ButtonCustom
-            color="white"
-            size="xl"
-            customClasses="w-64"
-            link={`mailto:${externalLinks.miuEmail}?subject=${externalLinks.miuEmailSubject}`}
-            client:only="svelte"
-            externalLink={true}>
-            GET IN TOUCH
-          </ButtonCustom>
-        </div>
-      </div>
-    </div> -->
   </MaxWidthContainer>
   <FooterFull client:only="svelte" />
 </Layout>

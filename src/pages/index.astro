@@ -4,12 +4,9 @@ import Hero from '@components/sections/Hero.svelte';
 import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
 import FooterFull from '@components/FooterFull.svelte';
 import Countdown from '@components/elements/Countdown.svelte';
-import Products from '@components/sections/Products.svelte';
 import ContentImageFull from '../components/sections/ContentImageFull.svelte';
 import { getCollection } from 'astro:content'; // Get products collection
 import { displaySiteBanner } from '../components/stores.js';
-import MetricCard from '@components/cards/MetricCard.svelte';
-import { externalLinks } from '@content/externalLinks.js';
 import { displaySiteClassificationBanner } from '../components/stores.js';
 import '../styles/global.css';
 import '../styles/fonts.css';
@@ -18,7 +15,6 @@ displaySiteBanner.set(false);
 displaySiteClassificationBanner.set(true);
 
 const products = await getCollection('products');
-const metrics = await getCollection('aboutMetrics');
 
 products.sort((a, b) => a.data.order - b.data.order);
 ---
@@ -34,14 +30,6 @@ products.sort((a, b) => a.data.order - b.data.order);
     fadeInDescription={true}
   />
   <MaxWidthContainer>
-    <!-- <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
-      <h1 class="text-left md:text-center font-bold text-[32px] md:text-[40px] text-mcswf-gold pt-16 px-8">OUR MISSION</h1>
-      <p class="text-left md:text-center text-base lg:text-2xl py-16 px-8">
-        To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps
-      </p>
-    </div> -->
-    <!-- <BackgroundBeams client:only /> -->
-
     <ContentImageFull
       link="/publication"
       linkText="LEARN MORE"

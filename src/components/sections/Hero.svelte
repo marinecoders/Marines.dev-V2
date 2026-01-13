@@ -21,7 +21,11 @@
   $: descriptionLines = description && typeof description === 'string' ? description.split('\n') : [];
   const colorSpecificClasses = {
     white: 'from-white via-slate-50 to-slate-200',
-    yellow: 'from-mcswf-gold via-yellow-300 to-mcswf-gold',
+    yellow: 'from-mcswf-gold via-mcswf-gold-dark to-mcswf-gold',
+  };
+  const descriptionColorClasses = {
+    white: 'text-slate-100',
+    yellow: 'text-mcswf-gold',
   };
 </script>
 
@@ -33,7 +37,12 @@
     <MaxWidthContainer
       class={twMerge('relative h-[400px] md:h-[550px] flex flex-col gap-6 md:gap-12 items-stretch md:items-center justify-center md:justify-center text-left md:text-center', componentHeightClasses)}>
       <!-- Title -->
-      <h1 class={twMerge('text-left md:text-center font-bold text-[32px] md:text-[40px] bg-gradient-to-r text-transparent bg-clip-text', titleClasses, colorSpecificClasses[titleColor])}>
+      <h1
+        class={twMerge(
+          'text-left md:text-center font-bold text-[32px] md:text-[44px] bg-gradient-to-r text-transparent bg-clip-text [text-shadow:_0_2px_8px_rgb(255_255_255_/_0.2)] tracking-wider leading-tight',
+          titleClasses,
+          colorSpecificClasses[titleColor]
+        )}>
         {#if !title}
           <slot name="title" />
         {:else}
@@ -42,7 +51,7 @@
       </h1>
       <!-- Description -->
       {#if $$slots.description || description}
-        <p class={twMerge('text-left md:text-center text-base lg:text-2xl', descriptionClasses, colorSpecificClasses[descriptionColor])}>
+        <p class={twMerge('text-left md:text-center text-base lg:text-2xl font-normal leading-relaxed tracking-wide max-w-4xl mx-auto', descriptionClasses, descriptionColorClasses[descriptionColor])}>
           {#if $$slots.description}
             <slot name="description" />
           {:else if description}

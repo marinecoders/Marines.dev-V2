@@ -4,7 +4,7 @@ import PublicationPage from '@components/PublicationPage.svelte';
 import FooterFull from '@components/FooterFull.svelte';
 ---
 
-<Layout title="Marine Coders Publication" >
+<Layout title="Marine Coders Publication" hideBackground={true}>
   <PublicationPage client:only="svelte" />
   <FooterFull client:only="svelte" />
 </Layout>

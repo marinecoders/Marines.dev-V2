@@ -37,108 +37,30 @@
 <svelte:head>
   <title>Marine Coders Publication</title>
   <style>
-    :root {
-      --electric-green: #059669;
-      --electric-green-dark: #047857;
-      --electric-green-light: #10b981;
-    }
-
-    .publication-page {
-      font-family: 'Times New Roman', Times, serif !important;
-    }
-
-    .publication-page .border-mcswf-gold {
-      border-color: #006d50 !important;
-    }
-    .publication-page .text-mcswf-gold {
-      color: #006d50 !important;
-    }
-    .publication-page .bg-mcswf-gold {
-      background-color: #006d50 !important;
-    }
-    .publication-page .hover\:bg-mcswf-gold-dark:hover {
-      background-color: #004d3a !important;
-    }
-
-    .electric-line {
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--electric-green), transparent);
-      box-shadow:
-        0 0 4px var(--electric-green),
-        0 0 8px var(--electric-green),
-        0 0 12px var(--electric-green-light);
-      animation: electric-pulse 4s ease-in-out infinite alternate;
-    }
-
-    .chapter-header {
-      text-align: center;
-    }
-
-    .chapter-header .electric-line {
-    }
-
-    .chapter-number {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: var(--electric-green);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    .chapter-title {
-      font-size: 2rem;
-      font-weight: bold;
-      color: var(--text-primary);
-    }
-
-    .clickable-header {
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .clickable-header:hover {
-      color: var(--electric-green);
-      transform: translateY(-1px);
-    }
-
-    .clickable-header:hover .chapter-number {
-      color: var(--electric-green-light);
-    }
-
-    /* Scroll padding to account for fixed header */
-    html {
-      scroll-padding-top: 150px;
-    }
-
-    /* Alternative: Add padding to sections with IDs */
-    section[id] {
-      scroll-margin-top: 150px;
-    }
-
     @keyframes electric-pulse {
       0% {
         box-shadow:
-          0 0 3px var(--electric-green),
-          0 0 6px var(--electric-green),
-          0 0 9px var(--electric-green-light);
+          0 0 3px #059669,
+          0 0 6px #059669,
+          0 0 9px #10b981;
         opacity: 0.7;
       }
       100% {
         box-shadow:
-          0 0 5px var(--electric-green),
-          0 0 10px var(--electric-green),
-          0 0 15px var(--electric-green-light);
+          0 0 5px #059669,
+          0 0 10px #059669,
+          0 0 15px #10b981;
         opacity: 1;
       }
     }
   </style>
 </svelte:head>
 
-<div class="publication-page">
+<div class="font-serif">
   <!-- Mobile TOC Toggle Button -->
   <button
     on:click={openDrawer}
-    class="lg:hidden fixed left-4z-50 bottom-4 -translate-y-1/2 ml-4 bg-[var(--electric-green)] text-white p-3 rounded-full shadow-lg hover:bg-[var(--electric-green-dark)] transition-colors duration-200"
+    class="lg:hidden fixed left-4 z-50 bottom-4 -translate-y-1/2 ml-4 bg-[#059669] text-white p-3 rounded-full shadow-lg hover:bg-[#047857] transition-colors duration-200"
     aria-label="Toggle Table of Contents">
     <Icon
       icon="mdi:table-of-contents"
@@ -167,7 +89,7 @@
     class:-translate-x-full={!drawerOpen}>
     <div class="p-6">
       <div class="flex justify-between items-center mb-6">
-        <h2 class="text-xl font-bold text-[var(--electric-green)] dark:text-[var(--electric-green-light)]">Table of Contents</h2>
+        <h2 class="text-xl font-bold text-[#059669] dark:text-[#10b981]">Table of Contents</h2>
         <button
           on:click={closeDrawer}
           class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
@@ -180,70 +102,70 @@
 
       <div class="mb-6">
         <h3
-          class="text-base font-bold text-[var(--electric-green)] mb-2 uppercase tracking-wider py-2 border-b border-[rgba(5,150,105,0.3)] dark:text-[var(--electric-green-light)] dark:border-[rgba(5,150,105,0.5)]">
+          class="text-base font-bold text-[#059669] mb-2 uppercase tracking-wider py-2 border-b border-[rgba(5,150,105,0.3)] dark:text-[#10b981] dark:border-[rgba(5,150,105,0.5)]">
           Chapters
         </h3>
         <a
           href="#chapter-1"
           on:click={handleTocLinkClick}
-          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 1: The History of the Marine Coders</a>
         <a
           href="#chapter-2"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 2: Mission, Vision, and Core Values</a>
         <a
           href="#chapter-3"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 3: Marine Coders Organization and Structure</a>
         <a
           href="#chapter-4"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 4: Marine Coders Operating Model</a>
         <a
           href="#chapter-5"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 5: Impact and Future Operations</a>
       </div>
 
       <div class="mb-6">
         <h3
-          class="text-base font-bold text-[var(--electric-green)] mb-2 uppercase tracking-wider py-2 border-b border-[rgba(5,150,105,0.3)] dark:text-[var(--electric-green-light)] dark:border-[rgba(5,150,105,0.5)]">
+          class="text-base font-bold text-[#059669] mb-2 uppercase tracking-wider py-2 border-b border-[rgba(5,150,105,0.3)] dark:text-[#10b981] dark:border-[rgba(5,150,105,0.5)]">
           Appendices
         </h3>
         <a
           href="#technical-manager"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Technical Manager Billet Description</a>
         <a
           href="#software-engineer"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Software Engineer Billet Description</a>
         <a
           href="#data-scientist"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Data Scientist/AI Engineer (Data) Billet Description</a>
         <a
           href="#design-strategist"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Design Strategist Billet Description</a>
         <a
           href="#product-manager"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Product Manager (PM) Billet Description</a>
         <a
           href="#core-skills"
           on:click={handleTocLinkClick}
-          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Core Skills for All Marine Coders</a>
       </div>
     </div>
@@ -253,64 +175,64 @@
   <div class="max-w-[1400px] mx-auto px-2 sm:px-4 lg:px-6 py-8">
     <div class="grid grid-cols-1 lg:grid-cols-[350px_1fr] gap-6 lg:gap-8 min-h-screen lg:-ml-16">
       <!-- Desktop Table of Contents -->
-      <aside class="hidden lg:block lg:sticky lg:top-1/2 ml-8 lg:-translate-y-64 h-fit p-4 sm:p-5 lg:p-6 bg-transparent border-0 rounded-none backdrop-blur-none shadow-none">
-        <h2 class="text-xl font-bold text-[var(--electric-green)] mb-4 text-center border-b border-[var(--electric-green)] pb-2 dark:text-[var(--electric-green-light)]">Table of Contents</h2>
+      <aside class="hidden lg:block lg:sticky lg:top-40 lg:self-start h-fit p-4 sm:p-5 lg:p-6 bg-transparent border-0 rounded-none backdrop-blur-none shadow-none">
+        <h2 class="text-xl font-bold text-[#059669] mb-4 text-center border-b border-[#059669] pb-2 dark:text-[#10b981]">Table of Contents</h2>
 
         <div class="mb-6">
           <h3
-            class="text-base font-bold text-[var(--electric-green)] mb-2 uppercase tracking-wider py-2 border-b border-[rgba(5,150,105,0.3)] dark:text-[var(--electric-green-light)] dark:border-[rgba(5,150,105,0.5)]">
+            class="text-base font-bold text-[#059669] mb-2 uppercase tracking-wider py-2 border-b border-[rgba(5,150,105,0.3)] dark:text-[#10b981] dark:border-[rgba(5,150,105,0.5)]">
             Chapters
           </h3>
           <a
             href="#chapter-1"
-            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 1: The History of the Marine Coders</a>
           <a
             href="#chapter-2"
-            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 2: Mission, Vision, and Core Values</a>
           <a
             href="#chapter-3"
-            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 3: Marine Coders Organization and Structure</a>
           <a
             href="#chapter-4"
-            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 4: Marine Coders Operating Model</a>
           <a
             href="#chapter-5"
-            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 5: Impact and Future Operations</a>
         </div>
 
         <div class="mb-6">
           <h3
-            class="text-base font-bold text-[var(--electric-green)] mb-2 uppercase tracking-wider py-2 border-b border-[rgba(5,150,105,0.3)] dark:text-[var(--electric-green-light)] dark:border-[rgba(5,150,105,0.5)]">
+            class="text-base font-bold text-[#059669] mb-2 uppercase tracking-wider py-2 border-b border-[rgba(5,150,105,0.3)] dark:text-[#10b981] dark:border-[rgba(5,150,105,0.5)]">
             Appendices
           </h3>
           <a
             href="#technical-manager"
-            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Technical Manager Billet Description</a>
           <a
             href="#software-engineer"
-            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Software Engineer Billet Description</a>
           <a
             href="#data-scientist"
-            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Data Scientist/AI Engineer (Data) Billet Description</a>
           <a
             href="#design-strategist"
-            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Design Strategist Billet Description</a>
           <a
             href="#product-manager"
-            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Product Manager (PM) Billet Description</a>
           <a
             href="#core-skills"
-            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[#059669] hover:border-l-[#059669] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Core Skills for All Marine Coders</a>
         </div>
       </aside>
@@ -320,16 +242,16 @@
         <!-- Publication Header -->
         <div class="text-center mb-16">
           <div class="mb-8">
-            <div class="electric-line my-8"></div>
-            <h1 class="text-4xl md:text-5xl font-bold text-mcswf-gold mb-4">Marine Coders Publication 1</h1>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-8"></div>
+            <h1 class="text-4xl md:text-5xl font-bold text-[#059669] mb-4">Marine Coders Publication 1</h1>
             <div class="flex justify-center mb-4">
               <img
                 src="/ega-dark.svg"
                 alt="Marine Corps Eagle, Globe, and Anchor"
                 class="h-64 w-auto" />
             </div>
-            <p class="text-4xl md:text-5xl text-mcswf-gold mb-2">Marine Innovation Unit</p>
-            <div class="electric-line my-8"></div>
+            <p class="text-4xl md:text-5xl text-[#059669] mb-2">Marine Innovation Unit</p>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-8"></div>
           </div>
         </div>
 
@@ -342,20 +264,20 @@
         </div>
 
         <!-- Publication Info -->
-        <div class="border border-mcswf-gold p-6 mb-12">
-          <div class="text-center text-mcswf-gold dark:text-white">
+        <div class="border border-[#059669] p-6 mb-12">
+          <div class="text-center text-[#059669] dark:text-white">
             <p class="text-lg font-semibold mb-2">Marine Innovation Unit</p>
             <p class="text-lg font-semibold mb-2">Marine Forces Reserve</p>
             <p class="mb-2">10 McDonald Street Stewart ANG Base</p>
             <p class="mb-2">Newburgh, New York 12550</p>
-            <p class="text-mcswf-gold font-semibold">30 March 2025</p>
+            <p class="text-[#059669] font-semibold">30 March 2025</p>
           </div>
         </div>
 
         <!-- Forward -->
         <section class="mb-16">
-          <div class="border-l-4 border-mcswf-gold p-6 mb-8">
-            <h2 class="text-3xl font-bold text-mcswf-gold mb-2">FORWARD</h2>
+          <div class="border-l-4 border-[#059669] p-6 mb-8">
+            <h2 class="text-3xl font-bold text-[#059669] mb-2">FORWARD</h2>
           </div>
 
           <div class="p-6 mb-8">
@@ -369,7 +291,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h3 class="text-2xl font-bold text-mcswf-gold mb-4">THE NECESSITY OF SOFTWARE IN THE MARINE CORPS</h3>
+            <h3 class="text-2xl font-bold text-[#059669] mb-4">THE NECESSITY OF SOFTWARE IN THE MARINE CORPS</h3>
             <p class="dark:text-white mb-4">
               The modern battlefield is digital, and nearly every aspect of modern combat operations relies on software in some capacity. From command and control (C2) systems to logistics management,
               software underpins the ability to fight and win. Consider the following examples:
@@ -383,7 +305,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h3 class="text-2xl font-bold text-mcswf-gold mb-4">WHO ARE THE MARINE CODERS</h3>
+            <h3 class="text-2xl font-bold text-[#059669] mb-4">WHO ARE THE MARINE CODERS</h3>
             <p class="dark:text-white mb-4">
               Marine Coders are the digital warfighters of the Marine Corps, bringing world-class software development skills to enhance operational effectiveness and modern warfighting capabilities.
             </p>
@@ -394,7 +316,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h3 class="text-2xl font-bold text-mcswf-gold mb-4">RELEVANCE TO FORCE DESIGN</h3>
+            <h3 class="text-2xl font-bold text-[#059669] mb-4">RELEVANCE TO FORCE DESIGN</h3>
             <p class="dark:text-white mb-4">
               The Marine Corps' Force Design initiative is a transformative effort to reshape the force to meet the demands of the future fight. As the modern battlefield becomes increasingly
               digitized, the ability to develop software at the tactical edge is no longer a luxury—it is a necessity. Marine Coders directly support Force Design by enabling rapid, adaptive, and
@@ -427,25 +349,25 @@
         <!-- Chapter 1: The History of the Marine Coders -->
         <section
           id="chapter-1"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#chapter-1"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Chapter 1</div>
-              <div class="chapter-title my-2">The History of the Marine Coders</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Chapter 1</div>
+              <div class="text-3xl font-bold my-2">The History of the Marine Coders</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">"War is both timeless and ever changing. While the basic nature of war is constant, the means and methods we use evolve continuously."</p>
               <p class="text-sm text-gray-400">- MCDP 1, Warfighting</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-6 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">
                 "The Marine Corps must become a more agile, resilient, and technologically advanced force. We must modernize—not for the sake of change, but to meet the demands of the future operating
                 environment."
@@ -478,12 +400,12 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Key Milestones and Dates</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Key Milestones and Dates</h4>
             <p class="dark:text-white mb-4">For a detailed timeline of Marine Coders milestones and key dates, please visit our comprehensive history page.</p>
             <div class="text-center">
               <a
                 href="/timeline"
-                class="inline-block bg-mcswf-gold  font-bold py-3 px-6 rounded hover:bg-mcswf-gold-dark transition-colors duration-200">
+                class="inline-block bg-[#059669]  font-bold py-3 px-6 rounded hover:bg-[#059669]-dark transition-colors duration-200">
                 VIEW MARINE CODERS HISTORY
               </a>
             </div>
@@ -493,39 +415,39 @@
         <!-- Chapter 2: Mission, Vision, and Core Values -->
         <section
           id="chapter-2"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#chapter-2"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Chapter 2</div>
-              <div class="chapter-title my-2">Mission, Vision, and Core Values</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Chapter 2</div>
+              <div class="text-3xl font-bold my-2">Mission, Vision, and Core Values</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">
                 "It must be considered that there is nothing more difficult to carry out, nor more doubtful of success, nor more dangerous to handle, than to initiate a new order of things."
               </p>
               <p class="text-sm text-gray-400">- Niccolo Machiavelli, The Prince</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-0 italic bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-0 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">"There are two thousand years of experience to tell us that the only thing harder than getting a new idea into the military mind is to get an old idea out."</p>
               <p class="text-sm text-gray-400">- Basil H. Liddell Hart, Thoughts on War</p>
             </blockquote>
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">MISSION</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">MISSION</h4>
             <p class="dark:text-white text-lg mb-0">To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps</p>
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">VISION</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">VISION</h4>
             <p class="dark:text-white mb-0">
               Transform the Marine Corps' software philosophy to a warfighting-first mindset that prioritizes lethality, agility, and operational effectiveness over acquisition cycles, centralization,
               and bureaucracy. Our vision is a Marine Corps where software is not just a support function but a combat multiplier - where Marines at the edge have the capability to build, modify, and
@@ -534,11 +456,11 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">CORE VALUES</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">CORE VALUES</h4>
             <div class="space-y-6 dark:text-white">
               <div>
                 <p class="mb-2">
-                  <strong class="text-mcswf-gold">We are Marines first</strong>—regardless of our technical specialty or billet. Our work is grounded in the Marine Corps' core values of honor,
+                  <strong class="text-[#059669]">We are Marines first</strong>—regardless of our technical specialty or billet. Our work is grounded in the Marine Corps' core values of honor,
                   courage, and commitment. As we lead in digital modernization efforts, we do so with a warfighting mindset, understanding that our software solutions must be as disciplined, reliable,
                   and resilient as the Marines who depend on them. We view technology as a force multiplier, but never as a substitute for the ethos that defines us.
                 </p>
@@ -546,7 +468,7 @@
 
               <div>
                 <p class="mb-2">
-                  <strong class="text-mcswf-gold">We are mission focused</strong> - Our development efforts are driven by operational relevance and tactical necessity. We write code with a purpose: to
+                  <strong class="text-[#059669]">We are mission focused</strong> - Our development efforts are driven by operational relevance and tactical necessity. We write code with a purpose: to
                   solve real problems for real Marines. Whether it's a planning tool for a MEU, a data dashboard for logistics, or a TAK plugin for a unit in the field, every line of code we write is intended
                   to enhance the Marine Corps' ability to shoot, move, and communicate.
                 </p>
@@ -555,7 +477,7 @@
 
               <div>
                 <p class="mb-2">
-                  <strong class="text-mcswf-gold">We are agile and adaptive</strong> - We embrace the uncertainty of the modern battlefield by building software and teams that are agile, responsive, and
+                  <strong class="text-[#059669]">We are agile and adaptive</strong> - We embrace the uncertainty of the modern battlefield by building software and teams that are agile, responsive, and
                   decentralized. We deliver in small, rapid increments—listening to user feedback, iterating quickly, and deploying improvements with minimal friction. Our operational environment demands
                   speed, flexibility, and innovation under pressure. We apply those same principles to the way we build and ship software.
                 </p>
@@ -563,7 +485,7 @@
 
               <div>
                 <p class="mb-2">
-                  <strong class="text-mcswf-gold">We are continuous learners</strong>. Technology evolves rapidly, and so must we. We are committed to lifelong learning—staying current with modern
+                  <strong class="text-[#059669]">We are continuous learners</strong>. Technology evolves rapidly, and so must we. We are committed to lifelong learning—staying current with modern
                   frameworks, tools, and practices so we can deliver high-quality software in a dynamic threat environment. Through asynchronous training, peer collaboration, and real-world problem
                   solving, we invest in our individual growth and the collective capability of the team. We view every challenge as an opportunity to learn and improve.
                 </p>
@@ -575,25 +497,25 @@
         <!-- Chapter 3: Marine Coders Organization and Structure -->
         <section
           id="chapter-3"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#chapter-3"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Chapter 3</div>
-              <div class="chapter-title my-2">Marine Coders Organization and Structure</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Chapter 3</div>
+              <div class="text-3xl font-bold my-2">Marine Coders Organization and Structure</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">"Innovation distinguishes between a leader and a follower."</p>
               <p class="text-sm text-gray-400">- Steve Jobs</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-6 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">"Software is eating the world."</p>
               <p class="text-sm text-gray-400">- Marc Andreesen</p>
             </blockquote>
@@ -615,7 +537,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Marine Coders Composition</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Marine Coders Composition</h4>
             <p class="dark:text-white mb-4">
               The Marine Coders development teams are designed for flexibility, incorporating a diversity of rank, skill sets, and technical expertise to ensure mission-critical software solutions can
               be developed efficiently. Unlike traditional Marine Corps units, where rank often dictates leadership roles, Marine Coders teams operate with meritocratic, skill-based leadership
@@ -630,12 +552,12 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Marine Coders Capabilities</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Marine Coders Capabilities</h4>
             <p class="dark:text-white mb-4">The Marine Coders team maintains six core capabilities, listed below (note: order is not meant to indicate priority).</p>
 
             <div class="space-y-6">
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Tactical Application Development (TAK-Specific)</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Tactical Application Development (TAK-Specific)</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• TAK Plugin Development – Building and extending ATAK and WinTAK plugins</li>
                   <li>• Geospatial & Mapping (GIS) – Working with geospatial data for geospatial overlays</li>
@@ -644,7 +566,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Web Development</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Web Development</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Developing responsive, accessible, and performant user interfaces; translating UI/UX designs into functional components</li>
                   <li>• Effectively managing complex application states and integrating data from diverse sources</li>
@@ -653,7 +575,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Backend Development</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Backend Development</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Building modular, scalable backend applications</li>
                   <li>• Designing efficient API structures for TAK and web apps</li>
@@ -662,7 +584,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">DevSecOps & Deployment</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">DevSecOps & Deployment</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Ensuring apps are deployable across environments</li>
                   <li>• Automating builds, testing, and deployment</li>
@@ -671,7 +593,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Agile & Cross-Functional Collaboration</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Agile & Cross-Functional Collaboration</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Working in scrum or Kanban environments to deliver iteratively</li>
                   <li>• Engaging with customers to ensure applications meet real-world mission requirements</li>
@@ -681,7 +603,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Data Science and AI Development</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Data Science and AI Development</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Machine Learning Model Development - Building, training, and deploying models to support decision-making and operational automation</li>
                   <li>• Data Engineering & Pipeline Management - Creating scalable data processing and ingestion pipelines for real-time and batch data</li>
@@ -692,12 +614,12 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Roles and Responsibilities</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Roles and Responsibilities</h4>
             <p class="dark:text-white mb-4">There are five primary roles on Marine Coder's development teams. A high-level overview of the roles and their responsibilities follows:</p>
 
             <div class="space-y-4  dark:text-white">
               <div>
-                <p class="font-semibold text-mcswf-gold">Technical Managers</p>
+                <p class="font-semibold text-[#059669]">Technical Managers</p>
                 <p>
                   – Lead the design, development, and delivery of software solutions that support mission-critical needs. They guide architecture decisions, mentor junior developers, and ensure code
                   quality and security across the development lifecycle. Technical Managers translate operational requirements into scalable systems and oversee implementation of modern development
@@ -706,7 +628,7 @@
               </div>
 
               <div>
-                <p class="font-semibold text-mcswf-gold">Software Engineers</p>
+                <p class="font-semibold text-[#059669]">Software Engineers</p>
                 <p>
                   – Develop mission-critical applications using modern frameworks and DevSecOps principles. They write and maintain secure, scalable, and high-performance code to support warfighting
                   operations, logistics, and intelligence functions. Their expertise includes cloud-native development, containerization, and full-stack application development.
@@ -714,7 +636,7 @@
               </div>
 
               <div>
-                <p class="font-semibold text-mcswf-gold">Data Scientist/AI Engineer (Data)</p>
+                <p class="font-semibold text-[#059669]">Data Scientist/AI Engineer (Data)</p>
                 <p>
                   – Process and analyze data to enhance battlefield awareness and decision-making. They build data pipelines, apply predictive analytics, and develop models for use in applications
                   and/or operational planning. Their work supports real-time data fusion for tactical and strategic decision-making.
@@ -722,7 +644,7 @@
               </div>
 
               <div>
-                <p class="font-semibold text-mcswf-gold">Design Strategist</p>
+                <p class="font-semibold text-[#059669]">Design Strategist</p>
                 <p>
                   – The Design Strategist is responsible for ensuring digital solutions are intuitive, easily to use, and tailored to the tactical, strategic, and operational needs of Marines. This
                   billet leads research to identify the core problem(s) to solve and collaborates with stakeholders to design effective solutions.
@@ -730,7 +652,7 @@
               </div>
 
               <div>
-                <p class="font-semibold text-mcswf-gold">Product Managers (PMs)</p>
+                <p class="font-semibold text-[#059669]">Product Managers (PMs)</p>
                 <p>
                   – Define and prioritize software solutions that address critical operational challenges. They gather user requirements, manage backlogs, and align development efforts with mission
                   objectives. Product Managers coordinate across cross-functional teams to ensure timely delivery of impactful capabilities. Their leadership ensures that software efforts remain
@@ -744,25 +666,25 @@
         <!-- Chapter 4: Marine Coders Operating Model -->
         <section
           id="chapter-4"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#chapter-4"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Chapter 4</div>
-              <div class="chapter-title my-2">Marine Coders Operating Model</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Chapter 4</div>
+              <div class="text-3xl font-bold my-2">Marine Coders Operating Model</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">"Talk is cheap. Show me the code."</p>
               <p class="text-sm text-gray-400">- Linus Torvalds</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-6 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">"War is ninety percent information."</p>
               <p class="text-sm text-gray-400">- Napoleon Bonaparte</p>
             </blockquote>
@@ -775,20 +697,20 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Recruiting</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Recruiting</h4>
             <p class="dark:text-white mb-4">
               The Marine Coders work closely with the MIU Talent Management Office and COMMSTRAT team for recruiting members of the team. In so doing, they will prioritize identifying Marines with a
               demonstrated interest in software development, a baseline of technical proficiency, and the maturity to operate independently within a mission-focused, self-directed environment.
             </p>
 
-            <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Eligibility and Selection</h5>
+            <h5 class="text-lg font-semibold text-[#059669] mb-3">Eligibility and Selection</h5>
             <ul class=" dark:text-white space-y-2 mb-4">
               <li>• Reservists with industry experience in software development, platform engineering, data, or product management</li>
               <li>• Active-duty Marines with technical aptitude and coding experience looking to transition to the Marine Corps Reserve</li>
               <li>• Prospective candidates must apply through MIU recruitment channels</li>
             </ul>
 
-            <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Pathways to Become a Marine Coder</h5>
+            <h5 class="text-lg font-semibold text-[#059669] mb-3">Pathways to Become a Marine Coder</h5>
             <ul class="dark:text-white space-y-2">
               <li>• Reserve inter-unit transfer or joining MIU through talent board process</li>
               <li>• Active Duty Transition – Marines transitioning from active service with technical skills can join via the Direct Affiliation Program (DAP) to MIU</li>
@@ -798,7 +720,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Screening</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Screening</h4>
             <p class="dark:text-white mb-0">
               The MIU Talent Management Office will conduct the initial screening process for Marine Coders, evaluating candidates based on the aforementioned criteria as well as the practical
               administrative requirements necessary for onboarding. Once a candidate has been screened and approved by Talent Management, the Marine Coders team will conduct a secondary assessment,
@@ -807,7 +729,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Training</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Training</h4>
             <p class="dark:text-white mb-0">
               Our developers operate under a unique training model that emphasizes self-directed, asynchronous learning to maintain proficiency in their billet. Each Marine is individually responsible
               for identifying and addressing any skill gaps related to their billet requirements, leveraging online resources, peer collaboration, and real-world project experience to stay
@@ -818,7 +740,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Employment</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Employment</h4>
             <p class="dark:text-white mb-4">
               As with all reservists, Marine Coders are required to achieve a satisfactory year by earning at least 50 retirement points per anniversary year (not a calendar year). There are many ways
               to earn these 50 points, but a conventional means to do so is through a combination of the main Marine Coders events throughout the year, to include:
@@ -837,7 +759,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Collaboration with MCSWF and the Marine Corps</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Collaboration with MCSWF and the Marine Corps</h4>
             <p class="dark:text-white mb-4">To ensure mission alignment, Marine Coders maintain structured engagement with MCSWF and other Marine Corps stakeholders through:</p>
             <ul class=" dark:text-white space-y-2 mb-4">
               <li>
@@ -852,7 +774,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Scalability and Future Growth</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Scalability and Future Growth</h4>
             <p class="dark:text-white mb-4">As Marine Coders scale in numbers and capability, the operating model will evolve to support:</p>
             <ul class=" dark:text-white space-y-2 mb-4">
               <li>• Rotational Tasking Model – Aligning projects with seasonal availability of Reservists, allowing teams to cycle between development, mentorship, and operational support roles</li>
@@ -864,7 +786,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Scope of Marine Coders' Work</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Scope of Marine Coders' Work</h4>
             <p class="dark:text-white mb-4">
               While the Marine Coders team represents a significant advancement in the Marine Corps' ability to deliver organic software capability, it is essential to understand the scope and scale
               at which this capability is most effectively employed. Marine Coders are not intended to serve as a replacement for traditional acquisition pathways, nor are they structured to support
@@ -894,25 +816,25 @@
         <!-- Chapter 5: Impact and Future Operations -->
         <section
           id="chapter-5"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#chapter-5"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Chapter 5</div>
-              <div class="chapter-title my-2">Impact and Future Operations</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Chapter 5</div>
+              <div class="text-3xl font-bold my-2">Impact and Future Operations</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">"Measuring programming progress by lines of code is like measuring aircraft building progress by weight."</p>
               <p class="text-sm text-gray-400">- Bill Gates</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic bg-green-100 bg-opacity-5">
+            <blockquote class="border-l-4 border-[#059669] pl-4 mb-6 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">"The most dangerous phrase: we've always done it this way."</p>
               <p class="text-sm text-gray-400">- Dr. Admiral Grace Hopper</p>
             </blockquote>
@@ -961,8 +883,8 @@
 
         <!-- Conclusion -->
         <section class="mb-16">
-          <div class="border-l-4 border-mcswf-gold p-6 mb-8">
-            <h2 class="text-3xl font-bold text-mcswf-gold mb-2">CONCLUSION</h2>
+          <div class="border-l-4 border-[#059669] p-6 mb-8">
+            <h2 class="text-3xl font-bold text-[#059669] mb-2">CONCLUSION</h2>
           </div>
 
           <div class="p-6 mb-8">
@@ -989,20 +911,20 @@
         <!-- Technical Manager Billet Description -->
         <section
           id="technical-manager"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#technical-manager"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Appendix</div>
-              <div class="chapter-title my-2">Technical Manager Billet Description</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Appendix</div>
+              <div class="text-3xl font-bold my-2">Technical Manager Billet Description</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Billet Description</h4>
             <p class="dark:text-white mb-4">
               The Technical Manager (Senior Software Developer) serves as the principal technical lead within the Marine Coders team, providing both hands-on software development and strategic
               technical guidance across multiple projects. This billet is responsible for shaping technical direction, mentoring junior developers, and ensuring the delivery of secure, scalable, and
@@ -1021,7 +943,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Primary Duties and Responsibilities</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Lead the technical design, development, and deployment of full-stack software applications</li>
               <li>• Architect scalable, maintainable systems using modern development frameworks and tools</li>
@@ -1035,7 +957,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Preferred Skills and Experience</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Proficiency in multiple modern programming languages and frameworks (e.g., React, Spring Boot, TypeScript, Python, Java, SQL, Git)</li>
               <li>• Experience leading software development efforts or architecting complex systems in production environments</li>
@@ -1050,20 +972,20 @@
         <!-- Software Engineer Billet Description -->
         <section
           id="software-engineer"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#software-engineer"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Appendix</div>
-              <div class="chapter-title my-2">Software Engineer Billet Description</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Appendix</div>
+              <div class="text-3xl font-bold my-2">Software Engineer Billet Description</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Billet Description</h4>
             <p class="dark:text-white mb-4">
               The Marine Corps Reserve Software Developer serves as a key member of a cross-functional development team responsible for the design, development, deployment, and maintenance of software
               solutions in direct support of Marine Corps operational and administrative needs. This billet supports the mission of the Marine Coders and other Reserve-led digital initiatives by
@@ -1082,7 +1004,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Primary Duties and Responsibilities</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Develop and maintain software applications using modern programming languages and frameworks (e.g., React, Spring Boot, Python, TypeScript, SQL)</li>
               <li>• Contribute to tactical applications such as ATAK plugins or edge-deployable web applications</li>
@@ -1094,7 +1016,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Preferred Skills and Experience</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Proficiency in one or more of the following: React, Spring Boot, Python, Java, Android/Kotlin, SQL, TypeScript, Docker, Git</li>
               <li>• Familiarity with tactical environments, military workflows, or digital modernization efforts within the DoD</li>
@@ -1108,20 +1030,20 @@
         <!-- Data Scientist/AI Engineer Billet Description -->
         <section
           id="data-scientist"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#data-scientist"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Appendix</div>
-              <div class="chapter-title my-2">Data Scientist/AI Engineer (Data) Billet Description</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Appendix</div>
+              <div class="text-3xl font-bold my-2">Data Scientist/AI Engineer (Data) Billet Description</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Billet Description</h4>
             <p class="dark:text-white mb-4">
               The Data Scientist / AI Engineer supports the integration of data-driven decision-making and artificial intelligence capabilities into Marine Corps operations and institutional
               functions. These Marines serve on cross-functional teams and are responsible for the collection, analysis, visualization, and modeling of data to inform warfighter needs, improve
@@ -1138,7 +1060,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Primary Duties and Responsibilities</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Design and execute data analyses to support operational planning, readiness, and performance optimization</li>
               <li>• Build and maintain data pipelines, ETL processes, and automated analytics workflows</li>
@@ -1151,7 +1073,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Preferred Skills and Experience</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Proficiency in Python, R, SQL, or other data science languages and tools</li>
               <li>• Experience with pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, or similar frameworks</li>
@@ -1165,20 +1087,20 @@
         <!-- Design Strategist Billet Description -->
         <section
           id="design-strategist"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#design-strategist"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Appendix</div>
-              <div class="chapter-title my-2">Design Strategist Billet Description</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Appendix</div>
+              <div class="text-3xl font-bold my-2">Design Strategist Billet Description</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Billet Description</h4>
             <p class="dark:text-white mb-4">
               The Design Strategist serves as the primary advocate for the end user within the Marine Coders team, ensuring that software solutions are intuitive, usable, and tailored to the
               operational needs of Marines. This billet plays a critical role in bridging the gap between users and developers by conducting research that informs design decisions across the full
@@ -1198,7 +1120,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Primary Duties and Responsibilities</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Plan and execute user research efforts, including interviews, contextual inquiries, usability tests, and surveys</li>
               <li>• Synthesize research findings into clear, actionable insights to inform design and development decisions</li>
@@ -1211,7 +1133,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Preferred Skills and Experience</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Experience conducting, synthesizing, and communicating UX research using both qualitative and quantitative methods</li>
               <li>• Creation of design artifacts such as journey maps, wireframes, prototypes</li>
@@ -1228,20 +1150,20 @@
         <!-- Product Manager Billet Description -->
         <section
           id="product-manager"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#product-manager"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Appendix</div>
-              <div class="chapter-title my-2">Product Manager (PM) Billet Description</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Appendix</div>
+              <div class="text-3xl font-bold my-2">Product Manager (PM) Billet Description</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Billet Description</h4>
             <p class="dark:text-white mb-4">
               The Product Manager serves as the strategic and operational lead for software product development within the Marine Coders team. This billet is responsible for identifying and
               prioritizing operational needs, translating them into actionable product requirements, and guiding cross-functional teams through the delivery of effective, user-centered software
@@ -1258,7 +1180,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Primary Duties and Responsibilities</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Define product goals, roadmaps, and success criteria in collaboration with stakeholders and users</li>
               <li>• Translate operational needs into clear, prioritized user stories and technical requirements</li>
@@ -1272,7 +1194,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Preferred Skills and Experience</h4>
             <ul class="dark:text-white space-y-2">
               <li>• Experience leading software or digital product development efforts using agile or lean methodologies</li>
               <li>• Strong skills in requirements gathering, user story writing, and backlog management</li>
@@ -1288,16 +1210,16 @@
         <!-- Core Skills for All Marine Coders -->
         <section
           id="core-skills"
-          class="mb-16">
-          <div class="chapter-header my-12 mb-8">
-            <div class="electric-line my-4"></div>
+          class="mb-16 scroll-mt-[150px]">
+          <div class="text-center my-12 mb-8">
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
             <a
               href="#core-skills"
-              class="clickable-header">
-              <div class="chapter-number mb-2">Appendix</div>
-              <div class="chapter-title my-2">Core Skills for All Marine Coders</div>
+              class="cursor-pointer transition-all duration-200 hover:text-[#059669] hover:-translate-y-0.5">
+              <div class="text-xl font-bold text-[#059669] uppercase tracking-wider mb-2 hover:text-[#10b981]">Appendix</div>
+              <div class="text-3xl font-bold my-2">Core Skills for All Marine Coders</div>
             </a>
-            <div class="electric-line my-4"></div>
+            <div class="h-0.5 bg-gradient-to-r from-transparent via-[#059669] to-transparent shadow-[0_0_4px_#059669,0_0_8px_#059669,0_0_12px_#10b981] animate-[electric-pulse_4s_ease-in-out_infinite_alternate] my-4"></div>
           </div>
 
           <div class="p-6 mb-8">
@@ -1306,11 +1228,11 @@
               competencies enable collaboration, increase interoperability, and ensure a baseline level of technical fluency across the team.
             </p>
 
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Foundational Technical Skills</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Foundational Technical Skills</h4>
 
             <div class="space-y-6">
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Git & Version Control</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Git & Version Control</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Understand basic Git operations: clone, pull, commit, push, branching</li>
                   <li>• Comfortable using GitHub or GitLab for code and documentation management</li>
@@ -1319,7 +1241,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Setting Up a Local Development Environment</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Setting Up a Local Development Environment</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Ability to install and configure an IDE (e.g., VS Code, IntelliJ, PyCharm)</li>
                   <li>• Set up local environments using tools like Docker, Python virtual environments, or Node/npm</li>
@@ -1328,7 +1250,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Command Line Fundamentals</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Command Line Fundamentals</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Navigate directories, manage files, and run scripts via terminal or shell</li>
                   <li>• Useful across development, data analysis, and deployment tasks</li>
@@ -1336,7 +1258,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Understanding of APIs and JSON</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Understanding of APIs and JSON</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Familiarity with RESTful APIs, including how to test endpoints</li>
                   <li>• Able to read and work with JSON-formatted data</li>
@@ -1345,7 +1267,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Basic Data Literacy</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Basic Data Literacy</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Understand structured data formats such as CSV, JSON, and SQL</li>
                   <li>• Able to read and interpret simple datasets and write/read basic queries</li>
@@ -1354,7 +1276,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Software Development Lifecycle Awareness</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Software Development Lifecycle Awareness</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Understands agile concepts like sprints, user stories, and minimum viable products (MVPs)</li>
                   <li>• Familiar with testing, code review, and deployment cycles</li>
@@ -1362,7 +1284,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Security & Operational Discipline</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Security & Operational Discipline</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Basic awareness of DoD cybersecurity principles</li>
                   <li>• Understands the importance of secure data handling, access control, and compliance</li>
@@ -1371,7 +1293,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Documentation & Communication</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Documentation & Communication</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Able to write and read clear README files, usage guides, and process documentation</li>
                   <li>• Comfortable with collaborative documentation tools (e.g., Markdown, Google Docs)</li>
@@ -1380,7 +1302,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">Deployment Awareness</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">Deployment Awareness</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Understands the general process of how code moves from development to production</li>
                   <li>• Familiar with CI/CD principles and configuration basics (e.g., YAML pipeline files)</li>
@@ -1389,7 +1311,7 @@
               </div>
 
               <div>
-                <h5 class="text-lg font-semibold text-mcswf-gold mb-3">UX and User Empathy</h5>
+                <h5 class="text-lg font-semibold text-[#059669] mb-3">UX and User Empathy</h5>
                 <ul class="dark:text-white space-y-1 ml-4">
                   <li>• Understands the value of usability, clarity, and responsive interfaces</li>
                   <li>• Appreciates the importance of user feedback and intuitive design</li>
@@ -1400,7 +1322,7 @@
           </div>
 
           <div class="p-6 mb-8">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Recommended Tools and Platforms for Familiarity</h4>
+            <h4 class="text-xl font-semibold text-[#059669] mb-4">Recommended Tools and Platforms for Familiarity</h4>
             <ul class="dark:text-white space-y-2">
               <li>• GitHub or GitLab (for version control and collaboration)</li>
               <li>• Visual Studio Code (or another preferred IDE)</li>

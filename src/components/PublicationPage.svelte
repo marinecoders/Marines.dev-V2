@@ -168,7 +168,7 @@
   <!-- Mobile TOC Drawer -->
   <div
     bind:this={drawer}
-    class="lg:hidden fixed left-0 top-0 h-full w-80 max-w-[85vw] dark:bg-gray-800 bg-gray-300 shadow-xl z-50 overflow-y-auto transform transition-transform duration-300 ease-in-out"
+    class="lg:hidden fixed left-0 top-0 h-full w-80 max-w-[85vw] bg-gray-700 shadow-xl z-50 overflow-y-auto transform transition-transform duration-300 ease-in-out"
     class:-translate-x-full={!drawerOpen}>
     <div class="p-6">
       <div class="flex justify-between items-center mb-6">
@@ -191,27 +191,27 @@
         <a
           href="#chapter-1"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 1: The History of the Marine Coders</a>
         <a
           href="#chapter-2"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 2: Mission, Vision, and Core Values</a>
         <a
           href="#chapter-3"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 3: Marine Coders Organization and Structure</a>
         <a
           href="#chapter-4"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 4: Marine Coders Operating Model</a>
         <a
           href="#chapter-5"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Chapter 5: Impact and Future Operations</a>
       </div>
 
@@ -223,39 +223,39 @@
         <a
           href="#technical-manager"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Technical Manager Billet Description</a>
         <a
           href="#software-engineer"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Software Engineer Billet Description</a>
         <a
           href="#data-scientist"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Data Scientist/AI Engineer (Data) Billet Description</a>
         <a
           href="#design-strategist"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Design Strategist Billet Description</a>
         <a
           href="#product-manager"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Product Manager (PM) Billet Description</a>
         <a
           href="#core-skills"
           on:click={handleTocLinkClick}
-          class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+          class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
           >Core Skills for All Marine Coders</a>
       </div>
     </div>
   </div>
 
   <!-- Main Content Container -->
-  <div class="max-w-[1400px] mx-auto px-2 sm:px-4 lg:px-6 py-16">
+  <div class="max-w-[1400px] mx-auto px-2 sm:px-4 lg:px-6 py-8">
     <div class="grid grid-cols-1 lg:grid-cols-[350px_1fr] gap-6 lg:gap-8 min-h-screen lg:-ml-16">
       <!-- Desktop Table of Contents -->
       <aside class="hidden lg:block lg:sticky lg:top-1/2 ml-8 lg:-translate-y-64 h-fit p-4 sm:p-5 lg:p-6 bg-transparent border-0 rounded-none backdrop-blur-none shadow-none">
@@ -268,23 +268,23 @@
           </h3>
           <a
             href="#chapter-1"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 1: The History of the Marine Coders</a>
           <a
             href="#chapter-2"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 2: Mission, Vision, and Core Values</a>
           <a
             href="#chapter-3"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 3: Marine Coders Organization and Structure</a>
           <a
             href="#chapter-4"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 4: Marine Coders Operating Model</a>
           <a
             href="#chapter-5"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Chapter 5: Impact and Future Operations</a>
         </div>
 
@@ -295,27 +295,27 @@
           </h3>
           <a
             href="#technical-manager"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Technical Manager Billet Description</a>
           <a
             href="#software-engineer"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Software Engineer Billet Description</a>
           <a
             href="#data-scientist"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Data Scientist/AI Engineer (Data) Billet Description</a>
           <a
             href="#design-strategist"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Design Strategist Billet Description</a>
           <a
             href="#product-manager"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Product Manager (PM) Billet Description</a>
           <a
             href="#core-skills"
-            class="block py-2 text-gray-700 dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
+            class="block py-2  dark:text-gray-100 no-underline border-l-2 border-transparent pl-3 transition-all duration-200 text-sm rounded my-0.5 hover:text-[var(--electric-green)] hover:border-l-[var(--electric-green)] hover:translate-x-1 hover:bg-[rgba(5,150,105,0.1)] dark:hover:bg-[rgba(5,150,105,0.2)]"
             >Core Skills for All Marine Coders</a>
         </div>
       </aside>
@@ -324,7 +324,7 @@
       <main class="main-content">
         <!-- Publication Header -->
         <div class="text-center mb-16">
-          <div class="p-8 mb-8">
+          <div class="mb-8">
             <div class="electric-line"></div>
             <h1 class="text-4xl md:text-5xl font-bold text-mcswf-gold mb-4">Marine Coders Publication 1</h1>
             <div class="flex justify-center mb-4">
@@ -348,7 +348,7 @@
 
         <!-- Publication Info -->
         <div class=" border border-mcswf-gold p-6 mb-12">
-          <div class="text-center text-black dark:text-white">
+          <div class="text-center text-mcswf-gold dark:text-white">
             <p class="text-lg font-semibold mb-2">Marine Innovation Unit</p>
             <p class="text-lg font-semibold mb-2">Marine Forces Reserve</p>
             <p class="mb-2">10 McDonald Street Stewart ANG Base</p>
@@ -364,10 +364,10 @@
           </div>
 
           <div class=" p-6 mb-6">
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               This publication is designed to guide current and future Marine Coders in understanding their role, responsibilities, and impact. This document will be updated as situations change.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The Marine Corps is at an inflection point. The nature of warfare is evolving rapidly, driven by technological advancement and the increasing digitization of the modern battlefield. To
               maintain our competitive advantage and ensure mission success, the Marine Corps must embrace software development as a core warfighting capability.
             </p>
@@ -375,11 +375,11 @@
 
           <div class=" p-6 mb-6">
             <h3 class="text-2xl font-bold text-mcswf-gold mb-4">THE NECESSITY OF SOFTWARE IN THE MARINE CORPS</h3>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The modern battlefield is digital, and nearly every aspect of modern combat operations relies on software in some capacity. From command and control (C2) systems to logistics management,
               software underpins the ability to fight and win. Consider the following examples:
             </p>
-            <ul class="text-black dark:text-white space-y-2 mb-4">
+            <ul class=" dark:text-white space-y-2 mb-4">
               <li>• Precision guided munitions like JDAMs and GMLRS rely on software for targeting and guidance</li>
               <li>• Tactical data networks like Link-16 and Blue Force Tracker leverage software for real-time battlefield awareness and coordination</li>
               <li>• GCSS-MC (Global Combat Support System-Marine Corps) manages supply chains, vehicle readiness, and sustainment planning—all software-driven</li>
@@ -387,12 +387,12 @@
             </ul>
           </div>
 
-          <div class=" p-6 mb-6">
+          <div class=" p-6">
             <h3 class="text-2xl font-bold text-mcswf-gold mb-4">WHO ARE THE MARINE CODERS</h3>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Marine Coders are the digital warfighters of the Marine Corps, bringing world-class software development skills to enhance operational effectiveness and modern warfighting capabilities.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               As a part of the Marine Innovation Unit (MIU), Marine Coders leverage the vast expertise of Marine Reservists who have excelled in the technology sector, bringing cutting-edge
               innovation, industry best practices, and real-world experience to Marine Corps modernization efforts.
             </p>
@@ -400,27 +400,27 @@
 
           <div class=" p-6">
             <h3 class="text-2xl font-bold text-mcswf-gold mb-4">RELEVANCE TO FORCE DESIGN</h3>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The Marine Corps' Force Design initiative is a transformative effort to reshape the force to meet the demands of the future fight. As the modern battlefield becomes increasingly
               digitized, the ability to develop software at the tactical edge is no longer a luxury—it is a necessity. Marine Coders directly support Force Design by enabling rapid, adaptive, and
               secure software solutions that enhance warfighting capabilities across all domains.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Force Design envisions a Marine Corps capable of operating within contested maritime spaces, leveraging distributed forces, and integrating multi-domain reconnaissance and
               counter-reconnaissance to gain a decisive advantage. To achieve this, the force must be equipped with software-driven capabilities that provide:
             </p>
-            <ul class="text-black dark:text-white space-y-2 mb-4">
+            <ul class=" dark:text-white space-y-2 mb-4">
               <li>• Real-time data processing and decision support to enhance operational command and control</li>
               <li>• Tactical AI/ML applications to improve battlefield awareness, automate threat detection, and optimize logistics</li>
               <li>• Cyber resilience and zero-trust security architectures to safeguard digital infrastructure in contested environments</li>
               <li>• Interoperability with joint and allied forces through seamless software integration and common data environments</li>
               <li>• Edge computing and cloud-based solutions to ensure connectivity and operational effectiveness even in degraded conditions</li>
             </ul>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Recent global conflicts have highlighted the importance of software-driven lethality and resilience. Digital applications have been used to coordinate fires, enhance targeting precision,
               and facilitate agile logistics—capabilities that Marine Coders will bring to the fight.
             </p>
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               Through their work with Marine Corps Software Factory (MCSWF) and other Marine Corps stakeholders, Marine Coders ensure that the Marine Corps remains at the forefront of digital
               warfighting. The ability to develop, deploy, and sustain software solutions in a rapidly evolving battlespace will be a defining feature of 21st-century warfare, and Marine Coders are
               leading this charge.
@@ -428,72 +428,7 @@
           </div>
         </section>
 
-        <!-- Chapter 1: The History of the Marine Coders -->
-        <section
-          id="chapter-1"
-          class="mb-18">
-          <div class="chapter-header">
-            <div class="electric-line"></div>
-            <a
-              href="#chapter-1"
-              class="clickable-header">
-              <div class="chapter-number">Chapter 1</div>
-              <div class="chapter-title">The History of the Marine Coders</div>
-            </a>
-            <div class="electric-line"></div>
-          </div>
-
-          <div class=" p-6 mb-6">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
-              <p class="mb-2">"War is both timeless and ever changing. While the basic nature of war is constant, the means and methods we use evolve continuously."</p>
-              <p class="text-sm text-gray-500 dark:text-gray-300">- MCDP 1, Warfighting</p>
-            </blockquote>
-
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
-              <p class="mb-2">
-                "The Marine Corps must become a more agile, resilient, and technologically advanced force. We must modernize—not for the sake of change, but to meet the demands of the future operating
-                environment."
-              </p>
-              <p class="text-sm text-gray-500 dark:text-gray-300">- Force Design 2030</p>
-            </blockquote>
-
-            <p class="text-black dark:text-white mb-4">The story of the Marine Coders is a story of initiative, grassroots-energy, and impact.</p>
-
-            <p class="text-black dark:text-white mb-4">
-              The team was created in 2020 by two Marines - Major Drew Hutcheon and Captain Collin Chew - who saw something the Marine Corps lacked: organic software capability. While the force prided
-              itself on being agile, expeditionary, and lethal, its approach to software lagged behind. Constrained by bureaucracy, compliance-first thinking, and reliance on external contractors, the
-              Marine Corps needed a new solution. The Marines were becoming increasingly dependent on digital systems, yet the Corps had few warfighters who could actually build or fix the software
-              they depended on.
-            </p>
-
-            <p class="text-black dark:text-white mb-4">So, rather than wait for a formal directive or funding line, these two leaders started a community.</p>
-
-            <p class="text-black dark:text-white mb-4">
-              They called it Marine Coders—a grassroots, bottoms-up initiative built not from a staffing document, but from a shared passion. It began informally, as a community of interest, with
-              Marines from across the Total Force—active duty, reservists, enlisted and officers—connecting through chat servers, Git repositories, and weekend code sprints. Many had backgrounds in
-              computer science, engineering, or data, but no formal place to apply those skills within the Marine Corps. Marine Coders gave them that place.
-            </p>
-
-            <p class="text-black dark:text-white">
-              What made Marine Coders unique wasn't just the technology it produced - it was the way it was built. It wasn't born out of a tasker or a Program Objective Memorandum (POM) cycle. It
-              emerged organically, driven by Marines who saw that coding could be a form of warfighting. And through that lens, they began delivering tools that mattered - apps used in real
-              operations, software that replaced spreadsheets and PowerPoint, and tools built by Marines, for Marines.
-            </p>
-          </div>
-
-          <div class=" p-6">
-            <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Key Milestones and Dates</h4>
-            <p class="text-black dark:text-white mb-4">For a detailed timeline of Marine Coders milestones and key dates, please visit our comprehensive history page.</p>
-            <div class="text-center">
-              <a
-                href="/timeline"
-                class="inline-block bg-mcswf-gold text-black font-bold py-3 px-6 rounded hover:bg-mcswf-gold-dark transition-colors duration-200">
-                VIEW MARINE CODERS HISTORY
-              </a>
-            </div>
-          </div>
-        </section>
-
+        
         <!-- Chapter 1: The History of the Marine Coders -->
         <section
           id="chapter-1"
@@ -510,50 +445,50 @@
           </div>
 
           <div class=" p-6 mb-6">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">"War is both timeless and ever changing. While the basic nature of war is constant, the means and methods we use evolve continuously."</p>
-              <p class="text-sm text-gray-500 dark:text-gray-300">- MCDP 1, Warfighting</p>
+              <p class="text-sm text-gray-400">- MCDP 1, Warfighting</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">
                 "The Marine Corps must become a more agile, resilient, and technologically advanced force. We must modernize—not for the sake of change, but to meet the demands of the future operating
                 environment."
               </p>
-              <p class="text-sm text-gray-500 dark:text-gray-300">- Force Design 2030</p>
+              <p class="text-sm text-gray-400">- Force Design 2030</p>
             </blockquote>
 
-            <p class="text-black dark:text-white mb-4">The story of the Marine Coders is a story of initiative, grassroots-energy, and impact.</p>
+            <p class=" dark:text-white mb-4">The story of the Marine Coders is a story of initiative, grassroots-energy, and impact.</p>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The team was created in 2020 by two Marines - Major Drew Hutcheon and Captain Collin Chew - who saw something the Marine Corps lacked: organic software capability. While the force prided
               itself on being agile, expeditionary, and lethal, its approach to software lagged behind. Constrained by bureaucracy, compliance-first thinking, and reliance on external contractors, the
               Marine Corps needed a new solution. The Marines were becoming increasingly dependent on digital systems, yet the Corps had few warfighters who could actually build or fix the software
               they depended on.
             </p>
 
-            <p class="text-black dark:text-white mb-4">So, rather than wait for a formal directive or funding line, these two leaders started a community.</p>
+            <p class=" dark:text-white mb-4">So, rather than wait for a formal directive or funding line, these two leaders started a community.</p>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               They called it Marine Coders—a grassroots, bottoms-up initiative built not from a staffing document, but from a shared passion. It began informally, as a community of interest, with
               Marines from across the Total Force—active duty, reservists, enlisted and officers—connecting through chat servers, Git repositories, and weekend code sprints. Many had backgrounds in
               computer science, engineering, or data, but no formal place to apply those skills within the Marine Corps. Marine Coders gave them that place.
             </p>
 
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               What made Marine Coders unique wasn't just the technology it produced - it was the way it was built. It wasn't born out of a tasker or a Program Objective Memorandum (POM) cycle. It
               emerged organically, driven by Marines who saw that coding could be a form of warfighting. And through that lens, they began delivering tools that mattered - apps used in real
               operations, software that replaced spreadsheets and PowerPoint, and tools built by Marines, for Marines.
             </p>
           </div>
 
-          <div class=" p-6">
+          <div class="p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Key Milestones and Dates</h4>
-            <p class="text-black dark:text-white mb-4">For a detailed timeline of Marine Coders milestones and key dates, please visit our comprehensive history page.</p>
+            <p class=" dark:text-white mb-4">For a detailed timeline of Marine Coders milestones and key dates, please visit our comprehensive history page.</p>
             <div class="text-center">
               <a
                 href="/timeline"
-                class="inline-block bg-mcswf-gold text-black font-bold py-3 px-6 rounded hover:bg-mcswf-gold-dark transition-colors duration-200">
+                class="inline-block bg-mcswf-gold  font-bold py-3 px-6 rounded hover:bg-mcswf-gold-dark transition-colors duration-200">
                 VIEW MARINE CODERS HISTORY
               </a>
             </div>
@@ -575,28 +510,28 @@
             <div class="electric-line"></div>
           </div>
 
-          <div class=" p-6 mb-6">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+          <div class="p-6">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">
                 "It must be considered that there is nothing more difficult to carry out, nor more doubtful of success, nor more dangerous to handle, than to initiate a new order of things."
               </p>
-              <p class="text-sm">- Niccolo Machiavelli, The Prince</p>
+              <p class="text-sm text-gray-400">- Niccolo Machiavelli, The Prince</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">"There are two thousand years of experience to tell us that the only thing harder than getting a new idea into the military mind is to get an old idea out."</p>
-              <p class="text-sm">- Basil H. Liddell Hart, Thoughts on War</p>
+              <p class="text-sm text-gray-400">- Basil H. Liddell Hart, Thoughts on War</p>
             </blockquote>
           </div>
 
-          <div class=" p-6 mb-6">
+          <div class="p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">MISSION</h4>
-            <p class="text-black dark:text-white text-lg">To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps</p>
+            <p class=" dark:text-white text-lg">To design, develop, and deploy software solutions that enhance the lethality, agility, and effectiveness of the Marine Corps</p>
           </div>
 
-          <div class=" p-6 mb-6">
+          <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">VISION</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white">
               Transform the Marine Corps' software philosophy to a warfighting-first mindset that prioritizes lethality, agility, and operational effectiveness over acquisition cycles, centralization,
               and bureaucracy. Our vision is a Marine Corps where software is not just a support function but a combat multiplier - where Marines at the edge have the capability to build, modify, and
               deploy mission-critical software solutions in real-time.
@@ -605,7 +540,7 @@
 
           <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">CORE VALUES</h4>
-            <div class="space-y-6 text-black dark:text-white">
+            <div class="space-y-6  dark:text-white">
               <div>
                 <p class="mb-2">
                   <strong class="text-mcswf-gold">We are Marines first</strong>—regardless of our technical specialty or billet. Our work is grounded in the Marine Corps' core values of honor,
@@ -658,40 +593,40 @@
           </div>
 
           <div class=" p-6 mb-6">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">"Innovation distinguishes between a leader and a follower."</p>
-              <p class="text-sm">- Steve Jobs</p>
+              <p class="text-sm text-gray-400">- Steve Jobs</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">"Software is eating the world."</p>
-              <p class="text-sm">- Marc Andreesen</p>
+              <p class="text-sm text-gray-400">- Marc Andreesen</p>
             </blockquote>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Marine Coders operate as part of the Marine Innovation Unit (MIU), wherein they serve as a Direct Support Team (DST) to the Marine Corps Software Factory (MCSWF).
             </p>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The MIU is a recently formed unit and, as such, their organizational structure is still evolving. In general, the staffing model of the MIU depends on the DSTs who reside in the Client
               Management Group (CMG). These DSTs maintain standing relationships with select organizations within the Marine Corps (e.g. PACOM, TECOM, MCSWF). The DSTs identify needs for their
               respective organizations and scope those needs into engagements which can be staffed and supported by members of the MIU. Once the engagements are approved by MIU leadership, they are
               staffed by the talent support division and executed by the engagement management division.
             </p>
 
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               The Marine Coders are unique within this MIU operating model in that they identify MCSWF needs and staff the engagements to satisfy those needs themselves.
             </p>
           </div>
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Marine Coders Composition</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The Marine Coders development teams are designed for flexibility, incorporating a diversity of rank, skill sets, and technical expertise to ensure mission-critical software solutions can
               be developed efficiently. Unlike traditional Marine Corps units, where rank often dictates leadership roles, Marine Coders teams operate with meritocratic, skill-based leadership
               ensuring that technical expertise, product vision, and operational need drive decision-making.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Administratively, the Marine Coders team is comprised of four cross functional development teams. These teams are foundational to how Marine Coders recruits, screens, trains, and
               performs administrative and logistical functions. If possible, the integrity of these teams may be preserved for development efforts in support of customers. It is worth noting, however,
               that this team structure is not forced on problems. The Marine Coders are flexible in staffing individual teams to meet unique challenges for customer needs. In practicality, this means
@@ -701,12 +636,12 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Marine Coders Capabilities</h4>
-            <p class="text-black dark:text-white mb-4">The Marine Coders team maintains six core capabilities, listed below (note: order is not meant to indicate priority).</p>
+            <p class=" dark:text-white mb-4">The Marine Coders team maintains six core capabilities, listed below (note: order is not meant to indicate priority).</p>
 
             <div class="space-y-6">
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Tactical Application Development (TAK-Specific)</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• TAK Plugin Development – Building and extending ATAK and WinTAK plugins</li>
                   <li>• Geospatial & Mapping (GIS) – Working with geospatial data for geospatial overlays</li>
                   <li>• UI Design – Understanding military UI/UX constraints and user workflows in the field</li>
@@ -715,7 +650,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Web Development</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Developing responsive, accessible, and performant user interfaces; translating UI/UX designs into functional components</li>
                   <li>• Effectively managing complex application states and integrating data from diverse sources</li>
                   <li>• Applying human-centered design principles with prototyping skills in Figma; writing comprehensive unit, integration, and end-to-end tests</li>
@@ -724,7 +659,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Backend Development</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Building modular, scalable backend applications</li>
                   <li>• Designing efficient API structures for TAK and web apps</li>
                   <li>• Secure access control for military applications and databases</li>
@@ -733,7 +668,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">DevSecOps & Deployment</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Ensuring apps are deployable across environments</li>
                   <li>• Automating builds, testing, and deployment</li>
                   <li>• Managing deployment configurations efficiently</li>
@@ -742,7 +677,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Agile & Cross-Functional Collaboration</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Working in scrum or Kanban environments to deliver iteratively</li>
                   <li>• Engaging with customers to ensure applications meet real-world mission requirements</li>
                   <li>• Maintaining clear, well-documented code and processes for maintainability</li>
@@ -752,7 +687,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Data Science and AI Development</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Machine Learning Model Development - Building, training, and deploying models to support decision-making and operational automation</li>
                   <li>• Data Engineering & Pipeline Management - Creating scalable data processing and ingestion pipelines for real-time and batch data</li>
                   <li>• Predictive Analytics & Advanced Insights - Leveraging statistical analysis and ML techniques to derive actionable insights and forecast operational outcomes</li>
@@ -763,9 +698,9 @@
 
           <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Roles and Responsibilities</h4>
-            <p class="text-black dark:text-white mb-4">There are five primary roles on Marine Coder's development teams. A high-level overview of the roles and their responsibilities follows:</p>
+            <p class=" dark:text-white mb-4">There are five primary roles on Marine Coder's development teams. A high-level overview of the roles and their responsibilities follows:</p>
 
-            <div class="space-y-4 text-black dark:text-white">
+            <div class="space-y-4  dark:text-white">
               <div>
                 <p class="font-semibold text-mcswf-gold">Technical Managers</p>
                 <p>
@@ -827,17 +762,17 @@
           </div>
 
           <div class=" p-6 mb-6">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">"Talk is cheap. Show me the code."</p>
-              <p class="text-sm">- Linus Torvalds</p>
+              <p class="text-sm text-gray-400">- Linus Torvalds</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">"War is ninety percent information."</p>
-              <p class="text-sm">- Napoleon Bonaparte</p>
+              <p class="text-sm text-gray-400">- Napoleon Bonaparte</p>
             </blockquote>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Marine Coders operate within a hybrid software development framework, balancing structured collaboration with the Marine Corps Software Factory (MCSWF) and asynchronous, self-driven
               work. Given the part-time nature of the force, the operating model prioritizes high-impact development cycles, clear prioritization of projects, and streamlined workflows that maximize
               effectiveness within the constraints of approximately 40 drill periods and two weeks of annual training per Marine Coder.
@@ -846,20 +781,20 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Recruiting</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The Marine Coders work closely with the MIU Talent Management Office and COMMSTRAT team for recruiting members of the team. In so doing, they will prioritize identifying Marines with a
               demonstrated interest in software development, a baseline of technical proficiency, and the maturity to operate independently within a mission-focused, self-directed environment.
             </p>
 
             <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Eligibility and Selection</h5>
-            <ul class="text-black dark:text-white space-y-2 mb-4">
+            <ul class=" dark:text-white space-y-2 mb-4">
               <li>• Reservists with industry experience in software development, platform engineering, data, or product management</li>
               <li>• Active-duty Marines with technical aptitude and coding experience looking to transition to the Marine Corps Reserve</li>
               <li>• Prospective candidates must apply through MIU recruitment channels</li>
             </ul>
 
             <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Pathways to Become a Marine Coder</h5>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Reserve inter-unit transfer or joining MIU through talent board process</li>
               <li>• Active Duty Transition – Marines transitioning from active service with technical skills can join via the Direct Affiliation Program (DAP) to MIU</li>
               <li>• Lateral Entry from Civilian Sector – Industry professionals with prior Marine Corps service can return to uniform as Marine Coders.</li>
@@ -869,7 +804,7 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Screening</h4>
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               The MIU Talent Management Office will conduct the initial screening process for Marine Coders, evaluating candidates based on the aforementioned criteria as well as the practical
               administrative requirements necessary for onboarding. Once a candidate has been screened and approved by Talent Management, the Marine Coders team will conduct a secondary assessment,
               focusing on technical proficiency and overall maturity, with maturity being the primary consideration.
@@ -878,7 +813,7 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Training</h4>
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               Our developers operate under a unique training model that emphasizes self-directed, asynchronous learning to maintain proficiency in their billet. Each Marine is individually responsible
               for identifying and addressing any skill gaps related to their billet requirements, leveraging online resources, peer collaboration, and real-world project experience to stay
               mission-ready. This decentralized approach ensures that Marines are continuously improving their technical expertise, adapting to emerging technologies, and remaining fully capable.
@@ -889,11 +824,11 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Employment</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               As with all reservists, Marine Coders are required to achieve a satisfactory year by earning at least 50 retirement points per anniversary year (not a calendar year). There are many ways
               to earn these 50 points, but a conventional means to do so is through a combination of the main Marine Coders events throughout the year, to include:
             </p>
-            <ul class="text-black dark:text-white space-y-2 mb-4">
+            <ul class=" dark:text-white space-y-2 mb-4">
               <li>• Annual Training in support of MCSWF (14 points) - Once a year, the Marine Coders team will conduct a two-week on-site development sprint in support of MCSWF</li>
               <li>• One-week offsite IDT in support of MCSWF (10 points) - Once a year, the Marine Coders team will conduct a one-week on-site development sprint in support of MCSWF</li>
               <li>• One-week offsite IDT for MIU (10 points) - In general, plan on a one-week unit event in November for all-hands training and the Marine Corps ball</li>
@@ -903,13 +838,13 @@
               </li>
               <li>• Each Friday, the Marine Coders team hosts office hours from 11am to 12am EST</li>
             </ul>
-            <p class="text-black dark:text-white">While specific timelines vary year-to-year, a reasonable annual timeline for the Marine Coders team is as follows:</p>
+            <p class=" dark:text-white">While specific timelines vary year-to-year, a reasonable annual timeline for the Marine Coders team is as follows:</p>
           </div>
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Collaboration with MCSWF and the Marine Corps</h4>
-            <p class="text-black dark:text-white mb-4">To ensure mission alignment, Marine Coders maintain structured engagement with MCSWF and other Marine Corps stakeholders through:</p>
-            <ul class="text-black dark:text-white space-y-2 mb-4">
+            <p class=" dark:text-white mb-4">To ensure mission alignment, Marine Coders maintain structured engagement with MCSWF and other Marine Corps stakeholders through:</p>
+            <ul class=" dark:text-white space-y-2 mb-4">
               <li>
                 • Quarterly Planning Sessions – Marine Coders participate in roadmap planning and feature prioritization with MCSWF leadership to ensure efforts remain aligned with Force Design 2030
                 objectives
@@ -923,8 +858,8 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Scalability and Future Growth</h4>
-            <p class="text-black dark:text-white mb-4">As Marine Coders scale in numbers and capability, the operating model will evolve to support:</p>
-            <ul class="text-black dark:text-white space-y-2 mb-4">
+            <p class=" dark:text-white mb-4">As Marine Coders scale in numbers and capability, the operating model will evolve to support:</p>
+            <ul class=" dark:text-white space-y-2 mb-4">
               <li>• Rotational Tasking Model – Aligning projects with seasonal availability of Reservists, allowing teams to cycle between development, mentorship, and operational support roles</li>
               <li>
                 • Rapid Surge Capacity – Marine Coders can be activated on short-term orders during crises, ensuring the Marine Corps has a ready reserve of digital warfighters who can rapidly respond
@@ -935,25 +870,25 @@
 
           <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Scope of Marine Coders' Work</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               While the Marine Coders team represents a significant advancement in the Marine Corps' ability to deliver organic software capability, it is essential to understand the scope and scale
               at which this capability is most effectively employed. Marine Coders are not intended to serve as a replacement for traditional acquisition pathways, nor are they structured to support
               large-scale, multi-year, enterprise-wide software systems. These types of efforts - often requiring sustained funding, lifecycle management, systems integration, and long-term support -
               remain the responsibility of the established acquisition community and Program Managers.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Rather, Marine Coders are most effectively applied to discrete, well-bounded software problems, particularly those with a clear operational or tactical need and a well-defined end user.
               The team excels when positioned as the primary force responsible for delivery, leveraging its agility and proximity to the warfighter to iterate rapidly and deliver minimum viable
               capabilities within compressed timeframes. In this capacity, Marine Coders can shorten the gap between user-identified need and functional capability, enabling a more responsive and
               adaptive approach to software in support of current operations.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               This model aligns with the Marine Corps' broader emphasis on mission command, initiative, and adaptability. By focusing on problems that are small in scope but high in impact, Marine
               Coders are able to deliver solutions that address friction points across the force - whether in data collection, situational awareness, logistics visibility, or planning support. These
               solutions may not scale to the enterprise level, but they do scale to the needs of a battalion, a MEU, or a detachment - units whose effectiveness often hinges on timely access to
               tailored digital tools.
             </p>
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               The value of Marine Coders is not in replacing formal acquisition pipelines, but in augmenting the Corps' ability to deliver capability at the tactical edge. When applied to the right
               problems - those that are immediate, bounded, and operationally relevant - Marine Coders serve as a force multiplier, enabling Marines to adapt the digital battlespace with the same
               mindset they bring to physical maneuver.
@@ -977,34 +912,34 @@
           </div>
 
           <div class=" p-6 mb-6">
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-200 bg-green-100 bg-opacity-5">
               <p class="mb-2">"Measuring programming progress by lines of code is like measuring aircraft building progress by weight."</p>
-              <p class="text-sm">- Bill Gates</p>
+              <p class="text-sm text-gray-400">- Bill Gates</p>
             </blockquote>
 
-            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic text-gray-600 dark:text-gray-300">
+            <blockquote class="border-l-4 border-mcswf-gold pl-4 mb-6 italic bg-green-100 bg-opacity-5">
               <p class="mb-2">"The most dangerous phrase: we've always done it this way."</p>
-              <p class="text-sm">- Dr. Admiral Grace Hopper</p>
+              <p class="text-sm text-gray-400">- Dr. Admiral Grace Hopper</p>
             </blockquote>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Marine Coders have already begun to demonstrate meaningful impact across the force by delivering software capabilities that enhance mission effectiveness, accelerate decision-making, and
               reduce friction in both tactical and administrative environments. From building lightweight, deployable web applications to prototyping TAK plugins and automating critical workflows,
               Marine Coders have provided tangible, user-focused solutions that address operational needs in real time.
             </p>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               By embedding Marine software developers and technologists directly into problem-solving efforts, the Marine Corps gains not only functional tools, but also a responsive, agile capability
               that adapts to the pace of the modern battlefield. Unlike traditional acquisition cycles, which are often years in duration, Marine Coders are capable of delivering mission-relevant
               capabilities in weeks or even days. This ensures that warfighters receive tools when and where they need them—on timelines dictated by the mission, not by bureaucracy.
             </p>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Looking forward, Marine Coders will continue to expand their support to the Marine Corps Software factory, delivering software in support of their priorities, emerging operational
               concepts, and evolving mission sets. Areas of continued and future focus include:
             </p>
 
-            <ul class="text-black dark:text-white space-y-2 mb-4">
+            <ul class=" dark:text-white space-y-2 mb-4">
               <li>
                 • <strong>Cross-Functional Team Integration</strong> – Working in close collaboration with Marine operators, planners, and acquisition professionals to co-create solutions that reflect
                 tactical, operational, and strategic intent
@@ -1016,13 +951,13 @@
               </li>
             </ul>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               As the Marine Corps continues to modernize under the Force Design initiative, the demand for software that is secure, adaptable, and purpose-built for the warfighter will only grow.
               Marine Coders are uniquely positioned to meet this demand. Their ability to bridge operational insight with technical skill allows them to deliver high-impact solutions that scale from
               the fire team to the fleet.
             </p>
 
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               The future operating environment requires a force that thinks, decides, and acts at the speed of relevance. Marine Coders ensure the Marine Corps is not only ready for that future - but
               is actively shaping it.
             </p>
@@ -1036,18 +971,18 @@
           </div>
 
           <div class=" p-6">
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               As the Marine Corps continues its ambitious evolution through the Force Design initiative, the critical role played by software cannot be overstated. The digital battlefield demands
               warriors who are proficient not only in traditional warfighting but also in modern software engineering practices. Marine Coders, drawn from the ranks of skilled reservists with
               extensive industry experience, serve as an essential bridge between innovative technology and operational effectiveness.
             </p>
 
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Their unique combination of technical expertise, operational awareness, and adaptability enables the Marine Corps to swiftly respond to emerging challenges and exploit opportunities in
               real-time.
             </p>
 
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               Ultimately, the Marine Coders are at the forefront of shaping a Marine Corps equipped to prevail in digitally contested environments. By continually developing and updating this guiding
               document, we ensure that current and future Marine Coders understand the significance of their role, the breadth of their responsibilities, and their profound impact on national
               security. As warfare evolves, Marine Coders will remain central to maintaining the Marine Corps' decisive technological advantage - ready to face and overcome the digital battlespace
@@ -1073,17 +1008,17 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The Technical Manager (Senior Software Developer) serves as the principal technical lead within the Marine Coders team, providing both hands-on software development and strategic
               technical guidance across multiple projects. This billet is responsible for shaping technical direction, mentoring junior developers, and ensuring the delivery of secure, scalable, and
               mission-aligned software solutions that directly support Marine Corps operational and administrative priorities.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               As a senior member of a cross-functional team, the Technical Manager plays a key role in architecting systems, writing and reviewing code, and translating operational requirements into
               functional applications. They work in close coordination with product managers, UX designers, and stakeholders to ensure solutions are responsive to warfighter needs and are built with
               performance, usability, and security in mind.
             </p>
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               This billet requires a high level of technical expertise, initiative, and leadership. It is best suited for Marines with extensive software development experience and the ability to
               operate independently in a remote, asynchronous, and fast-paced environment. Technical Managers are expected to uphold engineering excellence while helping shape the digital capability
               of the Marine Corps. Strong leadership is the core of this billet as they have ultimate command of the team.
@@ -1092,7 +1027,7 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Lead the technical design, development, and deployment of full-stack software applications</li>
               <li>• Architect scalable, maintainable systems using modern development frameworks and tools</li>
               <li>• Write, test, and review code to ensure performance, security, and adherence to best practices</li>
@@ -1106,7 +1041,7 @@
 
           <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Proficiency in multiple modern programming languages and frameworks (e.g., React, Spring Boot, TypeScript, Python, Java, SQL, Git)</li>
               <li>• Experience leading software development efforts or architecting complex systems in production environments</li>
               <li>• Familiarity with tactical environments, military workflows, and digital modernization initiatives within the DoD</li>
@@ -1134,17 +1069,17 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The Marine Corps Reserve Software Developer serves as a key member of a cross-functional development team responsible for the design, development, deployment, and maintenance of software
               solutions in direct support of Marine Corps operational and administrative needs. This billet supports the mission of the Marine Coders and other Reserve-led digital initiatives by
               providing technically proficient Marines who can develop mission-relevant applications in an agile and responsive manner.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Software developers are expected to contribute across the entire software development lifecycle, including requirements gathering, system design, code implementation, testing, and
               deployment. Applications may include tactical decision aids, internal tools, web applications, data dashboards, and integrations with existing Marine Corps systems, including TAK-based
               platforms.
             </p>
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               This billet requires asynchronous, continuous training and participation, with Marines responsible for maintaining the skills and certifications necessary to perform in a modern software
               environment. Collaboration with other developers, product owners, and end-users is essential, and Marines in this billet must demonstrate maturity, operational awareness, and a
               continuous learning mindset.
@@ -1153,7 +1088,7 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Develop and maintain software applications using modern programming languages and frameworks (e.g., React, Spring Boot, Python, TypeScript, SQL)</li>
               <li>• Contribute to tactical applications such as ATAK plugins or edge-deployable web applications</li>
               <li>• Participate in agile development practices, including sprint planning, code reviews, and user feedback cycles</li>
@@ -1165,7 +1100,7 @@
 
           <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Proficiency in one or more of the following: React, Spring Boot, Python, Java, Android/Kotlin, SQL, TypeScript, Docker, Git</li>
               <li>• Familiarity with tactical environments, military workflows, or digital modernization efforts within the DoD</li>
               <li>• Experience with geospatial data formats (GeoPackage, KML, MBTiles) and platforms such as TAK is highly desirable</li>
@@ -1192,16 +1127,16 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The Data Scientist / AI Engineer supports the integration of data-driven decision-making and artificial intelligence capabilities into Marine Corps operations and institutional
               functions. These Marines serve on cross-functional teams and are responsible for the collection, analysis, visualization, and modeling of data to inform warfighter needs, improve
               operational efficiency, and enhance command and control (C2) capabilities.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Marines in this billet are expected to develop analytical tools and machine learning models tailored to tactical, operational, or administrative use cases. This may include building
               dashboards, data pipelines, recommendation systems, or AI-enabled decision support tools for planning, logistics, intelligence, and personnel systems.
             </p>
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               This is a technical, self-directed, and impact-oriented billet, requiring Marines to train asynchronously and apply industry-standard methods in data science and AI/ML. Collaboration
               with software developers, subject matter experts, and operational units is critical to mission success.
             </p>
@@ -1209,7 +1144,7 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Design and execute data analyses to support operational planning, readiness, and performance optimization</li>
               <li>• Build and maintain data pipelines, ETL processes, and automated analytics workflows</li>
               <li>• Develop machine learning models and AI-enabled tools to solve targeted Marine Corps problems</li>
@@ -1222,7 +1157,7 @@
 
           <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Proficiency in Python, R, SQL, or other data science languages and tools</li>
               <li>• Experience with pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, or similar frameworks</li>
               <li>• Familiarity with data engineering tools (e.g., Airflow, DBT, Spark), cloud platforms, or tactical edge computing</li>
@@ -1249,18 +1184,18 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The Design Strategist serves as the primary advocate for the end user within the Marine Coders team, ensuring that software solutions are intuitive, usable, and tailored to the
               operational needs of Marines. This billet plays a critical role in bridging the gap between users and developers by conducting research that informs design decisions across the full
               product lifecycle.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Design Strategists are responsible for planning, conducting, and synthesizing research data in order to develop user insights, design principles, and artifacts such as UI/UX designs
               and/or wireframes. This research can be gathered through industry analysis, user interviews, usability testing, prototyping, field observation, UI/UX tools (ie: Google Analytics,
               Microsoft Clarity, etc.), and other methods. Design Strategists work closely with product managers, analysts, other designers, and developers to translate research findings into
               actionable recommendations to build and improve upon the functionality, accessibility, usability, and overall effectiveness of Marine Coders-developed software.
             </p>
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               This billet requires deep expertise in user-centered design, operational empathy, and collaboration within an agile, distributed development team. The Design Strategist leverages
               research and creative problem-solving to improve outcomes at tactical and operational levels, effectively identifies user insights, and clearly communicates recommendations. They
               consistently advocate for user needs throughout the product lifecycle.
@@ -1269,7 +1204,7 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Plan and execute user research efforts, including interviews, contextual inquiries, usability tests, and surveys</li>
               <li>• Synthesize research findings into clear, actionable insights to inform design and development decisions</li>
               <li>• Collaborate with product managers, designers, and developers to align software features with user needs and workflows</li>
@@ -1282,7 +1217,7 @@
 
           <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Experience conducting, synthesizing, and communicating UX research using both qualitative and quantitative methods</li>
               <li>• Creation of design artifacts such as journey maps, wireframes, prototypes</li>
               <li>• Familiarity with design, research, and collaboration tools such as Figma, Adobe Suite, Sketch, Miro, Tableau or similar platforms</li>
@@ -1312,16 +1247,16 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Billet Description</h4>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               The Product Manager serves as the strategic and operational lead for software product development within the Marine Coders team. This billet is responsible for identifying and
               prioritizing operational needs, translating them into actionable product requirements, and guiding cross-functional teams through the delivery of effective, user-centered software
               solutions in support of the warfighter.
             </p>
-            <p class="text-black dark:text-white mb-4">
+            <p class=" dark:text-white mb-4">
               Product Managers define product vision, manage roadmaps, and ensure alignment between Marine Corps operational challenges and technical efforts. They serve as the connective tissue
               between stakeholders, developers, designers, and end users—ensuring that each product delivered by the team is focused, mission-relevant, and built to enhance operational effectiveness.
             </p>
-            <p class="text-black dark:text-white">
+            <p class=" dark:text-white">
               This role requires strong operational awareness, technical fluency, and communication skills, as well as the ability to lead in a dynamic, distributed, and often asynchronous team
               environment. Product Managers must be comfortable operating in ambiguity and making informed decisions based on user feedback, strategic guidance, and tactical realities.
             </p>
@@ -1329,7 +1264,7 @@
 
           <div class=" p-6 mb-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Primary Duties and Responsibilities</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Define product goals, roadmaps, and success criteria in collaboration with stakeholders and users</li>
               <li>• Translate operational needs into clear, prioritized user stories and technical requirements</li>
               <li>• Lead agile ceremonies including sprint planning, backlog refinement, and retrospectives</li>
@@ -1343,7 +1278,7 @@
 
           <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Preferred Skills and Experience</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• Experience leading software or digital product development efforts using agile or lean methodologies</li>
               <li>• Strong skills in requirements gathering, user story writing, and backlog management</li>
               <li>• Familiarity with tools such as Jira, Trello, GitHub Projects, or similar platforms</li>
@@ -1371,7 +1306,7 @@
           </div>
 
           <div class=" p-6 mb-6">
-            <p class="text-black dark:text-white mb-6">
+            <p class=" dark:text-white mb-6">
               While the individual roles each bring distinct capabilities to the Marine Coders team, there is a set of foundational skills that all team members should possess. These shared
               competencies enable collaboration, increase interoperability, and ensure a baseline level of technical fluency across the team.
             </p>
@@ -1381,7 +1316,7 @@
             <div class="space-y-6">
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Git & Version Control</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Understand basic Git operations: clone, pull, commit, push, branching</li>
                   <li>• Comfortable using GitHub or GitLab for code and documentation management</li>
                   <li>• Enables collaboration, version control, and integration with CI/CD workflows</li>
@@ -1390,7 +1325,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Setting Up a Local Development Environment</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Ability to install and configure an IDE (e.g., VS Code, IntelliJ, PyCharm)</li>
                   <li>• Set up local environments using tools like Docker, Python virtual environments, or Node/npm</li>
                   <li>• Supports local development, debugging, and testing of software</li>
@@ -1399,7 +1334,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Command Line Fundamentals</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Navigate directories, manage files, and run scripts via terminal or shell</li>
                   <li>• Useful across development, data analysis, and deployment tasks</li>
                 </ul>
@@ -1407,7 +1342,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Understanding of APIs and JSON</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Familiarity with RESTful APIs, including how to test endpoints</li>
                   <li>• Able to read and work with JSON-formatted data</li>
                   <li>• Enables integration across systems and services</li>
@@ -1416,7 +1351,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Basic Data Literacy</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Understand structured data formats such as CSV, JSON, and SQL</li>
                   <li>• Able to read and interpret simple datasets and write/read basic queries</li>
                   <li>• Supports better decision-making, debugging, and development</li>
@@ -1425,7 +1360,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Software Development Lifecycle Awareness</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Understands agile concepts like sprints, user stories, and minimum viable products (MVPs)</li>
                   <li>• Familiar with testing, code review, and deployment cycles</li>
                 </ul>
@@ -1433,7 +1368,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Security & Operational Discipline</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Basic awareness of DoD cybersecurity principles</li>
                   <li>• Understands the importance of secure data handling, access control, and compliance</li>
                   <li>• Critical for developing software in military environments</li>
@@ -1442,7 +1377,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Documentation & Communication</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Able to write and read clear README files, usage guides, and process documentation</li>
                   <li>• Comfortable with collaborative documentation tools (e.g., Markdown, Google Docs)</li>
                   <li>• Promotes clarity, continuity, and effective collaboration in a distributed team</li>
@@ -1451,7 +1386,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">Deployment Awareness</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Understands the general process of how code moves from development to production</li>
                   <li>• Familiar with CI/CD principles and configuration basics (e.g., YAML pipeline files)</li>
                   <li>• Enables more seamless collaboration with DevSecOps personnel</li>
@@ -1460,7 +1395,7 @@
 
               <div>
                 <h5 class="text-lg font-semibold text-mcswf-gold mb-2">UX and User Empathy</h5>
-                <ul class="text-black dark:text-white space-y-1 ml-4">
+                <ul class=" dark:text-white space-y-1 ml-4">
                   <li>• Understands the value of usability, clarity, and responsive interfaces</li>
                   <li>• Appreciates the importance of user feedback and intuitive design</li>
                   <li>• Improves coordination with UX designers and leads to more mission-effective tools</li>
@@ -1471,7 +1406,7 @@
 
           <div class=" p-6">
             <h4 class="text-xl font-semibold text-mcswf-gold mb-4">Recommended Tools and Platforms for Familiarity</h4>
-            <ul class="text-black dark:text-white space-y-2">
+            <ul class=" dark:text-white space-y-2">
               <li>• GitHub or GitLab (for version control and collaboration)</li>
               <li>• Visual Studio Code (or another preferred IDE)</li>
               <li>• Docker (basic usage for building and running containers)</li>

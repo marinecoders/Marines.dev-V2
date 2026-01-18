@@ -33,7 +33,6 @@ const productCollection = defineCollection({
       src: z.string(),
       alt: z.string(),
     }),
-    }),
     order: z.number(),
     heading: z.string(),
     bullets: z.array(z.string()),

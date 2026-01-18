@@ -33,9 +33,6 @@ const productCollection = defineCollection({
       src: z.string(),
       alt: z.string(),
     }),
-    image2: z.object({
-      src: z.string(),
-      alt: z.string(),
     }),
     order: z.number(),
     heading: z.string(),
@@ -47,6 +44,8 @@ const productCollection = defineCollection({
         metric: z.string(),
       })
     ),
+    heroButtonText: z.string().optional(),
+    heroButtonLink: z.string().optional(),
   }),
 });
 

@@ -44,6 +44,7 @@
         { url: '/products/sparta', text: 'SPARTA' },
         { url: '/products/ares', text: 'ARES - HLZ' },
         { url: '/products/FlightMode', text: 'FlightMode' },
+        { url: '/products/dondocs', text: 'DonDocs' },
       ],
     },
     {

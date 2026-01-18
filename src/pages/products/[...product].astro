@@ -24,6 +24,11 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const metrics = entry.data.metrics || [];
+
+// Use custom hero button text/link if provided, otherwise default to "REQUEST APP DEMO"
+const heroButtonText = entry.data.heroButtonText || 'REQUEST APP DEMO';
+const heroButtonLink = entry.data.heroButtonLink || `mailto:${externalLinks.mcswfEmail}?subject=${externalLinks.mcswfEmailSubject}`;
+const isExternalLink = heroButtonLink.startsWith('http://') || heroButtonLink.startsWith('https://');
 ---
 
 <Layout title={entry.data.product}>
@@ -31,9 +36,9 @@ const metrics = entry.data.metrics || [];
     title={entry.data.product}
     description={entry.data.description}
     descriptionClasses="font-light lg:w-[1000px]"
-    link={`mailto:${externalLinks.mcswfEmail}?subject=${externalLinks.mcswfEmailSubject}`}
-    linkText="REQUEST APP DEMO"
-    externalLink={true}
+    link={heroButtonLink}
+    linkText={heroButtonText}
+    externalLink={isExternalLink}
     backgroundImg={entry.data.background.src}
     client:only="svelte"
   />

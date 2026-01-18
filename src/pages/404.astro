@@ -4,6 +4,7 @@ import { displaySiteBanner } from '../components/stores.js';
 
 import '../styles/global.css';
 import ForwardArrow from '@components/icons/ForwardArrow.svelte';
+import FooterFull from '@components/FooterFull.svelte';
 
 displaySiteBanner.set(false);
 
@@ -28,9 +29,9 @@ const pageLinks = [
 
 <Layout title="404">
   <div class="max-h-screen scrollbar-hide snap-start snap-y snap-mandatory">
-    <div class="h-screen snap-start py-16 md:py-20 px-8 md:px-16 lg:px-24">
+    <div class=" snap-start py-16 md:py-20 px-8 md:px-16 lg:px-24">
       <h1 class="font-semibold text-[200px] text-mcswf-gold font-roboto h-64">404</h1>
-      <span class="bold text-2xl -mt-20">This page is unavailable.<span class="block">Try one of these pages instead.</span></span>
+      <span class="bold text-2xl -mt-20">This page is unavailable.<span class="block">Have you taken Website Navigation course?</span></span>
       <div class="relative grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 m-auto pt-10 lg:pt-24 text-base md:text-xl justify-between">
         {
           pageLinks.map((link) => (
@@ -48,4 +49,5 @@ const pageLinks = [
       </div>
     </div>
   </div>
+  <FooterFull client:only="svelte" />  
 </Layout>

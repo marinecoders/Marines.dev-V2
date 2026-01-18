@@ -1,0 +1,20 @@
+product: 'DonDocs'
+description: "DonDocs is a professional Naval Correspondence Generator that streamlines document creation for Marines. This SECNAV M-5216.5 compliant tool generates pixel-perfect PDFs using LaTeX-quality typesetting, supporting 18 document types including naval letters, memoranda, and endorsements. All processing happens locally in your browser with NIST 800-171 compliance, ensuring data security while providing profiles, templates, and batch processing capabilities."
+heroButtonText: 'TRY NOW'
+heroButtonLink: 'https://dondocs.usmc.dev'
+background: 
+  src: '/images/DOW-BACKGROUND.png'
+  alt: 'Marine working on documents'
+image: 
+  src: '/images/miu-laptop-screen.jpg'
+  alt: 'Navy Letter Formatter interface'
+image2:
+  src: '/images/marine_working.png'
+  alt: 'Marine using Navy Letter Formatter'
+order: 2
+heading: "SECNAV M-5216.5 Compliant \n NIST 800-171 Secure \n LaTeX-Quality Output"
+bullets:
+  - '18 Document Types Supported'
+  - 'Local Browser Processing (No Server)'
+  - 'Profiles & Templates for Efficiency'
+metrics: []

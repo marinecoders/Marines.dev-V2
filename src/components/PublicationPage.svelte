@@ -521,18 +521,11 @@
             </blockquote>
 
             <p class="dark:text-white mb-4">
-              Marine Coders operate as part of the Marine Innovation Unit (MIU), wherein they serve as a Direct Support Team (DST) to the Marine Corps Software Factory (MCSWF).
+              Marine Coders operate as part of the Marine Innovation Unit (MIU), wherein they serve as in Group 2, Detachment Charlie and serve in direct support to the Marine Corps Software Factory (MCSWF).
             </p>
 
             <p class="dark:text-white mb-4">
-              The MIU is a recently formed unit and, as such, their organizational structure is still evolving. In general, the staffing model of the MIU depends on the DSTs who reside in the Client
-              Management Group (CMG). These DSTs maintain standing relationships with select organizations within the Marine Corps (e.g. PACOM, TECOM, MCSWF). The DSTs identify needs for their
-              respective organizations and scope those needs into engagements which can be staffed and supported by members of the MIU. Once the engagements are approved by MIU leadership, they are
-              staffed by the talent support division and executed by the engagement management division.
-            </p>
-
-            <p class="dark:text-white mb-0">
-              The Marine Coders are unique within this MIU operating model in that they identify MCSWF needs and staff the engagements to satisfy those needs themselves.
+              The MIU is a recently formed unit and, as such, their organizational structure is still evolving. Marines in Group 2, Detchment Charlie are organized into teams of 6-8 Marines. The teams are then aligned to priority efforts identified by MCSWF and other supported units.
             </p>
           </div>
 

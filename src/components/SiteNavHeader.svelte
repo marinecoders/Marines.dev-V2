@@ -38,10 +38,9 @@
     },
     {
       text: 'PRODUCTS',
-      url: '/products/sparta',
+      url: '/products/ares',
       image: '/images/products_card.png',
       subLinks: [
-        { url: '/products/sparta', text: 'SPARTA' },
         { url: '/products/ares', text: 'ARES - HLZ' },
         { url: '/products/FlightMode', text: 'FlightMode' },
         { url: '/products/dondocs', text: 'DonDocs' },

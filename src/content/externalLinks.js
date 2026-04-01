@@ -13,5 +13,5 @@ export const externalLinks = {
 };
 
 export const timerCountdown = {
-  formatedDate: 'February 28, 2026 00:00:00',
+  formatedDate: 'April 15, 2026 00:00:00',
 };

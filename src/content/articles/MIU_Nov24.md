@@ -12,3 +12,4 @@ image:
   src: "/images/MIU_2024Ball.jpg"
   alt: "MIU Marine Coders at November 2024 Ball"
 ---
+

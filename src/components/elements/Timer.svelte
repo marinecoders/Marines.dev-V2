@@ -35,7 +35,7 @@
   }
 </script>
 
-<div class="grid w-full grid-cols-1 gap-3 mt-8 lg:grid-cols-4 lg:inline-flex sm:justify-between">
+<div class="grid w-full grid-cols-1 gap-3 mt-2 lg:grid-cols-4 lg:inline-flex sm:justify-between">
   <div class="invisible my-auto w-42 lg:w-60 lg:visible">
     <hr class="h-1 bg-[#62040A] border-none" />
   </div>

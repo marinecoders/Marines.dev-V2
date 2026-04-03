@@ -1,5 +1,5 @@
-product: 'Helicopter Landing Zone (HLZ) Application'
-description: "The HLZ Application provides real-time helicopter landing zone assessment and management capabilities. This advanced system enables rapid evaluation of landing sites, weather conditions, and safety parameters to ensure secure helicopter operations in dynamic environments."
+product: 'Helicopter Landing Zone (HLZ) Plugin'
+description: "An ATAK plugin that predicts potential Helicopter Landing Zones given terrain coverage and elevation data. Supports planning for casevac/infiltration/exfiltration at the infantry squad/platoon level or for pilots operating with fielded ATAK capable devices (MAGTABs)."
 background:
   src: '/images/marine_flight_sim.jpeg'
   alt: 'Marine flight simulation'

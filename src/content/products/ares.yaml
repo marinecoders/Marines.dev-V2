@@ -4,18 +4,18 @@ background:
   src: '/images/marine_flight_sim.jpeg'
   alt: 'Marine flight simulation'
 image:
-  src: '/images/FlightMode-on-Galaxy-Tab-S6.svg'
-  alt: 'HLZ on tablet device'
+  src: '/images/hlz-image.png'
+  alt: 'HLZ Plugin screenshot'
+imageBorder: true
 image2:
   src: '/images/ATAK-on-military-phone.svg'
   alt: 'HLZ mobile interface'
 order: 2
-heading: "Smart Landing Zone Management\nReal-Time Assessment\nSafety First"
+heading: "Key Features"
 heroButtonText: 'DOWNLOAD PLUGIN'
 heroButtonLink: 'https://tak.gov/plugins/hlz-predictor'
 bullets:
-  - 'Real-Time Landing Zone Assessment'
-  - 'Weather and Environmental Monitoring'
-  - 'Safety Parameter Validation'
-  - 'Multi-Platform Integration'
+  - 'Predict helicopter landing zones tailored to aircraft specifications and requirements.'
+  - 'Plot landing zone dimensions unique to each aircraft.'
+  - 'Available for Military and Civilian use cases.'
 metrics: []

@@ -42,12 +42,46 @@ const isExternalLink = heroButtonLink.startsWith('http://') || heroButtonLink.st
     backgroundImg={entry.data.background.src}
     client:only="svelte"
   />
-  <div class="relative z-20 max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:px-6">
-    <img
-      class="w-full rounded-xl border-8 border-white/20 shadow-2xl shadow-black/60"
-      src="/images/hlz-image.png"
-      alt="HLZ Plugin screenshot"
-    />
+  <div class="relative z-20 items-start max-w-screen-xl lg:gap-20 gap-36 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-2 lg:px-6">
+    <div class="grid gap-4 mt-8 grid-cols-1 hidden lg:block min-h-[650px]">
+      <div class="w-full flex justify-center">
+        <img
+          class={`object-cover ${entry.data.imageBorder ? 'rounded-xl border-8 border-white/20 shadow-2xl shadow-black/60' : ''}`}
+          src={entry.data.image.src}
+          alt={entry.data.image.alt}
+        />
+      </div>
+    </div>
+    <div class="grid gap-4 mt-8 grid-cols-1">
+      <h2 class="mb-4 ml-8 text-2xl md:text-4xl font-extrabold tracking-tight text-left text-white">
+        {entry.data.heading}
+      </h2>
+      <ul class="m-4 ml-12 list-disc text-xl md:text-2xl">
+        {entry.data.bullets.map((b) => <li>{b}</li>)}
+      </ul>
+      <div class="grid grid-cols-1 lg:grid-cols-2 m-auto z-20">
+        {
+          metrics.length > 0
+            ? metrics.map((p) => (
+                <div class="text-center my-12 mx-4">
+                  <MetricCard
+                    icon={p.icon}
+                    value={p.value}
+                    metric={p.metric}
+                  />
+                </div>
+              ))
+            : null
+        }
+      </div>
+      <div class="grid gap-4 my-4 grid-cols-1 lg:hidden relative h-max">
+        <img
+          class="px-7 w-full"
+          src={entry.data.image.src}
+          alt={entry.data.image.alt}
+        />
+      </div>
+    </div>
   </div>
 
   <div class="relative z-20">

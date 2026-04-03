@@ -5,14 +5,16 @@ background:
   alt: 'Marine gesturing at a television that says SnapDB'
 image:
   src: '/images/FlightMode-on-Galaxy-Tab-S6.svg'
-  alt: 'FlightMode on a Galaxy Tab S6'
+  alt: 'FlightMode Input Screen'
 image2:
   src: '/images/ATAK-on-military-phone.svg'
-  alt: 'FlightMode Input Screen on '
+  alt: 'FlightMode on military phone'
 order: 3
-heading: "CAS Made Easy"
+heading: "Key Features"
+heroButtonText: 'DOWNLOAD PLUGIN'
+heroButtonLink: 'https://tak.gov/plugins/flight-mode'
 bullets:
-  - 'Pilot Friendly Input and Readback formats'
-  - 'Hybrid Position Selection (Map & User Input)'
-  - 'Simplified MGRS Coordinate Input'
+  - 'Nine Line Copy Tool enables quickly copying down a close air support nine line as it is read out.'
+  - 'Bullseye allows specifying point as an offset from a predefined bullseye.'
+  - 'MGRS Picker assists in quickly specifying a MGRS point, allowing a pilot to select the grid box from the map, then entering the 4, 6, 8, or 10 digits of the grid.'
 metrics: []

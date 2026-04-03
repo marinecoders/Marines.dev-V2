@@ -45,6 +45,7 @@ const productCollection = defineCollection({
     ),
     heroButtonText: z.string().optional(),
     heroButtonLink: z.string().optional(),
+    imageBorder: z.boolean().optional(),
   }),
 });
 

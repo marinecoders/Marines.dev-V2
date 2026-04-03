@@ -41,7 +41,7 @@
       url: '/products/ares',
       image: '/images/products_card.png',
       subLinks: [
-        { url: '/products/ares', text: 'ARES - HLZ' },
+        { url: '/products/ares', text: 'HLZ' },
         { url: '/products/FlightMode', text: 'FlightMode' },
         { url: '/products/dondocs', text: 'DonDocs' },
       ],

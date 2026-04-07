@@ -93,6 +93,16 @@
                   height="32"
                   class="text-white hover:text-mcswf-red transition-colors" />
               </a>
+              <a
+                href="https://join.slack.com/t/marinecoders/shared_invite/zt-3tz731don-xlY024rheMnub6_WfDXYUg"
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon
+                  icon="mdi:slack"
+                  width="32"
+                  height="32"
+                  class="text-white hover:text-purple-400 transition-colors" />
+              </a>
             </div>
           </div>
           <div class="w-3/5 font-light">
@@ -200,6 +210,17 @@
               width="32"
               height="32"
               class="text-white hover:text-mcswf-red transition-colors" />
+          </a>
+          <a
+            href="https://join.slack.com/t/marinecoders/shared_invite/zt-3tz731don-xlY024rheMnub6_WfDXYUg"
+            class="mr-4"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Icon
+              icon="mdi:slack"
+              width="32"
+              height="32"
+              class="text-white hover:text-purple-400 transition-colors" />
           </a>
         </div>
       </div>

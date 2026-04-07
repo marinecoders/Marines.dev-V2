@@ -3,6 +3,7 @@ import Layout from '@layouts/Layout.astro';
 import Hero from '@components/sections/Hero.svelte';
 import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
 import ContentImageFull from '@components/sections/ContentImageFull.svelte';
+import ButtonCustom from '@components/buttons/ButtonCustom.svelte';
 import FooterFull from '@components/FooterFull.svelte';
 import { displaySiteBanner } from '@components/stores.js';
 import '../styles/global.css';
@@ -41,6 +42,24 @@ displaySiteBanner.set(true);
       gradientBackground={true}
       client:only="svelte"
     />
+    <div class="flex flex-col items-center justify-center py-12 lg:py-20 gap-6">
+      <h2 class="font-bold tracking-wider text-center text-2xl md:text-3xl lg:text-[40px] bg-gradient-to-r from-mcswf-gold via-mcswf-gold-dark to-mcswf-gold text-transparent bg-clip-text [text-shadow:_0_2px_8px_rgb(255_199_85_/_0.2)] leading-tight">
+        JOIN OUR COMMUNITY
+      </h2>
+      <p class="text-center text-base md:text-[21px] font-normal leading-relaxed tracking-wide text-slate-100 max-w-2xl">
+        Connect with Marine Coders on Slack to collaborate, share ideas, and stay up to date.
+      </p>
+      <ButtonCustom
+        color="yellow"
+        size="xl"
+        class="w-full md:w-64"
+        link="https://join.slack.com/t/marinecoders/shared_invite/zt-3tz731don-xlY024rheMnub6_WfDXYUg"
+        externalLink={true}
+        client:only="svelte"
+      >
+        JOIN OUR SLACK
+      </ButtonCustom>
+    </div>
   </MaxWidthContainer>
   <FooterFull client:only="svelte" />
 </Layout>

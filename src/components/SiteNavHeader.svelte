@@ -34,6 +34,7 @@
         { url: '/about', text: 'WHO WE ARE' },
         { url: '/timeline', text: 'CODERS HISTORY' },
         { url: '/publication', text: 'PUBLICATION 1' },
+        { url: 'https://join.slack.com/t/marinecoders/shared_invite/zt-3tz731don-xlY024rheMnub6_WfDXYUg', text: 'JOIN OUR SLACK', external: true },
       ],
     },
     {
@@ -125,6 +126,8 @@
                     <li class="p-1">
                       <a
                         href={subLink.url}
+                        target={subLink.external ? '_blank' : undefined}
+                        rel={subLink.external ? 'noopener noreferrer' : undefined}
                         class="relative inline-block overflow-hidden border-b-2 border-transparent hover:text-mcswf-gold tracking-wider group whitespace-nowrap">
                         <span class="ease absolute left-0 bottom-0 h-0 w-0 border-b-2 border-mcswf-gold transition-all duration-200 group-hover:w-full">{subLink.text}</span>
                         <span>{subLink.text}</span>
@@ -185,6 +188,8 @@
                       <li class="py-2 pl-4">
                         <a
                           href={subLink.url}
+                          target={subLink.external ? '_blank' : undefined}
+                          rel={subLink.external ? 'noopener noreferrer' : undefined}
                           class="relative inline-block overflow-hidden border-b-2 border-transparent hover:text-mcswf-gold tracking-wider group whitespace-nowrap">
                           <span class="ease absolute left-0 bottom-0 h-0 w-0 border-b-2 border-mcswf-gold transition-all duration-200 group-hover:w-full">{subLink.text}</span>
                           <span>{subLink.text}</span>

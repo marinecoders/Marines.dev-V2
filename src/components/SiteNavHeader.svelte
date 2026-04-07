@@ -35,7 +35,6 @@
         { url: '/community', text: 'COMMUNITY' },
         { url: '/timeline', text: 'CODERS HISTORY' },
         { url: '/publication', text: 'PUBLICATION 1' },
-        { url: 'https://join.slack.com/t/marinecoders/shared_invite/zt-3tz731don-xlY024rheMnub6_WfDXYUg', text: 'JOIN OUR SLACK', external: true },
       ],
     },
     {
@@ -59,10 +58,13 @@
       titleClasses: 'text-sm lg:text-xl',
     },
     {
-      text: 'NEWS',
+      text: 'CONNECT',
       image: '/images/contact_card.png',
       url: '/articles',
-      subLinks: [{ url: '/articles', text: 'ARTICLES AND EVENTS' }],
+      subLinks: [
+        { url: '/articles', text: 'ARTICLES AND EVENTS' },
+        { url: 'https://join.slack.com/t/marinecoders/shared_invite/zt-3tz731don-xlY024rheMnub6_WfDXYUg', text: 'JOIN OUR SLACK', external: true },
+      ],
     },
   ];
 

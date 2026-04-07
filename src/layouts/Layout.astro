@@ -1,5 +1,4 @@
 ---
-import SiteBanner from '@components/SiteBanner.svelte';
 import SiteNavHeader from '@components/SiteNavHeader.svelte';
 import SiteClassificationBanner from '@components/SiteClassificationBanner.svelte';
 import SiteBackgroundImg from '@components/SiteBackgroundImg.svelte';
@@ -52,7 +51,6 @@ const { title = null, hideBackground = false } = Astro.props;
     <title>MIU {title && '-'} {title}</title>
   </head>
   <body class="overflow-auto h-full w-full font-roboto text-white">
-    <SiteBanner />
     <SiteNavHeader client:only="svelte" />
     <SiteBackgroundImg client:only="svelte" hideBackground={hideBackground}/>
     <main>

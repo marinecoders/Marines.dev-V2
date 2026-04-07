@@ -6,12 +6,10 @@ import FooterFull from '@components/FooterFull.svelte';
 import Countdown from '@components/elements/Countdown.svelte';
 import ContentImageFull from '../components/sections/ContentImageFull.svelte';
 import { getCollection } from 'astro:content'; // Get products collection
-import { displaySiteBanner } from '../components/stores.js';
 import { displaySiteClassificationBanner } from '../components/stores.js';
 import '../styles/global.css';
 import '../styles/fonts.css';
 
-displaySiteBanner.set(false);
 displaySiteClassificationBanner.set(true);
 
 const products = await getCollection('products');

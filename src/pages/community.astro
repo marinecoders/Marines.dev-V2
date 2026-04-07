@@ -6,10 +6,7 @@ import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
 import CoderGrid from '@components/sections/CoderGrid.svelte';
 import ButtonCustom from '@components/buttons/ButtonCustom.svelte';
 import FooterFull from '@components/FooterFull.svelte';
-import { displaySiteBanner } from '@components/stores.js';
 import '../styles/global.css';
-
-displaySiteBanner.set(true);
 
 const communityEntries = await getCollection('community');
 const coders = communityEntries.map((entry) => entry.data);

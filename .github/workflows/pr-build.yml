@@ -21,11 +21,10 @@ jobs:
       - name: Build and upload your site output
         uses: withastro/action@v2
         with:
-          package-manager: pnpm@latest
-
+          node-version: 22
 
       - name: Run integration tests
-        run: pnpm run test:integration
+        run: npm run test:integration
         env:
           CI: true
         timeout-minutes: 4

@@ -1,12 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { displaySiteBanner } from '../components/stores.js';
 
 import '../styles/global.css';
 import ForwardArrow from '@components/icons/ForwardArrow.svelte';
 import FooterFull from '@components/FooterFull.svelte';
-
-displaySiteBanner.set(false);
 
 const pageLinks = [
   {

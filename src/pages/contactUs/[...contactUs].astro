@@ -2,11 +2,8 @@
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/sections/Hero.svelte';
 import FooterFull from '@components/FooterFull.svelte';
-import { displaySiteBanner } from '@components/stores.js';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import '../../styles/global.css';
-
-displaySiteBanner.set(false);
 
 interface Props {
   entry: CollectionEntry<'contactUs'>;

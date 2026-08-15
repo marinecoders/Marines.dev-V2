@@ -4,9 +4,6 @@ import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
 import FooterFull from '@components/FooterFull.svelte';
 import AllNewsAndEvents from '@components/sections/AllNewsAndEvents.svelte';
 import { getCollection } from 'astro:content';
-import { displaySiteBanner } from '@components/stores.js';
-
-displaySiteBanner.set(true);
 
 // Get all articles
 const allArticles = await getCollection('articles');

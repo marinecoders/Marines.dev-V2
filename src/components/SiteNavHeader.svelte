@@ -35,6 +35,7 @@
         { url: '/community', text: 'COMMUNITY' },
         { url: '/timeline', text: 'CODERS HISTORY' },
         { url: '/publication', text: 'PUBLICATION 1' },
+        { url: 'https://join.slack.com/t/marinecoders/shared_invite/zt-3tz731don-xlY024rheMnub6_WfDXYUg', text: 'JOIN OUR SLACK', external: true },
       ],
     },
     {

@@ -7,7 +7,7 @@ category: "Article"
 tags: ["reserve forces", "software development", "military innovation", "talent utilization", "defense strategy"]
 featured: true
 external: true
-externalUrl: "images/McGeeGazetteArticle1025.pdf"
+externalUrl: "/documents/McGeeGazetteArticle1025.pdf"
 image:
   src: "/images/mcgee-october25-gazette-image.png"
   alt: "Marin Corps Gazette October 2025 Imagegi"

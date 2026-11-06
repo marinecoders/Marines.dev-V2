@@ -1,22 +1,63 @@
 ---
+import SiteClassificationBanner from '@components/SiteClassificationBanner.svelte';
+import CodersLogoAndText from '@components/logos/CodersLogoAndText.svelte';
+import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
+/* Original homepage imports, retained for reference.
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/sections/Hero.svelte';
-import MaxWidthContainer from '@components/sections/MaxWidthContainer.svelte';
 import FooterFull from '@components/FooterFull.svelte';
 import Countdown from '@components/elements/Countdown.svelte';
 import ContentImageFull from '../components/sections/ContentImageFull.svelte';
 import { getCollection } from 'astro:content'; // Get products collection
-import { displaySiteClassificationBanner } from '../components/stores.js';
+*/
+import { displaySiteClassificationBanner } from '@components/stores';
 import '../styles/global.css';
 import '../styles/fonts.css';
 
 displaySiteClassificationBanner.set(true);
 
-const products = await getCollection('products');
-
-products.sort((a, b) => a.data.order - b.data.order);
+// const products = await getCollection('products');
+// products.sort((a, b) => a.data.order - b.data.order);
 ---
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The Marine Coders website is being taken down." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>MIU Marine Coders — Website Notice</title>
+  </head>
+  <body class="min-h-screen bg-[#252a34] font-roboto text-white">
+    <header class="w-full bg-[#1a1d24] shadow-sm shadow-stone-950">
+      <SiteClassificationBanner client:load />
+      <MaxWidthContainer>
+        <div class="flex items-center w-full py-2 sm:py-4">
+          <CodersLogoAndText displayImage={true} />
+        </div>
+      </MaxWidthContainer>
+    </header>
+    <main>
+      <MaxWidthContainer>
+        <section class="max-w-2xl mx-auto py-20 sm:py-32 text-center" aria-labelledby="website-notice">
+          <h1 id="website-notice" class="text-3xl sm:text-5xl font-bold text-mcswf-gold">
+            This website is being taken down.
+          </h1>
+          <p class="mt-6 text-lg text-slate-200">Thank you for your interest in MIU Marine Coders.</p>
+        </section>
+      </MaxWidthContainer>
+    </main>
+  </body>
+</html>
+
+<script>
+  import { displaySiteClassificationBanner } from '../components/stores.js';
+
+  displaySiteClassificationBanner.set(true);
+</script>
+
+{/* Original homepage retained while the site is being taken down.
 <Layout title="Home">
   <Hero
     titleColor="yellow"
@@ -62,3 +103,4 @@ products.sort((a, b) => a.data.order - b.data.order);
   />
   <FooterFull client:only="svelte" />
 </Layout>
+*/}

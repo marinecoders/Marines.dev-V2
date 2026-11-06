@@ -6,9 +6,14 @@
   href="/"
   class="flex items-center group transition-all duration-300 ease-in-out">
   {#if displayImage}
+<!--    <img-->
+<!--      style="fill: white;"-->
+<!--      src="/coders-logo.png"-->
+<!--      class="h-12 text-white mr-4 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(255,199,85,0.4)]"-->
+<!--      alt="Coders Logo" />-->
     <img
       style="fill: white;"
-      src="/coders-logo.png"
+      src="/unaffiliated-coders-logo.png"
       class="h-12 text-white mr-4 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(255,199,85,0.4)]"
       alt="Coders Logo" />
   {/if}
